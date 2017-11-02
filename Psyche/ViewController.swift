@@ -8,12 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
+    @IBOutlet weak var menuViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var menu: UIView!
+    
+    
+    var menuShowing = false //boolean to see if menu is showing currently or not
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
         
-        print("Hello")
+      
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,6 +31,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func openMenuAction(_ sender: Any) {
+    
+        if(menuShowing){
+            menuViewLeadingConstraint.constant = -150
+        }
+        else{
+            menuViewLeadingConstraint.constant = 0
+            
+            
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+        }
+        
+        menuShowing = !menuShowing
+    }
+   
 }
 

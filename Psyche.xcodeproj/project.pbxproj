@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0D1F991BD40030FA86 /* AppDelegate.swift */; };
 		2E556F101F991BD40030FA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0F1F991BD40030FA86 /* ViewController.swift */; };
-		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; };
+		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
 		2E556F151F991BD40030FA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F141F991BD40030FA86 /* Assets.xcassets */; };
 		2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E14FFDF1FABD0A100B74330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		2E556F0A1F991BD40030FA86 /* Psyche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psyche.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E556F0D1F991BD40030FA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E556F0F1F991BD40030FA86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,8 +39,8 @@
 		2E556F011F991BD40030FA86 = {
 			isa = PBXGroup;
 			children = (
-				2E556F0C1F991BD40030FA86 /* Psyche */,
 				2E556F0B1F991BD40030FA86 /* Products */,
+				2E556F0C1F991BD40030FA86 /* Psyche */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +91,9 @@
 		2E556F021F991BD40030FA86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					menuView,
+				);
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Apple Inc.";
@@ -148,6 +152,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2E556F121F991BD40030FA86 /* Base */,
+				2E14FFDF1FABD0A100B74330 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
