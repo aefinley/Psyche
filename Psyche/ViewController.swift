@@ -10,20 +10,28 @@ import UIKit
 
 class ViewController: UIViewController{
 
-    @IBOutlet weak var menuViewLeadingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var menu: UIView!
+    @IBOutlet weak var menuWidth: NSLayoutConstraint!
+    
+
+    @IBOutlet weak var menu: UIImageView!
     
     
     var menuShowing = false //boolean to see if menu is showing currently or not
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+        
+        
+        menuWidth.constant = -350 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
         menu.layer.shadowOpacity = 1
         menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menubackground")
         
       
-        // Do any additional setup after loading the view, typically from a nib.
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,11 +42,10 @@ class ViewController: UIViewController{
     @IBAction func openMenuAction(_ sender: Any) {
     
         if(menuShowing){
-            menuViewLeadingConstraint.constant = -150
+            menuWidth.constant = -350
         }
         else{
-            menuViewLeadingConstraint.constant = 0
-            
+            menuWidth.constant = 0
             
             UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
             view.layoutIfNeeded()

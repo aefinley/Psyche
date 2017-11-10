@@ -1,80 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Cp-tj-Ba0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Cp-tj-Ba0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Psyche-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTX-k1-Bfb">
-                                <rect key="frame" x="145" y="214" width="84" height="20.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="WELCOME">
-                                        <attributes>
-                                            <color key="NSColor" red="0.95564609769999997" green="0.59800827499999998" blue="0.19203817840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" red="0.95564609769999997" green="0.59800827499999998" blue="0.19203817840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="shadowColor" red="0.95564609769999997" green="0.59800827499999998" blue="0.19203817840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-v6-Xn5" customClass="UIScrollView">
-                                <rect key="frame" x="0.0" y="64" width="140" height="603"/>
+                            <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-v6-Xn5" customClass="UIImageView">
+                                <rect key="frame" x="0.0" y="64" width="150" height="603"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zs-5L-Bd6">
-                                        <rect key="frame" x="55" y="28" width="30" height="30"/>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOo-5y-lf6">
+                                        <rect key="frame" x="78" y="180" width="64" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <state key="normal" title="Timeline">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHj-QA-vQd">
+                                        <rect key="frame" x="71" y="50" width="64" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxo-lw-RMS">
+                                        <rect key="frame" x="78" y="254" width="64" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="AR">
-                                            <color key="titleColor" red="0.1863695383" green="0.12679198380000001" blue="0.2757984698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Gallery">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="YvU-Vn-IN3" kind="show" id="a8t-qN-vBP"/>
-                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDH-Sa-OFz">
-                                        <rect key="frame" x="31" y="144" width="79" height="30"/>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvY-gx-v04">
+                                        <rect key="frame" x="73" y="338" width="64" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Information"/>
-                                        <connections>
-                                            <segue destination="bzL-Fm-Q7E" kind="show" id="cGk-61-UlY"/>
-                                        </connections>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Learn">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEH-rm-ShR">
-                                        <rect key="frame" x="46" y="85" width="48" height="30"/>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1G-jc-caY">
+                                        <rect key="frame" x="73" y="419" width="64" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Gallery"/>
-                                        <connections>
-                                            <segue destination="OtQ-a7-goA" kind="show" id="hTw-D8-5k3"/>
-                                        </connections>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home icon" translatesAutoresizingMaskIntoConstraints="NO" id="iCa-IL-DEW">
+                                        <rect key="frame" x="26" y="47" width="43" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AR icon" translatesAutoresizingMaskIntoConstraints="NO" id="Zl1-Ke-Cau">
+                                        <rect key="frame" x="19" y="112" width="44" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline icon" translatesAutoresizingMaskIntoConstraints="NO" id="1gS-td-Pso">
+                                        <rect key="frame" x="26" y="180" width="42" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search icon" translatesAutoresizingMaskIntoConstraints="NO" id="v2Z-gJ-JDB">
+                                        <rect key="frame" x="26" y="418" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="explore icon will change later" translatesAutoresizingMaskIntoConstraints="NO" id="73R-1N-cje">
+                                        <rect key="frame" x="36" y="313" width="21" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gallery icon" translatesAutoresizingMaskIntoConstraints="NO" id="Zo3-cv-i4L">
+                                        <rect key="frame" x="29" y="254" width="34" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1a8-D5-5rL">
+                                        <rect key="frame" x="87" y="115" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <state key="normal" title="AR">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.95564609769999997" green="0.59800827499999998" blue="0.19203817840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="nkM-z7-kCR"/>
+                                    <constraint firstAttribute="width" constant="350" id="CZk-SB-Yil"/>
+                                    <constraint firstAttribute="height" constant="603" id="J04-Q6-YOI"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-gI-z7E">
+                                <rect key="frame" x="139" y="309" width="120" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="27"/>
+                                <color key="textColor" red="0.92540210489999997" green="0.92555385830000003" blue="0.92536973950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.18636953830718994" green="0.12679198384284973" blue="0.27579846978187561" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18431372549019609" green="0.12549019607843137" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZbG-v6-Xn5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BJE-uk-UD7"/>
-                            <constraint firstItem="LTX-k1-Bfb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="DGD-Ve-c7e"/>
-                            <constraint firstItem="ZbG-v6-Xn5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GaN-Hv-Umj"/>
-                            <constraint firstItem="ZbG-v6-Xn5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-140" id="H04-xu-jGx"/>
-                            <constraint firstItem="LTX-k1-Bfb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="T7s-f3-4l3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LTX-k1-Bfb" secondAttribute="trailing" constant="146" id="x7M-0L-VTx"/>
+                            <constraint firstAttribute="bottom" secondItem="ZbG-v6-Xn5" secondAttribute="bottom" id="5W5-vZ-27u"/>
+                            <constraint firstItem="ZbG-v6-Xn5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-150" id="VhT-il-xzT"/>
+                            <constraint firstItem="ZbG-v6-Xn5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="Vjk-ry-Jc0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -87,8 +129,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="menu" destination="ZbG-v6-Xn5" id="JVM-gG-HSY"/>
-                        <outlet property="menuViewLeadingConstraint" destination="H04-xu-jGx" id="vnX-dW-ORB"/>
+                        <outlet property="menu" destination="ZbG-v6-Xn5" id="i4k-mJ-brK"/>
+                        <outlet property="menuWidth" destination="VhT-il-xzT" id="mbW-xw-cGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -175,4 +217,12 @@
             <point key="canvasLocation" x="-590" y="102"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AR icon" width="100" height="102"/>
+        <image name="explore icon will change later" width="22" height="98"/>
+        <image name="gallery icon" width="38" height="54"/>
+        <image name="home icon" width="85" height="75"/>
+        <image name="search icon" width="60" height="64"/>
+        <image name="timeline icon" width="72" height="73"/>
+    </resources>
 </document>
