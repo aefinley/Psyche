@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-v6-Xn5" customClass="UIImageView">
-                                <rect key="frame" x="0.0" y="64" width="150" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="175" height="603"/>
                                 <subviews>
                                     <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOo-5y-lf6">
                                         <rect key="frame" x="78" y="180" width="64" height="30"/>
@@ -100,7 +100,7 @@
                                 </subviews>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="CZk-SB-Yil"/>
+                                    <constraint firstAttribute="width" constant="175" id="CZk-SB-Yil"/>
                                     <constraint firstAttribute="height" constant="603" id="J04-Q6-YOI"/>
                                 </constraints>
                             </view>
@@ -115,7 +115,7 @@
                         <color key="backgroundColor" red="0.18431372549019609" green="0.12549019607843137" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ZbG-v6-Xn5" secondAttribute="bottom" id="5W5-vZ-27u"/>
-                            <constraint firstItem="ZbG-v6-Xn5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-150" id="VhT-il-xzT"/>
+                            <constraint firstItem="ZbG-v6-Xn5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-175" id="VhT-il-xzT"/>
                             <constraint firstItem="ZbG-v6-Xn5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="Vjk-ry-Jc0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

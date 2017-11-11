@@ -24,11 +24,11 @@ class ViewController: UIViewController{
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
         
         
-        menuWidth.constant = -350 //menu should be hidden when view loads, width is 300 so needs to be -300
+        menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
         
         menu.layer.shadowOpacity = 1
         menu.layer.shadowRadius = 5
-        menu.image = #imageLiteral(resourceName: "menubackground")
+        menu.image = #imageLiteral(resourceName: "menuImage")
         
       
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
@@ -42,7 +42,7 @@ class ViewController: UIViewController{
     @IBAction func openMenuAction(_ sender: Any) {
     
         if(menuShowing){
-            menuWidth.constant = -350
+            menuWidth.constant = -175
         }
         else{
             menuWidth.constant = 0
