@@ -12,6 +12,7 @@
 		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
 		2E556F151F991BD40030FA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F141F991BD40030FA86 /* Assets.xcassets */; };
 		2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */; };
+		2E9A4A751FFF0CF400AE12C3 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A4A741FFF0CF400AE12C3 /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2E556F141F991BD40030FA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E556F171F991BD40030FA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E556F191F991BD40030FA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E9A4A741FFF0CF400AE12C3 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARViewController.swift; path = ../../Documents/Psyche/Psyche/ARViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				2E556F0D1F991BD40030FA86 /* AppDelegate.swift */,
+				2E9A4A741FFF0CF400AE12C3 /* ARViewController.swift */,
 				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
 				2E556F141F991BD40030FA86 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9A4A751FFF0CF400AE12C3 /* ARViewController.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
 			);
