@@ -172,13 +172,16 @@
         <!--Home-->
         <scene sceneID="z8u-2v-cEx">
             <objects>
-                <viewController id="bzL-Fm-Q7E" userLabel="Home" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d5n-lO-a33">
+                <viewController id="bzL-Fm-Q7E" userLabel="Home" customClass="SocialController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d5n-lO-a33" customClass="TWTRTweetView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="6mq-Xe-ET0"/>
                     </view>
+                    <connections>
+                        <outlet property="Tweet" destination="d5n-lO-a33" id="oGl-hp-pcT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYr-bF-LE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
