@@ -41,16 +41,16 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>twitterkit-&lt;GFeuBFtxR2hHpg7sA4g0pyXeh&gt;</string>
+				<string>twitterkit-&lt;tzMhH05lzEgNcAn4EB48CPnFA&gt;</string>
 			</array>
 		</dict>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>twitter</string>
-        <string>twitterauth</string>
-    </array>
-    <key>UISupportedInterfaceOrientations~ipad</key>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>twitter</string>
+		<string>twitterauth</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
