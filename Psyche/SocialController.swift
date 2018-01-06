@@ -22,7 +22,7 @@ class SocialController: UIViewController{
             if let t = tweet {
                 self.Tweet.configure(with: t)
             } else {
-                print("Failed to load Tweet: \(error)")
+                print("Failed to load Tweet: \(error!.localizedDescription)")
             }
         }    }
     override func didReceiveMemoryWarning() {
