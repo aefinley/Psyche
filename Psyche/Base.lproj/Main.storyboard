@@ -173,19 +173,15 @@
         <scene sceneID="z8u-2v-cEx">
             <objects>
                 <viewController id="bzL-Fm-Q7E" userLabel="Home" customClass="SocialController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d5n-lO-a33" customClass="TWTRTweetView">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p4i-pr-Syd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="6mq-Xe-ET0"/>
-                    </view>
-                    <connections>
-                        <outlet property="Tweet" destination="d5n-lO-a33" id="oGl-hp-pcT"/>
-                    </connections>
+                    </tableView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYr-bF-LE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943" y="101"/>
+            <point key="canvasLocation" x="1941.5999999999999" y="100.29985007496252"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QcI-PM-cw8">
