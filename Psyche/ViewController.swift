@@ -34,7 +34,8 @@ class ViewController: UIViewController{
         
         menu.layer.shadowOpacity = 1
         menu.layer.shadowRadius = 5
-        menu.image = #imageLiteral(resourceName: "menuImage")
+        menu.image = #imageLiteral(resourceName: "menuImageFlipped")
+        
         
       
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view

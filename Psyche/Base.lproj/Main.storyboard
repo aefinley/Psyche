@@ -125,6 +125,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Psyche" id="bLL-bc-FrP">
                         <barButtonItem key="leftBarButtonItem" title="Menu" style="plain" id="TbC-d4-KQA">
+                            <inset key="largeContentSizeImageInsets" minX="-1" minY="-1" maxX="0.0" maxY="0.0"/>
                             <color key="tintColor" red="0.9556460976600647" green="0.59800827503204346" blue="0.19203817844390869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="openMenuAction:" destination="BYZ-38-t0r" id="LqS-DP-h1S"/>
@@ -174,7 +175,7 @@
             <objects>
                 <viewController id="bzL-Fm-Q7E" userLabel="Home" customClass="SocialController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p4i-pr-Syd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tableView>
@@ -247,4 +248,5 @@
         <image name="search icon" width="60" height="64"/>
         <image name="timeline icon" width="72" height="73"/>
     </resources>
+    <color key="tintColor" red="0.047058823529411764" green="0.021470159230000001" blue="0.025092575440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
