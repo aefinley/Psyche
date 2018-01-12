@@ -14,6 +14,10 @@ class ViewController: UIViewController{
     
 
     @IBOutlet weak var menu: UIImageView!
+
+    
+    @IBOutlet weak var nasaLabel: UILabel!
+    
     
     
     var menuShowing = false //boolean to see if menu is showing currently or not
