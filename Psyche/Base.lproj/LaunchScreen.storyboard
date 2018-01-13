@@ -17,26 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="o08-R3-nKD">
-                                <rect key="frame" x="41" y="89" width="293" height="290"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-LO-g4n">
-                                <rect key="frame" x="150" y="422" width="85" height="83"/>
+                                <rect key="frame" x="141" y="422" width="94" height="83"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="o08-R3-nKD">
+                                <rect key="frame" x="40" y="101" width="304" height="289"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="SVR-do-JRI"/>
+                                    <constraint firstAttribute="height" constant="289" id="Bci-v7-KfV"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="o08-R3-nKD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="AYW-Yi-CSI"/>
-                            <constraint firstItem="o08-R3-nKD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hjo-nW-Ygu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3zP-LO-g4n" secondAttribute="trailing" constant="140" id="KgU-h3-4ds"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3zP-LO-g4n" secondAttribute="bottom" constant="162" id="XGs-pc-psb"/>
-                            <constraint firstItem="3zP-LO-g4n" firstAttribute="top" secondItem="o08-R3-nKD" secondAttribute="bottom" constant="43" id="cG8-8t-Pcj"/>
-                            <constraint firstItem="3zP-LO-g4n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="qTf-94-hfn"/>
-                            <constraint firstItem="o08-R3-nKD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="zEH-gc-j8T"/>
+                            <constraint firstItem="3zP-LO-g4n" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4Ds-pD-7l6"/>
+                            <constraint firstItem="o08-R3-nKD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="Ay0-R0-Gdg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o08-R3-nKD" secondAttribute="trailing" constant="31" id="Chb-rT-j5E"/>
+                            <constraint firstItem="o08-R3-nKD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="J7d-lX-rzz"/>
+                            <constraint firstItem="3zP-LO-g4n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="Pmg-fh-oQ8"/>
+                            <constraint firstItem="3zP-LO-g4n" firstAttribute="top" secondItem="o08-R3-nKD" secondAttribute="bottom" constant="32" id="kQD-ew-lH9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3zP-LO-g4n" secondAttribute="bottom" constant="162" id="ogv-jN-k0k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
