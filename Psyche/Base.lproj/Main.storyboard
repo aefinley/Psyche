@@ -22,8 +22,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeR-sS-oSL">
+                                <rect key="frame" x="87" y="43" width="50" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-Ue-QZV">
+                                <rect key="frame" x="23" y="27" width="51" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="hamburgerMenu"/>
+                                <connections>
+                                    <action selector="openMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yI5-B6-Uda"/>
+                                </connections>
+                            </button>
                             <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-v6-Xn5" customClass="UIImageView">
-                                <rect key="frame" x="0.0" y="78" width="180" height="569"/>
+                                <rect key="frame" x="0.0" y="27" width="180" height="569"/>
                                 <subviews>
                                     <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOo-5y-lf6">
                                         <rect key="frame" x="74" y="209" width="64" height="32"/>
@@ -103,21 +118,6 @@
                                             <segue destination="OtQ-a7-goA" kind="show" id="o5p-dI-1Lu"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NASA-insignia_Color_cmyk_5in_160601" translatesAutoresizingMaskIntoConstraints="NO" id="tSi-h2-ocs">
-                                        <rect key="frame" x="58" y="463" width="57" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMM-Ng-avv">
-                                        <rect key="frame" x="58" y="519" width="58" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="nasa.gov">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="openNasa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xx5-TP-uDX"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmu-nw-VH6">
                                         <rect key="frame" x="130" y="48" width="37" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -128,6 +128,21 @@
                                             <action selector="closeMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rDy-wL-NsL"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tSi-h2-ocs">
+                                        <rect key="frame" x="54" y="474" width="73" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMM-Ng-avv">
+                                        <rect key="frame" x="55" y="539" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                        <state key="normal" title="nasa.gov">
+                                            <color key="titleColor" red="0.0" green="0.27851034226907712" blue="0.57741116751269028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openNasa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xx5-TP-uDX"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
@@ -135,21 +150,6 @@
                                     <constraint firstAttribute="height" constant="603" id="J04-Q6-YOI"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeR-sS-oSL">
-                                <rect key="frame" x="87" y="43" width="50" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrM-Ue-QZV">
-                                <rect key="frame" x="23" y="27" width="51" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="hamburgerMenu"/>
-                                <connections>
-                                    <action selector="openMenuAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yI5-B6-Uda"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.18431372549019609" green="0.12549019607843137" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -238,12 +238,12 @@
     </scenes>
     <resources>
         <image name="AR icon" width="100" height="102"/>
-        <image name="NASA-insignia_Color_cmyk_5in_160601" width="504" height="504"/>
         <image name="closeMenuButton" width="128" height="128"/>
         <image name="explore icon will change later" width="22" height="98"/>
         <image name="gallery icon" width="38" height="54"/>
         <image name="hamburgerMenu" width="514" height="534"/>
         <image name="home icon" width="85" height="75"/>
+        <image name="nasaWhiteLogo" width="504" height="504"/>
         <image name="search icon" width="60" height="64"/>
         <image name="timeline icon" width="72" height="73"/>
     </resources>

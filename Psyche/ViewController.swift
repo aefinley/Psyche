@@ -61,12 +61,14 @@ class ViewController: UIViewController{
     //function to open nasa.gov link when nasa.gov button is selected
     @IBAction func openNasa(_ sender: UIButton) {
         
-        if let url = URL(string: "nasa.gov"){
+        if let url = URL(string: "http://nasa.gov/psyche"){
             
         
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
     }
-    
+
     }
     @IBAction func openMenuAction(_ sender: Any) {
     
