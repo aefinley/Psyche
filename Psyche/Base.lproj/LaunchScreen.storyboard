@@ -19,12 +19,18 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-LO-g4n">
                                 <rect key="frame" x="141" y="422" width="94" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="OTI-HL-fZc"/>
+                                    <constraint firstAttribute="height" constant="83" id="Pko-pq-9Q7"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="o08-R3-nKD">
                                 <rect key="frame" x="40" y="101" width="304" height="289"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="289" id="Bci-v7-KfV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="289" id="eJ2-jb-CQv"/>
+                                    <constraint firstAttribute="width" constant="304" id="kta-r6-yX9"/>
                                 </constraints>
                             </imageView>
                         </subviews>
