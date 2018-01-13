@@ -18,6 +18,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+         self.navigationController?.setNavigationBarHidden(false, animated: true)
         // Set the view's delegate
         sceneView.delegate = self
         

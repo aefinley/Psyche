@@ -18,6 +18,7 @@ class ViewController: UIViewController{
     
     @IBOutlet weak var nasaButton: UIButton!
     
+
     
     var menuShowing = false //boolean to see if menu is showing currently or not
     
@@ -29,11 +30,9 @@ class ViewController: UIViewController{
    
         self.navigationController?.navigationBar.barStyle = UIBarStyle.black
         self.navigationController?.navigationBar.tintColor = UIColor.white
+    
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
         
-        self.tabBarController?.tabBar.tintColor = UIColor.white
-       
-       
-        navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
         
         
         menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
@@ -47,7 +46,12 @@ class ViewController: UIViewController{
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
     }
 
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
