@@ -16,19 +16,21 @@ class ViewController: UIViewController{
     @IBOutlet weak var menu: UIImageView!
 
     
-    @IBOutlet weak var nasaLabel: UILabel!
-    
+    @IBOutlet weak var nasaButton: UIButton!
     
     
     var menuShowing = false //boolean to see if menu is showing currently or not
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationController?.setNavigationBarHidden(true, animated: true) //hide the navigation bar
+        
+        //hide the navigation controller
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
    
         self.navigationController?.navigationBar.barStyle = UIBarStyle.black
         self.navigationController?.navigationBar.tintColor = UIColor.white
         
+        self.tabBarController?.tabBar.tintColor = UIColor.white
        
        
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
@@ -45,11 +47,23 @@ class ViewController: UIViewController{
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    //function to open nasa.gov link when nasa.gov button is selected
+    @IBAction func openNasa(_ sender: UIButton) {
+        
+        if let url = URL(string: "nasa.gov"){
+            
+        
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    }
     @IBAction func openMenuAction(_ sender: Any) {
     
         if(menuShowing){
@@ -64,6 +78,13 @@ class ViewController: UIViewController{
         
         menuShowing = !menuShowing
     }
+    
+    @IBAction func closeMenu(_ sender: UIButton) {
+        if(menuShowing){
+            menuWidth.constant = -175
+        }
+    }
+    
    
 }
 
