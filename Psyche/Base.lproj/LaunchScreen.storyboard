@@ -18,31 +18,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-LO-g4n">
-                                <rect key="frame" x="141" y="422" width="94" height="83"/>
+                                <rect key="frame" x="149" y="425" width="86" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="94" id="OTI-HL-fZc"/>
-                                    <constraint firstAttribute="height" constant="83" id="Pko-pq-9Q7"/>
+                                    <constraint firstAttribute="height" constant="80" id="zc5-AT-lM1"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="o08-R3-nKD">
                                 <rect key="frame" x="40" y="101" width="304" height="289"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="289" id="Bci-v7-KfV"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="289" id="eJ2-jb-CQv"/>
-                                    <constraint firstAttribute="width" constant="304" id="kta-r6-yX9"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3zP-LO-g4n" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4Ds-pD-7l6"/>
-                            <constraint firstItem="o08-R3-nKD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="Ay0-R0-Gdg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o08-R3-nKD" secondAttribute="trailing" constant="31" id="Chb-rT-j5E"/>
-                            <constraint firstItem="o08-R3-nKD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="J7d-lX-rzz"/>
-                            <constraint firstItem="3zP-LO-g4n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="Pmg-fh-oQ8"/>
-                            <constraint firstItem="3zP-LO-g4n" firstAttribute="top" secondItem="o08-R3-nKD" secondAttribute="bottom" constant="32" id="kQD-ew-lH9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3zP-LO-g4n" secondAttribute="bottom" constant="162" id="ogv-jN-k0k"/>
+                            <constraint firstItem="o08-R3-nKD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="9f7-nG-jf2"/>
+                            <constraint firstItem="3zP-LO-g4n" firstAttribute="top" secondItem="o08-R3-nKD" secondAttribute="bottom" constant="35" id="NLj-6U-Tem"/>
+                            <constraint firstItem="3zP-LO-g4n" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="4.5" id="c0O-8s-6cY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o08-R3-nKD" secondAttribute="trailing" constant="31" id="c1b-Me-P2p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3zP-LO-g4n" secondAttribute="bottom" constant="162" id="q4B-oi-Ca7"/>
+                            <constraint firstItem="3zP-LO-g4n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="svN-Mm-WN8"/>
+                            <constraint firstItem="o08-R3-nKD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="xlR-Vg-sJe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
