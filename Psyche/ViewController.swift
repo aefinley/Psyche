@@ -52,6 +52,15 @@ class ViewController: UIViewController{
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
     }
+
+    //this method hides the menu when the user clicks on the view (outside the menu)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if(menuShowing){
+            menuWidth.constant = -175
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -70,6 +79,7 @@ class ViewController: UIViewController{
     }
 
     }
+    //this action opens the menu
     @IBAction func openMenuAction(_ sender: Any) {
     
         if(menuShowing){
@@ -88,6 +98,8 @@ class ViewController: UIViewController{
     @IBAction func closeMenu(_ sender: UIButton) {
         if(menuShowing){
             menuWidth.constant = -175
+             UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
         }
     }
     
