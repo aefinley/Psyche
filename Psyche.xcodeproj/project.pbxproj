@@ -21,6 +21,10 @@
 		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
 		2E556F151F991BD40030FA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F141F991BD40030FA86 /* Assets.xcassets */; };
 		2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */; };
+		5A7399CD20115863007DB8DC /* MissionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7399CC20115863007DB8DC /* MissionFactsViewController.swift */; };
+		5A80EB74201169940049A6C1 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80EB73201169940049A6C1 /* JourneyViewController.swift */; };
+		5A80EB76201172A30049A6C1 /* AsteroidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80EB75201172A30049A6C1 /* AsteroidViewController.swift */; };
+		5A80EB78201173340049A6C1 /* BuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80EB77201173340049A6C1 /* BuildingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +58,10 @@
 		2E556F141F991BD40030FA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E556F171F991BD40030FA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E556F191F991BD40030FA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A7399CC20115863007DB8DC /* MissionFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionFactsViewController.swift; sourceTree = "<group>"; };
+		5A80EB73201169940049A6C1 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		5A80EB75201172A30049A6C1 /* AsteroidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidViewController.swift; sourceTree = "<group>"; };
+		5A80EB77201173340049A6C1 /* BuildingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
 				2E3E337620099FBF00860330 /* LaunchScreenViewController.swift */,
+				5A80EB75201172A30049A6C1 /* AsteroidViewController.swift */,
+				5A80EB73201169940049A6C1 /* JourneyViewController.swift */,
+				5A7399CC20115863007DB8DC /* MissionFactsViewController.swift */,
+				5A80EB77201173340049A6C1 /* BuildingViewController.swift */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
 				2E556F141F991BD40030FA86 /* Assets.xcassets */,
 				2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */,
@@ -186,8 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A80EB78201173340049A6C1 /* BuildingViewController.swift in Sources */,
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
+				5A80EB76201172A30049A6C1 /* AsteroidViewController.swift in Sources */,
+				5A80EB74201169940049A6C1 /* JourneyViewController.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
+				5A7399CD20115863007DB8DC /* MissionFactsViewController.swift in Sources */,
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
 				2E3E337720099FBF00860330 /* LaunchScreenViewController.swift in Sources */,
 				0DEB0F732000220A00D7BB12 /* ARViewController.swift in Sources */,
