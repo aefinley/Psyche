@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DAB3566201FDCFB00A27060 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAB3565201FDCFB00A27060 /* HomeController.swift */; };
 		0DEB0F732000220A00D7BB12 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB0F722000220900D7BB12 /* ARViewController.swift */; };
 		0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB0F742000230C00D7BB12 /* SocialController.swift */; };
 		0DEB0F7C2000312A00D7BB12 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7A2000312900D7BB12 /* TwitterCore.framework */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0DAB3565201FDCFB00A27060 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		0DEB0F722000220900D7BB12 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		0DEB0F742000230C00D7BB12 /* SocialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialController.swift; sourceTree = "<group>"; };
 		0DEB0F772000307900D7BB12 /* Psyche-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Psyche-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				5A80EB73201169940049A6C1 /* JourneyViewController.swift */,
 				5A7399CC20115863007DB8DC /* MissionFactsViewController.swift */,
 				5A80EB77201173340049A6C1 /* BuildingViewController.swift */,
+				0DAB3565201FDCFB00A27060 /* HomeController.swift */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
 				2E556F141F991BD40030FA86 /* Assets.xcassets */,
 				2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */,
@@ -202,6 +205,7 @@
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
 				5A80EB76201172A30049A6C1 /* AsteroidViewController.swift in Sources */,
 				5A80EB74201169940049A6C1 /* JourneyViewController.swift in Sources */,
+				0DAB3566201FDCFB00A27060 /* HomeController.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
 				5A7399CD20115863007DB8DC /* MissionFactsViewController.swift in Sources */,
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
