@@ -11,7 +11,6 @@
 		0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB0F742000230C00D7BB12 /* SocialController.swift */; };
 		0DEB0F7C2000312A00D7BB12 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7A2000312900D7BB12 /* TwitterCore.framework */; };
 		0DEB0F7D2000312A00D7BB12 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */; };
-		0DEB0F7E2000313D00D7BB12 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */; };
 		0DEB0F7F2000313D00D7BB12 /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DEB0F832000521200D7BB12 /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */; };
 		0DEB0F842000521200D7BB12 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */; };
@@ -71,7 +70,6 @@
 			files = (
 				0DEB0F7C2000312A00D7BB12 /* TwitterCore.framework in Frameworks */,
 				0DEB0F7D2000312A00D7BB12 /* TwitterKit.framework in Frameworks */,
-				0DEB0F7E2000313D00D7BB12 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +148,7 @@
 					menuView,
 				);
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Apple Inc.";
 				TargetAttributes = {
 					2E556F091F991BD40030FA86 = {
