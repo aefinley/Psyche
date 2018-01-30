@@ -10,16 +10,10 @@ import UIKit
 import TwitterKit
 
 class SocialController: TWTRTimelineViewController{
-    
     let client = TWTRAPIClient()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        
-    
-        
         self.dataSource = TWTRUserTimelineDataSource(screenName: "NASAPsyche", apiClient: client)
     }
  
