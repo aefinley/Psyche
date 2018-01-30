@@ -60,6 +60,9 @@
                                         <state key="normal" title="gallery">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="3OX-Lv-laD" kind="show" id="NxC-D4-mf0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvY-gx-v04">
                                         <rect key="frame" x="68" y="336" width="64" height="33"/>
@@ -178,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="568.79999999999995" y="88.605697151424295"/>
+            <point key="canvasLocation" x="714" y="30"/>
         </scene>
         <!--Timeline View Controller-->
         <scene sceneID="SeG-qw-lJG">
@@ -250,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XID-Ze-PCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="271" y="867"/>
+            <point key="canvasLocation" x="-414" y="887"/>
         </scene>
         <!--Timeline View Controller-->
         <scene sceneID="GwR-SY-DRq">
@@ -265,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ced-C3-9df" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079" y="867"/>
+            <point key="canvasLocation" x="311" y="887"/>
         </scene>
         <!--AR-->
         <scene sceneID="0IF-9S-ewV">
@@ -474,11 +477,11 @@
             <objects>
                 <viewController id="3OX-Lv-laD" customClass="MediaGallery" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V7R-tt-Z6C">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fwz-Cv-JNu">
-                                <rect key="frame" x="0.0" y="65" width="375" height="557"/>
+                                <rect key="frame" x="0.0" y="45" width="375" height="513"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cSV-jS-DgI">
                                     <size key="itemSize" width="189" height="143"/>
@@ -527,7 +530,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UdD-zL-WSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="886.50674662668678"/>
+            <point key="canvasLocation" x="937" y="887"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g6E-oZ-2FM">
