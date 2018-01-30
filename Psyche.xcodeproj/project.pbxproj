@@ -11,19 +11,17 @@
 		0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEB0F742000230C00D7BB12 /* SocialController.swift */; };
 		0DEB0F7C2000312A00D7BB12 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7A2000312900D7BB12 /* TwitterCore.framework */; };
 		0DEB0F7D2000312A00D7BB12 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */; };
+		0DEB0F7E2000313D00D7BB12 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */; };
 		0DEB0F7F2000313D00D7BB12 /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DEB0F832000521200D7BB12 /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */; };
 		0DEB0F842000521200D7BB12 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */; };
-		2E3E337720099FBF00860330 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E337620099FBF00860330 /* LaunchScreenViewController.swift */; };
 		2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0D1F991BD40030FA86 /* AppDelegate.swift */; };
 		2E556F101F991BD40030FA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0F1F991BD40030FA86 /* ViewController.swift */; };
 		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
 		2E556F151F991BD40030FA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F141F991BD40030FA86 /* Assets.xcassets */; };
 		2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */; };
-		5A7399CD20115863007DB8DC /* MissionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7399CC20115863007DB8DC /* MissionFactsViewController.swift */; };
-		5A80EB74201169940049A6C1 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80EB73201169940049A6C1 /* JourneyViewController.swift */; };
-		5A80EB76201172A30049A6C1 /* AsteroidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80EB75201172A30049A6C1 /* AsteroidViewController.swift */; };
-		5A80EB78201173340049A6C1 /* BuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80EB77201173340049A6C1 /* BuildingViewController.swift */; };
+		ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC793F20164BCA00006E47 /* MediaGallery.swift */; };
+		ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC79412016626400006E47 /* imageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,7 +47,6 @@
 		0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 		0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
 		2E14FFDF1FABD0A100B74330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		2E3E337620099FBF00860330 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		2E556F0A1F991BD40030FA86 /* Psyche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psyche.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E556F0D1F991BD40030FA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E556F0F1F991BD40030FA86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Psyche/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -57,10 +54,8 @@
 		2E556F141F991BD40030FA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E556F171F991BD40030FA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E556F191F991BD40030FA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A7399CC20115863007DB8DC /* MissionFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionFactsViewController.swift; sourceTree = "<group>"; };
-		5A80EB73201169940049A6C1 /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
-		5A80EB75201172A30049A6C1 /* AsteroidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidViewController.swift; sourceTree = "<group>"; };
-		5A80EB77201173340049A6C1 /* BuildingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingViewController.swift; sourceTree = "<group>"; };
+		ABCC793F20164BCA00006E47 /* MediaGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGallery.swift; sourceTree = "<group>"; };
+		ABCC79412016626400006E47 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = imageCollectionViewCell.swift; path = views/imageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +65,7 @@
 			files = (
 				0DEB0F7C2000312A00D7BB12 /* TwitterCore.framework in Frameworks */,
 				0DEB0F7D2000312A00D7BB12 /* TwitterKit.framework in Frameworks */,
+				0DEB0F7E2000313D00D7BB12 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,11 +95,7 @@
 				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
 				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
-				2E3E337620099FBF00860330 /* LaunchScreenViewController.swift */,
-				5A80EB75201172A30049A6C1 /* AsteroidViewController.swift */,
-				5A80EB73201169940049A6C1 /* JourneyViewController.swift */,
-				5A7399CC20115863007DB8DC /* MissionFactsViewController.swift */,
-				5A80EB77201173340049A6C1 /* BuildingViewController.swift */,
+				ABCC793F20164BCA00006E47 /* MediaGallery.swift */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
 				2E556F141F991BD40030FA86 /* Assets.xcassets */,
 				2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */,
@@ -113,6 +105,7 @@
 				0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */,
 				0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */,
 				0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */,
+				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
 			);
 			path = Psyche;
 			sourceTree = "<group>";
@@ -148,7 +141,7 @@
 					menuView,
 				);
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Apple Inc.";
 				TargetAttributes = {
 					2E556F091F991BD40030FA86 = {
@@ -196,15 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A80EB78201173340049A6C1 /* BuildingViewController.swift in Sources */,
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
-				5A80EB76201172A30049A6C1 /* AsteroidViewController.swift in Sources */,
-				5A80EB74201169940049A6C1 /* JourneyViewController.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
-				5A7399CD20115863007DB8DC /* MissionFactsViewController.swift in Sources */,
+				ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */,
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
-				2E3E337720099FBF00860330 /* LaunchScreenViewController.swift in Sources */,
 				0DEB0F732000220A00D7BB12 /* ARViewController.swift in Sources */,
+				ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
