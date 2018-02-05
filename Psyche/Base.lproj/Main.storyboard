@@ -187,11 +187,11 @@
             </objects>
             <point key="canvasLocation" x="714" y="30"/>
         </scene>
-        <!--Timeline View Controller-->
+        <!--View Controller-->
         <scene sceneID="SeG-qw-lJG">
             <objects>
-                <viewController id="eUc-cD-MwX" customClass="TimelineViewController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lwS-4B-tfR">
+                <viewController id="eUc-cD-MwX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lwS-4B-tfR" customClass="TimelineBackground" customModule="Psyche" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -206,18 +206,17 @@
                                     <action selector="menuPress:" destination="eUc-cD-MwX" eventType="touchUpInside" id="jTt-Pb-iex"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="timeline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dN-Hg-kas">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="timeline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dN-Hg-kas">
                                 <rect key="frame" x="86" y="48" width="59.5" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYz-NP-Tc9">
-                                <rect key="frame" x="61" y="125" width="51" height="51"/>
+                                <rect key="frame" x="105" y="128" width="51" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="51" id="YIA-vu-cdW"/>
-                                    <constraint firstAttribute="height" constant="51" id="pe0-Wv-qXs"/>
+                                    <constraint firstAttribute="width" constant="51" id="TJW-TA-VeL"/>
+                                    <constraint firstAttribute="height" constant="51" id="n5I-1R-OrL"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="1.12.18Artboard 6"/>
                                 <connections>
@@ -225,33 +224,44 @@
                                     <segue destination="5cZ-xc-trK" kind="show" id="cak-fx-ogI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-oz-4cd">
+                                <rect key="frame" x="226" y="128" width="51" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="1.12.18Artboard 6"/>
+                                <connections>
+                                    <action selector="firstTimeline:" destination="eUc-cD-MwX" eventType="touchUpInside" id="djM-Sj-SkP"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNF-sH-p5a">
-                                <rect key="frame" x="185" y="125" width="51" height="51"/>
+                                <rect key="frame" x="76" y="234" width="51" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="1.12.18Artboard 10"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14e-P8-f6g">
-                                <rect key="frame" x="123" y="222" width="51" height="51"/>
+                                <rect key="frame" x="71" y="346" width="51" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="1.12.18Artboard 11"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bw-1d-DHD">
-                                <rect key="frame" x="226" y="222" width="51" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I53-aB-vav">
+                                <rect key="frame" x="147" y="346" width="51" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="1.12.18Artboard 7"/>
+                                <state key="normal" title="Button" image="1.12.18Artboard 11"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgR-nw-ee5">
-                                <rect key="frame" x="266" y="328" width="51" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBo-Uk-NJe">
+                                <rect key="frame" x="267" y="346" width="51" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="1.12.18Artboard 8"/>
+                                <state key="normal" title="Button" image="1.12.18Artboard 11"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq5-oh-PiK">
-                                <rect key="frame" x="74" y="328" width="51" height="51"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvx-iZ-dlw">
+                                <rect key="frame" x="205" y="234" width="51" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="1.12.18Artboard 9"/>
+                                <state key="normal" title="Button" image="1.12.18Artboard 10"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RYz-NP-Tc9" firstAttribute="top" secondItem="2dN-Hg-kas" secondAttribute="bottom" constant="100" id="v9b-DL-8Bo" userLabel="Button.top = bounds.height/5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1sU-5I-cFr"/>
                     </view>
                 </viewController>
@@ -609,9 +619,6 @@
         <image name="1.12.18Artboard 10" width="229" height="229"/>
         <image name="1.12.18Artboard 11" width="229" height="229"/>
         <image name="1.12.18Artboard 6" width="229" height="228"/>
-        <image name="1.12.18Artboard 7" width="229" height="228"/>
-        <image name="1.12.18Artboard 8" width="229" height="228"/>
-        <image name="1.12.18Artboard 9" width="229" height="228"/>
         <image name="AR icon" width="100" height="102"/>
         <image name="Asteroid" width="3300" height="2550"/>
         <image name="Building" width="7360" height="4912"/>
