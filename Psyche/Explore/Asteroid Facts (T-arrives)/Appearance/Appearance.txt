@@ -1,0 +1,9 @@
+Appearance:
+
+Scientists have combined radar and optical observations to generate a 3D shape model of Psyche.(12) This model:
+	Shows evidence for two crater-like depressions.
+	Suggests that there is significant variation in the metal content and color of the asteroid over the surface.
+	NOTE: No one has seen the Psyche asteroid yet, so we will not know what it actually looks like until the spacecraft arrives.
+
+(12)Radar Observations and Share Model of Asteroid 16 Psyche
+(12) http://outreach.naic.edu/ao/blog/radar-observations-and-shape-model-asteroid-16-psyche

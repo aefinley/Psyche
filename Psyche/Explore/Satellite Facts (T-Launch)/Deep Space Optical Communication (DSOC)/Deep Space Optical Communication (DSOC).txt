@@ -1,0 +1,8 @@
+Deep Space Optical Communication (DSOC):
+
+The Psyche mission will test a sophisticated new laser communication technology that encodes data in photons (rather than radio waves) to communicate between a probe in deep space and Earth.
+
+Using light instead of radio allows the spacecraft to communicate more data in a given amount of time.
+
+The DSOC team is based at the Jet Propulsion Laboratory
+

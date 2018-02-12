@@ -1,0 +1,9 @@
+Gamma Ray and Neutron Spectrometer:
+
+Will detect, measure, and map Psyche’s elemental composition.
+
+Mounted on a 2-meter (6-foot) boom (“arm”) to:
+	distance the sensors from background radiation created by energetic particles interacting with the spacecraft;
+	provide an unobstructed field of view.
+
+The team is based at the Applied Physics Laboratory at Johns Hopkins University.

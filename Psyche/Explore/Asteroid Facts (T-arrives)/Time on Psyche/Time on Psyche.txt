@@ -1,0 +1,15 @@
+Time on Psyche:
+
+A day on Psyche is about 4 hours and 12 minutes.(7)
+	This is the sidereal rotation period, or the "amount of time it takes for a [body] to completely spin around and make one full rotation." (8)
+	You could live through just under six “days” on Psyche in the same time as one day on Earth!
+
+A year on Psyche lasts about five Earth years (about 1,828 Earth days).(9)
+
+https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=16
+
+(7) Shepard, M. K., Richardson, J., Taylor, P. A., Rodriguez-Ford, L. A., Conrad, A., de Pater, I., ... & Close, L. M. (2017). Radar observations and shape model of asteroid 16 Psyche. Icarus, 281, 388-403: "sidereal rotation period P = 4.195948 h"
+(8) How long is one day on other planets?
+(8) https://spaceplace.nasa.gov/days/en/
+(9) JPL Small-Body Database Browser (Solar System Dynamics)
+(9) https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=16
