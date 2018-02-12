@@ -20,7 +20,8 @@ class TimelineBackground: UIView {
     */
     
     
-
+    @IBOutlet weak var orangeButton1: UIButton!
+    
     override func draw(_ rect: CGRect) {
         //let color = UIColor(
         let lightOrange = UIColor(red: 251/255, green: 158/255, blue: 1/255, alpha: 1.0)
@@ -31,6 +32,8 @@ class TimelineBackground: UIView {
         let path = UIBezierPath(rect: rect)
         let path2 = UIBezierPath(rect: rect)
         let path3 = UIBezierPath(rect: rect)
+        let path4 = UIBezierPath(rect: rect)
+        let path5 = UIBezierPath(rect: rect)
         path.lineWidth = lineWidth
         // finding the size of the screen
         let screenWidth = bounds.width
@@ -40,36 +43,36 @@ class TimelineBackground: UIView {
         //UIColor.red.setStroke()
         lightOrange.setStroke()
         
-        path.move(to: CGPoint(x: 0, y: screenHeight / 5))
-        path.addLine(to: CGPoint(x: screenWidth, y: screenHeight / 5))
+        path.move(to: CGPoint(x: 0, y: screenHeight / 6))
+        path.addLine(to: CGPoint(x: screenWidth, y: screenHeight / 6))
         
         path.stroke()
         
         //dark orange line
-        path2.move(to: CGPoint(x: 0, y: 2*screenHeight / 5))
-        path2.addLine(to: CGPoint(x: screenWidth, y: 2*screenHeight / 5))
+        path2.move(to: CGPoint(x: 0, y: 2*screenHeight / 6))
+        path2.addLine(to: CGPoint(x: screenWidth, y: 2*screenHeight / 6))
         darkOrange.setStroke()
         path2.stroke()
         
         //pink line
-        path3.move(to: CGPoint(x: 0, y: 3*screenHeight / 5))
-        path3.addLine(to: CGPoint(x: screenWidth, y: 3*screenHeight / 5))
+        path3.move(to: CGPoint(x: 0, y: 3*screenHeight / 6))
+        path3.addLine(to: CGPoint(x: screenWidth, y: 3*screenHeight / 6))
         pink.setStroke()
         path3.stroke()
-        /*
+        
         // purple line
-        path.move(to: CGPoint(x: 0, y: 4*screenHeight / 5))
-        path.addLine(to: CGPoint(x: screenWidth, y: 4*screenHeight / 5))
+        path4.move(to: CGPoint(x: 0, y: 4*screenHeight / 6))
+        path4.addLine(to: CGPoint(x: screenWidth, y: 4*screenHeight / 6))
         purple.setStroke()
-        path.stroke()
-        
-        */
+        path4.stroke()
         
         
-        /*let path = UIBezierPath(ovalIn: rect)
-        UIColor.green.setFill()
-        path.fill()
-        */
+        //second purple line
+        path5.move(to: CGPoint(x: 0, y: 5*screenHeight / 6))
+        path5.addLine(to: CGPoint(x: screenWidth, y: 5*screenHeight / 6))
+        path5.stroke()
+ 
+        
     }
     
     
