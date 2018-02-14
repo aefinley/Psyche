@@ -88,9 +88,26 @@ class ViewController: UIViewController{
     @IBAction func closeMenu(_ sender: UIButton) {
         if(menuShowing){
             menuWidth.constant = -175
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+            menuShowing = false
         }
     }
     
+    @IBAction func redirect(_ sender: UIBarButtonItem) {
+        var url:URL
+        switch sender.tag {
+        case 0:
+            url = URL(string: "https://www.facebook.com/NASAPsyche")!
+        case 1:
+            url = URL(string: "https://www.twitter.com/NASAPsyche")!
+        case 2:
+            url = URL(string: "https://www.instagram.com/nasapsyche")!
+        default:
+            url = URL(string: "https://www.google.com")!
+        }
+        UIApplication.shared.open(url, options: [:])
+    }
    
 }
 
