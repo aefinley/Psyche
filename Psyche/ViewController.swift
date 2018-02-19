@@ -24,7 +24,7 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //fasasf
         //hide the navigation controller
         self.navigationController?.setNavigationBarHidden(true, animated: true)
    
