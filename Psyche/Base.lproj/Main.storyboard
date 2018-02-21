@@ -182,7 +182,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="nasa.gov">
                                                     <attributes>
-                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="NSColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <font key="NSFont" size="17" name="Helvetica-Light"/>
                                                     </attributes>
                                                 </fragment>

@@ -49,6 +49,8 @@
 		0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 		0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
 		2E14FFDF1FABD0A100B74330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2E3748C5203DF0F900BA1CB0 /* asteroid.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = asteroid.scn; sourceTree = "<group>"; };
+		2E3748C6203DF10400BA1CB0 /* satellite.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = satellite.scn; sourceTree = "<group>"; };
 		2E556F0A1F991BD40030FA86 /* Psyche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psyche.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E556F0D1F991BD40030FA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E556F0F1F991BD40030FA86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Psyche/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -97,6 +99,7 @@
 		2E556F0C1F991BD40030FA86 /* Psyche */ = {
 			isa = PBXGroup;
 			children = (
+				2E3748C6203DF10400BA1CB0 /* satellite.scn */,
 				2E556F0D1F991BD40030FA86 /* AppDelegate.swift */,
 				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
 				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
@@ -104,6 +107,7 @@
 				ABCC793F20164BCA00006E47 /* MediaGallery.swift */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
 				2E556F141F991BD40030FA86 /* Assets.xcassets */,
+				2E3748C5203DF0F900BA1CB0 /* asteroid.scn */,
 				2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */,
 				2E556F191F991BD40030FA86 /* Info.plist */,
 				0DEB0F772000307900D7BB12 /* Psyche-Bridging-Header.h */,
