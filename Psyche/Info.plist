@@ -50,6 +50,12 @@
 		<string>twitter</string>
 		<string>twitterauth</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Knockout.otf</string>
+	</array>
+	<key></key>
+	<string></string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

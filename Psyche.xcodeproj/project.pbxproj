@@ -15,6 +15,8 @@
 		0DEB0F7F2000313D00D7BB12 /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DEB0F832000521200D7BB12 /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */; };
 		0DEB0F842000521200D7BB12 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */; };
+		2E3748CE203E077000BA1CB0 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E3748CD203DFFD400BA1CB0 /* art.scnassets */; };
+		2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3748D1203E119200BA1CB0 /* Knockout.otf */; };
 		2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0D1F991BD40030FA86 /* AppDelegate.swift */; };
 		2E556F101F991BD40030FA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0F1F991BD40030FA86 /* ViewController.swift */; };
 		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
@@ -49,8 +51,8 @@
 		0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 		0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
 		2E14FFDF1FABD0A100B74330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		2E3748C5203DF0F900BA1CB0 /* asteroid.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = asteroid.scn; sourceTree = "<group>"; };
-		2E3748C6203DF10400BA1CB0 /* satellite.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = satellite.scn; sourceTree = "<group>"; };
+		2E3748CD203DFFD400BA1CB0 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = /Users/pnovaz/Documents/Psyche/Psyche/art.scnassets; sourceTree = "<absolute>"; };
+		2E3748D1203E119200BA1CB0 /* Knockout.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Knockout.otf; sourceTree = "<group>"; };
 		2E556F0A1F991BD40030FA86 /* Psyche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psyche.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E556F0D1F991BD40030FA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E556F0F1F991BD40030FA86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Psyche/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -99,15 +101,15 @@
 		2E556F0C1F991BD40030FA86 /* Psyche */ = {
 			isa = PBXGroup;
 			children = (
-				2E3748C6203DF10400BA1CB0 /* satellite.scn */,
+				2E3748CD203DFFD400BA1CB0 /* art.scnassets */,
 				2E556F0D1F991BD40030FA86 /* AppDelegate.swift */,
 				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
 				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
+				2E3748D1203E119200BA1CB0 /* Knockout.otf */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
 				ABCC793F20164BCA00006E47 /* MediaGallery.swift */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
 				2E556F141F991BD40030FA86 /* Assets.xcassets */,
-				2E3748C5203DF0F900BA1CB0 /* asteroid.scn */,
 				2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */,
 				2E556F191F991BD40030FA86 /* Info.plist */,
 				0DEB0F772000307900D7BB12 /* Psyche-Bridging-Header.h */,
@@ -184,7 +186,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3748CE203E077000BA1CB0 /* art.scnassets in Resources */,
 				2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */,
+				2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */,
 				2E556F151F991BD40030FA86 /* Assets.xcassets in Resources */,
 				2E556F131F991BD40030FA86 /* Main.storyboard in Resources */,
 				0DEB0F832000521200D7BB12 /* TwitterShareExtensionUIResources.bundle in Resources */,

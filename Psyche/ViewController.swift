@@ -54,7 +54,10 @@ class ViewController: UIViewController{
         super.viewWillAppear(animated)
         
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        
+    
+        if(menuShowing){
+            menuWidth.constant = -175
+        }
     }
     
     override func didReceiveMemoryWarning() {

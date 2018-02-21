@@ -26,10 +26,20 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "asteroid.scn")!
+    
+        
+        let scene = SCNScene(named: "art.scnassets/asteroid.dae")!
+        
+       // let asteroid = scene.rootNode.childNode(withName: "PSYCHE_20170116_DEC",recursively: false)
+        
+        
         
         // Set the scene to the view
-        //sceneView.scene = scene
+        sceneView.scene = scene
+        
+    
+
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
