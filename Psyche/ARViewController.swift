@@ -11,7 +11,9 @@ import SceneKit
 import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
-    
+    var sentValue: Int?
+    //0 = asteroid
+    //1= satellite
    //sceneView
     
     @IBOutlet weak var sceneView: ARSCNView!
@@ -26,21 +28,22 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-    
         
+    
+    
+    if (sentValue == 0){ //user selected to view asteroid
+    
         let scene = SCNScene(named: "art.scnassets/asteroid.dae")!
-        
-       // let asteroid = scene.rootNode.childNode(withName: "PSYCHE_20170116_DEC",recursively: false)
-        
-        
-        
-        // Set the scene to the view
-        sceneView.scene = scene
-        
-    
-
-        
+        self.sceneView.scene = scene
     }
+    else if (sentValue == 1){ //user selected to view satellite
+    
+        let scene = SCNScene(named: "art.scnassets/satellite.scn")!
+        self.sceneView.scene = scene
+    }
+
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
