@@ -24,7 +24,7 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //fasasf
         //hide the navigation controller
         self.navigationController?.setNavigationBarHidden(true, animated: true)
    
@@ -40,6 +40,10 @@ class ViewController: UIViewController{
         menu.layer.shadowOpacity = 1
         menu.layer.shadowRadius = 5
         menu.image = #imageLiteral(resourceName: "menuImageFlipped")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        
+        
+        
         
         
       
@@ -50,7 +54,10 @@ class ViewController: UIViewController{
         super.viewWillAppear(animated)
         
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        
+    
+        if(menuShowing){
+            menuWidth.constant = -175
+        }
     }
     
     override func didReceiveMemoryWarning() {
