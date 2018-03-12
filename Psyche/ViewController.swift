@@ -40,13 +40,7 @@ class ViewController: UIViewController{
         menu.layer.shadowOpacity = 1
         menu.layer.shadowRadius = 5
         menu.image = #imageLiteral(resourceName: "menuImageFlipped")
-        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
-        
-        
-        
-        
-        
-      
+        self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
     }
 
