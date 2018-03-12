@@ -2,15 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/pnovaz/Documents/Psyche/Psyche/art.scnassets">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/pnovaz/Documents/Psyche/Psyche/satellite.dae">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/pnovaz/Documents/Psyche/Psyche/asteroid.dae">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
