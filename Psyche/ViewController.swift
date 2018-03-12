@@ -115,6 +115,49 @@ class ViewController: UIViewController{
         }
         UIApplication.shared.open(url, options: [:])
     }
+    
+    
+    
+    
+    
+    /*
+     //To be used to fetch images
+     func getImages(){
+     var pagedata:String = ""
+     var i = 1, added = 16
+     while added == 16 {
+     added=0
+     let url: URL = URL(string: "https://psyche.asu.edu/galleries/images/page/" + String(i))!
+     do{
+     try pagedata = String(contentsOf: url)
+     } catch _ {}
+     let arr = pagedata.split(separator: "<")
+     var findend=false
+     finder: for str in arr {
+     if findend{
+     let stri = str.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
+     if stri == "/section>" {
+     break finder
+     }
+     if stri.hasPrefix("img") {
+     var looker = stri.split(separator: " ")[3]
+     var end = looker.suffix(5)
+     looker = looker.prefix(upTo: looker.index(looker.endIndex, offsetBy: -13)) + end
+     //print(looker)
+     do{
+     try imageArray.append(UIImage(data: Data(contentsOf: URL(string: String(looker.suffix(from: looker.index(looker.startIndex, offsetBy: 5))).trimmingCharacters(in: CharacterSet(charactersIn: "\"")))!))!)
+     } catch _ {}
+     added+=1
+     }
+     }
+     if str.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines) == "section class=\"gallery-grid container\">" {
+     findend=true
+     }
+     }
+     i+=1
+     }    }
+     
+     */
    
 }
 
