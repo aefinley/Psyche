@@ -2,7 +2,7 @@
 //  TimelineBackground.swift
 //  Psyche
 //
-//  Created by TempGuest on 2/5/18.
+//  Created by Jennifer on 2/5/18.
 //  Copyright © 2018 Apple Inc. All rights reserved.
 //
 
@@ -23,7 +23,7 @@ class TimelineBackground: UIView {
     @IBOutlet weak var orangeButton1: UIButton!
     
     override func draw(_ rect: CGRect) {
-        //let color = UIColor(
+        
         let lightOrange = UIColor(red: 251/255, green: 158/255, blue: 1/255, alpha: 1.0)
         let darkOrange = UIColor(red: 245/255, green: 113/255, blue: 51/255, alpha: 1.0)
         let pink = UIColor(red: 239/255, green: 89/255, blue: 101/255, alpha: 1.0)
@@ -40,7 +40,6 @@ class TimelineBackground: UIView {
         let screenHeight = bounds.height
         
         //light orange line
-        //UIColor.red.setStroke()
         lightOrange.setStroke()
         
         path.move(to: CGPoint(x: 0, y: screenHeight / 6))

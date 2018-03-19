@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController{
+class ViewController: UIViewController {
 
     @IBOutlet weak var menuWidth: NSLayoutConstraint!
     
@@ -18,9 +18,22 @@ class ViewController: UIViewController{
     
     @IBOutlet weak var nasaButton: UIButton!
     
-
+    @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var hourLabel: UILabel!
+    @IBOutlet weak var minuteLabel: UILabel!
+    
+    @IBOutlet weak var yearTitle: UILabel!
+    @IBOutlet weak var dayTitle: UILabel!
+    @IBOutlet weak var hourTitle: UILabel!
+    @IBOutlet weak var minuteTitle: UILabel!
     
     var menuShowing = false //boolean to see if menu is showing currently or not
+    var countdownTimer:Timer!
+    var nextEvent:TimeInterval = 681004800 // time from Jan. 1 2001 to Aug. 1 2022
+    var countdownLabels:[UILabel] = []
+    var xBounds:[CGFloat] = []
+    var countdownTitles:[UILabel] = []
     
     //close menu if user clicks on main view
     
