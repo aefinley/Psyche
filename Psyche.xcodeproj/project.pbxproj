@@ -365,7 +365,7 @@
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.psych;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.psych.Identifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -387,7 +387,7 @@
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.psych;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.psych.Identifier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
