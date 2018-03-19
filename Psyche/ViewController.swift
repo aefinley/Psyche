@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController{
+class ViewController: UIViewController {
 
     @IBOutlet weak var menuWidth: NSLayoutConstraint!
     
@@ -18,9 +18,22 @@ class ViewController: UIViewController{
     
     @IBOutlet weak var nasaButton: UIButton!
     
-
+    @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var hourLabel: UILabel!
+    @IBOutlet weak var minuteLabel: UILabel!
+    
+    @IBOutlet weak var yearTitle: UILabel!
+    @IBOutlet weak var dayTitle: UILabel!
+    @IBOutlet weak var hourTitle: UILabel!
+    @IBOutlet weak var minuteTitle: UILabel!
     
     var menuShowing = false //boolean to see if menu is showing currently or not
+    var countdownTimer:Timer!
+    var nextEvent:TimeInterval = 681004800 // time from Jan. 1 2001 to Aug. 1 2022
+    var countdownLabels:[UILabel] = []
+    var xBounds:[CGFloat] = []
+    var countdownTitles:[UILabel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +61,27 @@ class ViewController: UIViewController{
         
       
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        
+        // starts the count down timer, executes countdownChanged every 60 seconds
+        countdownTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(countdownChanged), userInfo: nil, repeats: true)
+        countdownChanged()
+        
+        // move the countdown labels to their correct positions'
+        countdownLabels = [yearLabel, dayLabel, hourLabel, minuteLabel]
+        countdownTitles = [yearTitle, dayTitle, hourTitle, minuteTitle]
+        xBounds = [CGFloat(2)/10, CGFloat(4)/10, CGFloat(7)/10, CGFloat(9)/10]
+        for i in 0..<countdownLabels.count {
+            let label = countdownLabels[i]
+            label.frame.origin.y = self.view.frame.height / 6
+            label.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
+            let title = countdownTitles[i]
+            title.frame.origin.y = self.view.frame.height / 6
+            title.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
+  
+        }
+        
+        
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -114,6 +148,26 @@ class ViewController: UIViewController{
             url = URL(string: "https://www.google.com")!
         }
         UIApplication.shared.open(url, options: [:])
+    }
+    
+    // must expose this function to objective c
+    @objc func countdownChanged() {
+        
+        // one minute has passed, modify the count down time and update the UI
+        
+        let launch = Date(timeIntervalSinceReferenceDate: nextEvent)
+        let currentTime = Date()
+        let timeComponents = Calendar.current.dateComponents([.year, .day, .hour, .minute], from: currentTime, to: launch)
+        let year:Int = timeComponents.year!
+        let day:Int = timeComponents.day!
+        let hour:Int = timeComponents.hour!
+        let minute:Int = timeComponents.minute!
+        
+        yearLabel.text = (String)(format: "%02d", year)
+        dayLabel.text = (String)(format: "%03d", day)
+        hourLabel.text = (String)(format: "%02d", hour)
+        minuteLabel.text = (String)(format: "%02d", minute)
+        
     }
    
 }
