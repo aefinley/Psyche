@@ -26,8 +26,6 @@
 		2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA15CA6203E56CD0005E271 /* ARPickerController.swift */; };
 		ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC793F20164BCA00006E47 /* MediaGallery.swift */; };
 		ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC79412016626400006E47 /* imageCollectionViewCell.swift */; };
-		EE7E72D0203B5DE80040AA0B /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E72CF203B5DE80040AA0B /* CountdownView.swift */; };
-		EEA1749A2048B4DD008DF45C /* TimelineSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA174992048B4DD008DF45C /* TimelineSummaryViewController.swift */; };
 		EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA23B12028DAE60038F276 /* TimelineBackground.swift */; };
 		EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -68,8 +66,6 @@
 		2EA15CA6203E56CD0005E271 /* ARPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPickerController.swift; sourceTree = "<group>"; };
 		ABCC793F20164BCA00006E47 /* MediaGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGallery.swift; sourceTree = "<group>"; };
 		ABCC79412016626400006E47 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = imageCollectionViewCell.swift; path = views/imageCollectionViewCell.swift; sourceTree = "<group>"; };
-		EE7E72CF203B5DE80040AA0B /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
-		EEA174992048B4DD008DF45C /* TimelineSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimelineSummaryViewController.swift; path = Psyche/TimelineSummaryViewController.swift; sourceTree = "<group>"; };
 		EEDA23B12028DAE60038F276 /* TimelineBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackground.swift; sourceTree = "<group>"; };
 		EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackgroundControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +87,6 @@
 		2E556F011F991BD40030FA86 = {
 			isa = PBXGroup;
 			children = (
-				EEA174992048B4DD008DF45C /* TimelineSummaryViewController.swift */,
 				EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */,
 				EEDA23B12028DAE60038F276 /* TimelineBackground.swift */,
 				2E556F0B1F991BD40030FA86 /* Products */,
@@ -129,7 +124,6 @@
 				0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */,
 				0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */,
 				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
-				EE7E72CF203B5DE80040AA0B /* CountdownView.swift */,
 			);
 			path = Psyche;
 			sourceTree = "<group>";
@@ -215,12 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7E72D0203B5DE80040AA0B /* CountdownView.swift in Sources */,
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
 				2EA15CA5203E20060005E271 /* ARDescriptionController.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
 				ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */,
-				EEA1749A2048B4DD008DF45C /* TimelineSummaryViewController.swift in Sources */,
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
 				0DEB0F732000220A00D7BB12 /* ARViewController.swift in Sources */,
 				EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */,
@@ -366,14 +358,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3RCXMD99G3;
+				DEVELOPMENT_TEAM = 7ZF9F5WLVV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Psyche;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.psych;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -388,14 +380,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3RCXMD99G3;
+				DEVELOPMENT_TEAM = 7ZF9F5WLVV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Psyche;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.psych;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
