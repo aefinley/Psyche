@@ -32,7 +32,7 @@ class ViewController: UIViewController{
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     
         if(menuShowing){
-            menuWidth.constant = -175
+           menuWidth.constant = -175
         }
     }
     
