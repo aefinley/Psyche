@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import CoreData
 import UIKit
 
 class FactTableViewCell: UITableViewCell {
@@ -16,8 +16,7 @@ class FactTableViewCell: UITableViewCell {
     @IBOutlet weak var factTitle: UILabel!
     @IBOutlet weak var factImage: UIImageView!{
         didSet {
-            factImage.layer.cornerRadius = 8.0 //images in cells have rounded edges
-            factImage.layer.masksToBounds = true
+            //images in cells have rounded edges
         }
     }
     

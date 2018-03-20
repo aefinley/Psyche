@@ -9,7 +9,8 @@
 import Foundation
 
 class DetailViewController: UIViewController {
-    var selectedFact:efact!
+    
+    var selectedFact:Fact!
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UITextView!
@@ -18,10 +19,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = selectedFact.factName!
-        descLabel.text = selectedFact.factDescription!
-        factImage.image = selectedFact.factImage
-        
+        titleLabel.text = selectedFact.title
+        descLabel.text = selectedFact.desc
+        factImage.image = UIImage(data: selectedFact.image  as Data)
     }
     
 }

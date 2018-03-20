@@ -15,8 +15,6 @@
 		0DEB0F7F2000313D00D7BB12 /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DEB0F832000521200D7BB12 /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */; };
 		0DEB0F842000521200D7BB12 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */; };
-		2E3748CE203E077000BA1CB0 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E3748CD203DFFD400BA1CB0 /* art.scnassets */; };
-		2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3748D1203E119200BA1CB0 /* Knockout.otf */; };
 		1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910971E2030FFBB000879AB /* FactsTableViewController.swift */; };
 		1910974E2031043B000879AB /* Propulsion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097232031043B000879AB /* Propulsion.txt */; };
 		1910974F2031043B000879AB /* Radio Science.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097252031043B000879AB /* Radio Science.txt */; };
@@ -41,11 +39,13 @@
 		191097622031043B000879AB /* Objectives.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910974D2031043B000879AB /* Objectives.txt */; };
 		1910976420310694000879AB /* MissionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910976320310694000879AB /* MissionFactsViewController.swift */; };
 		19109766203106DC000879AB /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19109765203106DC000879AB /* TimelineViewController.swift */; };
+		1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982690520449B1700DF323F /* Fact+CoreDataClass.swift */; };
+		1982690820449B1700DF323F /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */; };
 		19ADDA7E2033D437008CB288 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ADDA7D2033D437008CB288 /* DetailViewController.swift */; };
-		19F381C120321E960002445A /* JourneyFactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F381C020321E960002445A /* JourneyFactsData.swift */; };
-		19F381C3203226CC0002445A /* AsteroidFactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F381C2203226CC0002445A /* AsteroidFactsData.swift */; };
-		19F381C72033BA6E0002445A /* EngineeringFactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F381C62033BA6E0002445A /* EngineeringFactsData.swift */; };
+		19DA4F1B204473DB0020F533 /* FactsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */; };
+		19EBB3B82060430F000D371C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EBB3B72060430F000D371C /* art.scnassets */; };
 		19F381CB2033CEB40002445A /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F381CA2033CEB40002445A /* FactTableViewCell.swift */; };
+		2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3748D1203E119200BA1CB0 /* Knockout.otf */; };
 		2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0D1F991BD40030FA86 /* AppDelegate.swift */; };
 		2E556F101F991BD40030FA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0F1F991BD40030FA86 /* ViewController.swift */; };
 		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
@@ -55,8 +55,6 @@
 		2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA15CA6203E56CD0005E271 /* ARPickerController.swift */; };
 		ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC793F20164BCA00006E47 /* MediaGallery.swift */; };
 		ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC79412016626400006E47 /* imageCollectionViewCell.swift */; };
-		EE7E72D0203B5DE80040AA0B /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E72CF203B5DE80040AA0B /* CountdownView.swift */; };
-		EEA1749A2048B4DD008DF45C /* TimelineSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA174992048B4DD008DF45C /* TimelineSummaryViewController.swift */; };
 		EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA23B12028DAE60038F276 /* TimelineBackground.swift */; };
 		EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -107,13 +105,13 @@
 		1910974D2031043B000879AB /* Objectives.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Objectives.txt; sourceTree = "<group>"; };
 		1910976320310694000879AB /* MissionFactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionFactsViewController.swift; sourceTree = "<group>"; };
 		19109765203106DC000879AB /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		1982690520449B1700DF323F /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		19ADDA7D2033D437008CB288 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		19F381C020321E960002445A /* JourneyFactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyFactsData.swift; sourceTree = "<group>"; };
-		19F381C2203226CC0002445A /* AsteroidFactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidFactsData.swift; sourceTree = "<group>"; };
-		19F381C62033BA6E0002445A /* EngineeringFactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringFactsData.swift; sourceTree = "<group>"; };
+		19DA4F1A204473DB0020F533 /* FactsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FactsData.xcdatamodel; sourceTree = "<group>"; };
+		19EBB3B72060430F000D371C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		19F381CA2033CEB40002445A /* FactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
 		2E14FFDF1FABD0A100B74330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		2E3748CD203DFFD400BA1CB0 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = /Users/pnovaz/Documents/Psyche/Psyche/art.scnassets; sourceTree = "<absolute>"; };
 		2E3748D1203E119200BA1CB0 /* Knockout.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Knockout.otf; sourceTree = "<group>"; };
 		2E556F0A1F991BD40030FA86 /* Psyche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psyche.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E556F0D1F991BD40030FA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,8 +124,6 @@
 		2EA15CA6203E56CD0005E271 /* ARPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPickerController.swift; sourceTree = "<group>"; };
 		ABCC793F20164BCA00006E47 /* MediaGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGallery.swift; sourceTree = "<group>"; };
 		ABCC79412016626400006E47 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = imageCollectionViewCell.swift; path = views/imageCollectionViewCell.swift; sourceTree = "<group>"; };
-		EE7E72CF203B5DE80040AA0B /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
-		EEA174992048B4DD008DF45C /* TimelineSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimelineSummaryViewController.swift; path = Psyche/TimelineSummaryViewController.swift; sourceTree = "<group>"; };
 		EEDA23B12028DAE60038F276 /* TimelineBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackground.swift; sourceTree = "<group>"; };
 		EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackgroundControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -373,25 +369,13 @@
 				1910971E2030FFBB000879AB /* FactsTableViewController.swift */,
 				19F381CA2033CEB40002445A /* FactTableViewCell.swift */,
 				19ADDA7D2033D437008CB288 /* DetailViewController.swift */,
-				19ADDA7C2033D3EA008CB288 /* FactData */,
 			);
 			path = MissionFacts;
-			sourceTree = "<group>";
-		};
-		19ADDA7C2033D3EA008CB288 /* FactData */ = {
-			isa = PBXGroup;
-			children = (
-				19F381C62033BA6E0002445A /* EngineeringFactsData.swift */,
-				19F381C2203226CC0002445A /* AsteroidFactsData.swift */,
-				19F381C020321E960002445A /* JourneyFactsData.swift */,
-			);
-			path = FactData;
 			sourceTree = "<group>";
 		};
 		2E556F011F991BD40030FA86 = {
 			isa = PBXGroup;
 			children = (
-				EEA174992048B4DD008DF45C /* TimelineSummaryViewController.swift */,
 				EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */,
 				EEDA23B12028DAE60038F276 /* TimelineBackground.swift */,
 				2E556F0B1F991BD40030FA86 /* Products */,
@@ -410,18 +394,21 @@
 		2E556F0C1F991BD40030FA86 /* Psyche */ = {
 			isa = PBXGroup;
 			children = (
-				2E3748CD203DFFD400BA1CB0 /* art.scnassets */,
+				19EBB3B72060430F000D371C /* art.scnassets */,
 				191097202031043B000879AB /* Explore */,
 				2E556F0D1F991BD40030FA86 /* AppDelegate.swift */,
+				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
 				19109765203106DC000879AB /* TimelineViewController.swift */,
 				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
 				2EA15CA6203E56CD0005E271 /* ARPickerController.swift */,
 				2EA15CA4203E20060005E271 /* ARDescriptionController.swift */,
-				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
 				2E3748D1203E119200BA1CB0 /* Knockout.otf */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
-				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
 				ABCC793F20164BCA00006E47 /* MediaGallery.swift */,
+				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
+				1982690520449B1700DF323F /* Fact+CoreDataClass.swift */,
+				1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */,
+				19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */,
 				19ADDA7B2033D3C2008CB288 /* MissionFacts */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
 				2E556F141F991BD40030FA86 /* Assets.xcassets */,
@@ -432,8 +419,6 @@
 				0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */,
 				0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */,
 				0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */,
-				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
-				EE7E72CF203B5DE80040AA0B /* CountdownView.swift */,
 			);
 			path = Psyche;
 			sourceTree = "<group>";
@@ -502,7 +487,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E3748CE203E077000BA1CB0 /* art.scnassets in Resources */,
 				2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */,
 				2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */,
 				191097592031043B000879AB /* Composition.txt in Resources */,
@@ -522,6 +506,7 @@
 				191097602031043B000879AB /* Goals.txt in Resources */,
 				191097552031043B000879AB /* Gravity.txt in Resources */,
 				1910975C2031043B000879AB /* Where.txt in Resources */,
+				19EBB3B82060430F000D371C /* art.scnassets in Resources */,
 				191097612031043B000879AB /* Mission Cost.txt in Resources */,
 				191097542031043B000879AB /* Spacecraft size.txt in Resources */,
 				191097512031043B000879AB /* Multispectral Imager.txt in Resources */,
@@ -541,16 +526,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7E72D0203B5DE80040AA0B /* CountdownView.swift in Sources */,
+				19DA4F1B204473DB0020F533 /* FactsData.xcdatamodeld in Sources */,
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
 				2EA15CA5203E20060005E271 /* ARDescriptionController.swift in Sources */,
 				1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */,
-				19F381C3203226CC0002445A /* AsteroidFactsData.swift in Sources */,
-				19F381C72033BA6E0002445A /* EngineeringFactsData.swift in Sources */,
-				19F381C120321E960002445A /* JourneyFactsData.swift in Sources */,
+				1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
 				ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */,
-				EEA1749A2048B4DD008DF45C /* TimelineSummaryViewController.swift in Sources */,
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
 				0DEB0F732000220A00D7BB12 /* ARViewController.swift in Sources */,
 				EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */,
@@ -559,6 +541,7 @@
 				2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */,
 				EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */,
 				1910976420310694000879AB /* MissionFactsViewController.swift in Sources */,
+				1982690820449B1700DF323F /* Fact+CoreDataProperties.swift in Sources */,
 				19109766203106DC000879AB /* TimelineViewController.swift in Sources */,
 				19ADDA7E2033D437008CB288 /* DetailViewController.swift in Sources */,
 			);
@@ -700,14 +683,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3RCXMD99G3;
+				DEVELOPMENT_TEAM = C83RT3C26Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Psyche;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PsycheA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -722,14 +705,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3RCXMD99G3;
+				DEVELOPMENT_TEAM = C83RT3C26Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Psyche;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PsycheA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -759,6 +742,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				19DA4F1A204473DB0020F533 /* FactsData.xcdatamodel */,
+			);
+			currentVersion = 19DA4F1A204473DB0020F533 /* FactsData.xcdatamodel */;
+			name = FactsData.xcdatamodeld;
+			path = "Explore/Journey Facts/FactsData.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2E556F021F991BD40030FA86 /* Project object */;
 }
