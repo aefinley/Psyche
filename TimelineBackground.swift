@@ -21,7 +21,6 @@ class TimelineBackground: UIView {
     
     
     @IBOutlet weak var orangeButton1: UIButton!
-    
     override func draw(_ rect: CGRect) {
         
         let lightOrange = UIColor(red: 251/255, green: 158/255, blue: 1/255, alpha: 1.0)
@@ -72,7 +71,9 @@ class TimelineBackground: UIView {
         path5.stroke()
  
         
+        
     }
+    
     
     
 }

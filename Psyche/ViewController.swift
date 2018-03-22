@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     
         if(menuShowing){
-           menuWidth.constant = -175
+           menuWidth.constant = -250
         }
     }
     
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     @IBAction func openMenuAction(_ sender: Any) {
     
         if(menuShowing){
-            menuWidth.constant = -175
+            menuWidth.constant = -250
         }
         else{
             menuWidth.constant = 0
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
     
     @IBAction func closeMenu(_ sender: UIButton) {
         if(menuShowing){
-            menuWidth.constant = -175
+            menuWidth.constant = -250
             UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
             view.layoutIfNeeded()
             menuShowing = false
@@ -125,11 +125,11 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
         
     
-        menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
+        menuWidth.constant = -250 //menu should be hidden when view loads, width is 300 so needs to be -300
         
         menu.layer.shadowOpacity = 1
         menu.layer.shadowRadius = 5
-        menu.image = #imageLiteral(resourceName: "menuImageFlipped")
+        menu.image = #imageLiteral(resourceName: "menuImage")
         //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
         
         

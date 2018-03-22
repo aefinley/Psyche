@@ -33,12 +33,24 @@ class TimelineBackgroundControllerViewController: UIViewController {
     @IBOutlet weak var darkPurple4: UIButton!
     
     
+    
+    
+  var menuShowing = false
+    
     var labelArray:[UILabel] = [UILabel]()
     var buttonArray:[UIButton] = [UIButton]()
     var axisArray:[CGFloat] = [CGFloat]()
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+    
         
          labelArray = [label1, label2, label3, label4, label5, label6, label7, label8, label9, label10]
         buttonArray = [orangeButton1, orangeButton2, darkOrangeButton1, darkOrangeButton2, pinkButton1, pinkButton2, darkPurple1, darkPurple2, darkPurple3, darkPurple4]
@@ -64,15 +76,19 @@ class TimelineBackgroundControllerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
-    /*
+    
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+    //}
+
 
 }
+
