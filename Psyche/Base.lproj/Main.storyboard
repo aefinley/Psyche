@@ -971,7 +971,6 @@
         <image name="timeline icon" width="72" height="73"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cIe-B3-mTC"/>
         <segue reference="NxC-D4-mf0"/>
         <segue reference="hTr-Bg-ZdR"/>
         <segue reference="L0A-mA-YJ2"/>
