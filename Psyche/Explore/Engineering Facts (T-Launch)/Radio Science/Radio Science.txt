@@ -1,0 +1,7 @@
+Radio Science:
+
+The Psyche mission will use the X-band radio telecommunications system to measure Psyche’s gravity field to high precision.
+
+When combined with topography derived from onboard imagery, this will provide information on the interior structure of Psyche.
+
+The team is based at MIT and JPL.

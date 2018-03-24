@@ -45,22 +45,16 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.white
     
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
-        
-        
-        
+
         menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
         
         menu.layer.shadowOpacity = 1
         menu.layer.shadowRadius = 5
         menu.image = #imageLiteral(resourceName: "menuImageFlipped")
         //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
-        
-        
-        
-        
-        
       
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
         
         // starts the count down timer, executes countdownChanged every 60 seconds
         countdownTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(countdownChanged), userInfo: nil, repeats: true)

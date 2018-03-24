@@ -1,0 +1,19 @@
+Propulsion: Solar-electric (low thrust) propulsion
+
+Solar electric propulsion uses electricity from solar arrays to create
+electromagnetic fields to accelerate and expel charged atoms (ions) of xenon
+to create a very low thrust with a very efficient use of propellant (1)
+
+This will be the first use of Hall effect thrusters beyond lunar orbit.
+
+The Psyche spacecraft is using xenon:
+	Xenon is a gas that is in the air we breathe (in very small amounts-- 0.09 parts per million! (2))	
+	Xenon gas is used in high quality light bulbs, including automobile headlamps and movie projectors.
+	“The most common propellant used in ion propulsion is xenon, which is easily ionized and has a high atomic mass, thus generating a desirable level of thrust when ions are accelerated. It also is inert and has a high storage density; therefore, it is well suited for storing on spacecraft.” (3)
+
+(1) How Will NASA’s Asteroid Redirect Mission Help Humans Reach Mars?
+(1) https://www.nasa.gov/content/how-will-nasas-asteroid-redirect-mission-help-humans-reach-mars
+(2) Introduction to the Atmosphere
+(2) http://www.srh.noaa.gov/jetstream/atmos/atmos_intro.html
+(3) NASA -Ion Propulsion
+(3) https://www.nasa.gov/centers/glenn/about/fs21grc.html

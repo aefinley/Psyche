@@ -1,0 +1,10 @@
+Multispectral Imager:
+
+Provides high-resolution images using filters to discriminate between Psyche’s metallic and silicate constituents.
+
+Consists of a pair of identical cameras designed to acquire geologic, compositional, and topographic data.
+
+Purpose of the second camera is to provide redundancy for mission-critical optical navigation.
+
+The team is based at Arizona State University.
+
