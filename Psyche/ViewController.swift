@@ -35,10 +35,6 @@ class ViewController: UIViewController {
     var xBounds:[CGFloat] = []
     var countdownTitles:[UILabel] = []
     
-    //close menu if user clicks on main view
-    
-  
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -105,10 +101,58 @@ class ViewController: UIViewController {
         UIApplication.shared.open(url, options: [:])
     }
     
-
+    // must expose this function to objective c
+    @objc func countdownChanged() {
+        
+        // one minute has passed, modify the count down time and update the UI
+        
+        let launch = Date(timeIntervalSinceReferenceDate: nextEvent)
+        let currentTime = Date()
+        let timeComponents = Calendar.current.dateComponents([.year, .day, .hour, .minute], from: currentTime, to: launch)
+        let year:Int = timeComponents.year!
+        let day:Int = timeComponents.day!
+        let hour:Int = timeComponents.hour!
+        let minute:Int = timeComponents.minute!
+        
+        yearLabel.text = (String)(format: "%02d", year)
+        dayLabel.text = (String)(format: "%03d", day)
+        hourLabel.text = (String)(format: "%02d", hour)
+        minuteLabel.text = (String)(format: "%02d", minute)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //close menu if user clicks on main view
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+        
+        menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menuImageFlipped")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
+        
+        // starts the count down timer, executes countdownChanged every 60 seconds
+        countdownTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(countdownChanged), userInfo: nil, repeats: true)
+        countdownChanged()
+        
+        // move the countdown labels to their correct positions'
+        countdownLabels = [yearLabel, dayLabel, hourLabel, minuteLabel]
+        countdownTitles = [yearTitle, dayTitle, hourTitle, minuteTitle]
+        xBounds = [CGFloat(2)/10, CGFloat(4)/10, CGFloat(7)/10, CGFloat(9)/10]
+        for i in 0..<countdownLabels.count {
+            let label = countdownLabels[i]
+            label.frame.origin.y = self.view.frame.height / 6
+            label.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
+            let title = countdownTitles[i]
+            title.frame.origin.y = self.view.frame.height / 6
+            title.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
+        }
         
         //gesture created so if user clicks on outside view menu will close
         let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
