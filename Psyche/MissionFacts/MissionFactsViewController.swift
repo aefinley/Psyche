@@ -21,7 +21,13 @@ class MissionFactsViewController: UIViewController {
     var viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let insertContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let titles = [ "Propulsion", "Radio Science", "Deep Space Optical Communication (DSOC)", "Multispectral Imager", "Gamma Ray and Neutron Spectrometer", "Bus Size", "Spacecraft Size", "Gravity", "Appearance", "Discovery", "Density", "Composition", "Beliefs", "Size", "Where", "Team on Psyche", "The Team", "Why", "Goals", "Cost", "Objectives", "Concept Study", "Preliminary Design of all Instruments and Spacecraft", "Critical Design and Build of all Instruments and Spacecraft", "Instrument And Spacecraft Build and Assembly", "Spacecraft Ships to Launch Site", "Launch", "Mars Gravity Assist", "Arrival At Psyche", "Orbiting Psyche", "Mission Closeout" ]
-    //let images = [ ]
+    
+    //7 Engineering, 7 Asteroird, 17 Journey
+    var images = [UIImage]()
+    var enginImg = [UIImage](repeating: #imageLiteral(resourceName: "Building"), count: 7)
+    var asteroidImg = [UIImage](repeating: #imageLiteral(resourceName: "Asteroid"), count: 7)
+    var journeyImg = [UIImage](repeating: #imageLiteral(resourceName: "Journey"), count: 18)
+    
     let descriptions = ["""
     Solar electric propulsion uses electricity from solar arrays to create
     electromagnetic fields to accelerate and expel charged atoms (ions) of xenon
@@ -384,14 +390,26 @@ class MissionFactsViewController: UIViewController {
         self.view.backgroundColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)
         super.viewDidLoad()
         
+        asteroidImg.append(contentsOf: journeyImg)
+        enginImg.append(contentsOf: asteroidImg)
+        images.append(contentsOf: enginImg)
+    
+        // get a handler to the contact entity
+        let entityDescription = NSEntityDescription.entity(forEntityName: "Fact", in: insertContext)
         
+        // create a fetch request
+        let request: NSFetchRequest<Fact> = Fact.fetchRequest() as! NSFetchRequest<Fact>
         
-        // Jennifer's Code
+        // associate the request with contact handler
+        request.entity = entityDescription
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName:"Fact")
+        // build the search request predicate (query)
+        let pred = NSPredicate(format: "(title = %@)", "Propulsion")
         
-        if let fetchResult = (try? viewContext.fetch(fetchRequest)) as? [Fact] {
-            
+        request.predicate = pred
+        
+        if let fetchResult = (try? viewContext.fetch(request)) as? [Fact] {
+       // Jennifer's Code
             let num = fetchResult.count
             
             if num == 0 {
@@ -403,13 +421,13 @@ class MissionFactsViewController: UIViewController {
                     switch i {
                     case 0...6:
                         newItem.categoryType = "Engineering"
-                        newItem.image = UIImagePNGRepresentation(#imageLiteral(resourceName: "Building"))! as Data
+                        //newItem.image = UIImagePNGRepresentation(#imageLiteral(resourceName: "Building"))! as Data
                     case 7...14:
                         newItem.categoryType = "Asteroid"
-                        newItem.image = UIImagePNGRepresentation(#imageLiteral(resourceName: "Asteroid"))! as Data
+                        //newItem.image = UIImagePNGRepresentation(#imageLiteral(resourceName: "Asteroid"))! as Data
                     case 15...32:
                         newItem.categoryType = "Journey"
-                        newItem.image = UIImagePNGRepresentation(#imageLiteral(resourceName: "Journey"))! as Data
+                        //newItem.image = UIImagePNGRepresentation(#imageLiteral(resourceName: "Journey"))! as Data
                     default:
                         newItem.categoryType = "None"
                     }
