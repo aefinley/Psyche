@@ -11,34 +11,33 @@ import UIKit
 
 class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
-   // var imageArray = [UIImage]()
+    
+    //for the menu
+    @IBOutlet weak var menuWidth: NSLayoutConstraint!
+    @IBOutlet weak var menu: UIImageView!
+    @IBOutlet weak var nasaButton: UIButton!
+    var menuShowing = false //boolean to see if menu is showing currently or not
+    
     
     @IBOutlet weak var myCollectionView: UICollectionView!
     
     //create a seperate video array.
-    
-    let imgArray:[String] = ["image1","image2","image3","image4","image5","image6","image7","image8","image9","image10",
-        "image11","image12","image13","image14","image15","image16","image17","image18","image19","image20",
-        "image21","image22","image23","image24","image25","image26","image27","image28","image29","image30",
-        "image31","image32","image33","image34","image35","image36","image37","image38","image39","image40",
-        "image41","image42","image43","image44"]
+    var imgarr:[UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //back button
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        
-        //add another - clickable sections for image/videos
         
         
         let itemSize = UIScreen.main.bounds.width/2 - 6
         
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsetsMake(20, 0, 10, 0)
+        layout.sectionInset = UIEdgeInsetsMake(20, 0, 60, 0)
         layout.itemSize = CGSize(width: itemSize, height: itemSize)
         
         layout.minimumInteritemSpacing = 4
         layout.minimumLineSpacing = 12
-        
         
         myCollectionView.collectionViewLayout = layout
         
@@ -53,13 +52,13 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
     
     //num of views
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imgArray.count
+        return imgarr.count //changed
     }
     
     //populate
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! myCell
-        cell.myImageView.image = UIImage(named: imgArray[indexPath.row] + ".jpg")
+        cell.myImageView.image = imgarr[indexPath.row] //changed
         cell.layer.borderWidth = 0
         cell.layer.cornerRadius = 20
         
@@ -68,9 +67,14 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         
     }
     
+    
+    //replace this and segue to a detailed view.
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let imageView = UIImageView(image: UIImage(named: imgArray[indexPath.row] + ".jpg"))
+        //var imagee = imgarr[indexPath.row]
+        
+        let imageView = UIImageView(image: imgarr[indexPath.row])
         imageView.frame =  self.view.bounds //self.view.frame
         imageView.backgroundColor = .black
         imageView.contentMode = .center
@@ -95,3 +99,8 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
    
     
 }
+
+
+
+
+

@@ -429,6 +429,31 @@
                                     <outlet property="delegate" destination="Mkb-HV-u9b" id="RtM-a0-RF4"/>
                                 </connections>
                             </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZu-b2-1fX">
+                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="iC0-Es-Z83"/>
+                                    <barButtonItem title="facebook" image="fFacebook-Icon" id="JDb-uY-Qxb" userLabel="facebookButton">
+                                        <connections>
+                                            <action selector="redirect:" destination="BYZ-38-t0r" id="guy-SU-KmB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eQb-Fk-Ey8"/>
+                                    <barButtonItem tag="1" title="twitter" image="fTwitter-Icon" id="AeJ-5V-ijA" userLabel="twitterButton">
+                                        <connections>
+                                            <action selector="redirect:" destination="BYZ-38-t0r" id="5mF-yN-D3U"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8yB-aF-w7K"/>
+                                    <barButtonItem tag="2" title="instagram" image="fInstagram-Icon" id="kCU-YD-3Ce" userLabel="instagramButton">
+                                        <connections>
+                                            <action selector="redirect:" destination="BYZ-38-t0r" id="saM-Hv-KPX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sgg-6E-7oO"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
