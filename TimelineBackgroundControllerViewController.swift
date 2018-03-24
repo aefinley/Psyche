@@ -82,7 +82,17 @@ class TimelineBackgroundControllerViewController: UIViewController {
         }
     }
     
+    @IBAction func openNasa(_ sender: Any) {
         
+        if let url = URL(string: "http://nasa.gov/psyche"){
+            
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
+        }
+    }
+    
     
     override func viewDidLoad() {
         
