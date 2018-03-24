@@ -35,56 +35,13 @@ class ViewController: UIViewController {
     var xBounds:[CGFloat] = []
     var countdownTitles:[UILabel] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        //fasasf
-        //hide the navigation controller
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-   
-        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-    
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
-
-        menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
-        
-        menu.layer.shadowOpacity = 1
-        menu.layer.shadowRadius = 5
-        menu.image = #imageLiteral(resourceName: "menuImageFlipped")
-        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
-      
-        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
-        self.view.bringSubview(toFront: menu)
-        
-        // starts the count down timer, executes countdownChanged every 60 seconds
-        countdownTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(countdownChanged), userInfo: nil, repeats: true)
-        countdownChanged()
-        
-        // move the countdown labels to their correct positions'
-        countdownLabels = [yearLabel, dayLabel, hourLabel, minuteLabel]
-        countdownTitles = [yearTitle, dayTitle, hourTitle, minuteTitle]
-        xBounds = [CGFloat(2)/10, CGFloat(4)/10, CGFloat(7)/10, CGFloat(9)/10]
-        for i in 0..<countdownLabels.count {
-            let label = countdownLabels[i]
-            label.frame.origin.y = self.view.frame.height / 6
-            label.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
-            let title = countdownTitles[i]
-            title.frame.origin.y = self.view.frame.height / 6
-            title.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
-  
-        }
-        
-        
-        
-    }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     
         if(menuShowing){
-            menuWidth.constant = -175
+           menuWidth.constant = -250
         }
     }
     
@@ -108,7 +65,7 @@ class ViewController: UIViewController {
     @IBAction func openMenuAction(_ sender: Any) {
     
         if(menuShowing){
-            menuWidth.constant = -175
+            menuWidth.constant = -250
         }
         else{
             menuWidth.constant = 0
@@ -122,7 +79,7 @@ class ViewController: UIViewController {
     
     @IBAction func closeMenu(_ sender: UIButton) {
         if(menuShowing){
-            menuWidth.constant = -175
+            menuWidth.constant = -250
             UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
             view.layoutIfNeeded()
             menuShowing = false
@@ -163,6 +120,65 @@ class ViewController: UIViewController {
         minuteLabel.text = (String)(format: "%02d", minute)
         
     }
-   
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //close menu if user clicks on main view
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+        
+        menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menuImageFlipped")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
+        
+        // starts the count down timer, executes countdownChanged every 60 seconds
+        countdownTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(countdownChanged), userInfo: nil, repeats: true)
+        countdownChanged()
+        
+        // move the countdown labels to their correct positions'
+        countdownLabels = [yearLabel, dayLabel, hourLabel, minuteLabel]
+        countdownTitles = [yearTitle, dayTitle, hourTitle, minuteTitle]
+        xBounds = [CGFloat(2)/10, CGFloat(4)/10, CGFloat(7)/10, CGFloat(9)/10]
+        for i in 0..<countdownLabels.count {
+            let label = countdownLabels[i]
+            label.frame.origin.y = self.view.frame.height / 6
+            label.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
+            let title = countdownTitles[i]
+            title.frame.origin.y = self.view.frame.height / 6
+            title.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
+        }
+        
+        //gesture created so if user clicks on outside view menu will close
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
+        
+        self.view.addGestureRecognizer(gesture)
+        
+        
+        //hide the navigation controller
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+        
+    
+        menuWidth.constant = -250 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menuImage")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        
+        
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
+    }
 }
 

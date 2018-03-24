@@ -33,12 +33,93 @@ class TimelineBackgroundControllerViewController: UIViewController {
     @IBOutlet weak var darkPurple4: UIButton!
     
     
+    @IBOutlet weak var menu: UIImageView!
+    
+    
+    
+    @IBOutlet weak var menuWidth: NSLayoutConstraint!
+    
+    
+  var menuShowing = false
+    
     var labelArray:[UILabel] = [UILabel]()
     var buttonArray:[UIButton] = [UIButton]()
     var axisArray:[CGFloat] = [CGFloat]()
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        if(menuShowing){
+            menuWidth.constant = -250
+        }
+       
+    }
+
+    
+    
+    @IBAction func openMenu(_ sender: Any) {
+        if(menuShowing){
+            menuWidth.constant = -250
+        }
+        else{
+            menuWidth.constant = 0
+            
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+        }
+        
+        menuShowing = !menuShowing
+    }
+    
+    @IBAction func closeMenu(_ sender: Any) {
+        if(menuShowing){
+            menuWidth.constant = -250
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+            menuShowing = false
+        }
+    }
+    
+    @IBAction func openNasa(_ sender: Any) {
+        
+        if let url = URL(string: "http://nasa.gov/psyche"){
+            
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
+        }
+    }
+    
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        //gesture created so if user clicks on outside view menu will close
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
+        
+        self.view.addGestureRecognizer(gesture)
+        
+        
+        //hide the navigation controller
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+        
+        
+        menuWidth.constant = -250 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+       menu.image = #imageLiteral(resourceName: "menuImage")
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
+        
         
          labelArray = [label1, label2, label3, label4, label5, label6, label7, label8, label9, label10]
         buttonArray = [orangeButton1, orangeButton2, darkOrangeButton1, darkOrangeButton2, pinkButton1, pinkButton2, darkPurple1, darkPurple2, darkPurple3, darkPurple4]
@@ -64,15 +145,19 @@ class TimelineBackgroundControllerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
-    /*
+    
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+    //}
+
 
 }
+

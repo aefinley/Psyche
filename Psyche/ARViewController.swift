@@ -25,7 +25,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
         
         // Create a new scene
         
@@ -34,13 +34,19 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     if (sentValue == 0){ //user selected to view asteroid
     
         let scene = SCNScene(named: "art.scnassets/asteroid.dae")!
+        let treeNode = scene.rootNode.childNode(withName: "asteroid", recursively: true)
+        treeNode?.position.z = -1
         self.sceneView.scene = scene
     }
     else if (sentValue == 1){ //user selected to view satellite
     
         let scene = SCNScene(named: "art.scnassets/satellite.scn")!
+        let treeNode = scene.rootNode.childNode(withName: "satellite", recursively: true)
+        treeNode?.position.z = -1
         self.sceneView.scene = scene
+       
     }
+       
 
     }
     
@@ -53,6 +59,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         // Run the view's session
         sceneView.session.run(configuration)
+        sceneView.allowsCameraControl = true
+        
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
