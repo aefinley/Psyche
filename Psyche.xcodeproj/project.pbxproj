@@ -45,13 +45,16 @@
 		19DA4F1B204473DB0020F533 /* FactsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */; };
 		19EBB3B82060430F000D371C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EBB3B72060430F000D371C /* art.scnassets */; };
 		19F381CB2033CEB40002445A /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F381CA2033CEB40002445A /* FactTableViewCell.swift */; };
+		2E32AC982075F0D900ABF263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E32AC972075F0D900ABF263 /* Images.xcassets */; };
 		2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3748D1203E119200BA1CB0 /* Knockout.otf */; };
+		2E4E83FB207BFFF7000993EA /* ARHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E83FA207BFFF7000993EA /* ARHelpViewController.swift */; };
 		2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0D1F991BD40030FA86 /* AppDelegate.swift */; };
 		2E556F101F991BD40030FA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0F1F991BD40030FA86 /* ViewController.swift */; };
 		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
 		2E556F151F991BD40030FA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F141F991BD40030FA86 /* Assets.xcassets */; };
 		2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */; };
-		2EA15CA5203E20060005E271 /* ARDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA15CA4203E20060005E271 /* ARDescriptionController.swift */; };
+		2E782985206D89B000E22BF3 /* SharePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */; };
+		2E8394702070B14400F7E7B9 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83946F2070B14400F7E7B9 /* UIButtonExtension.swift */; };
 		2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA15CA6203E56CD0005E271 /* ARPickerController.swift */; };
 		ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC793F20164BCA00006E47 /* MediaGallery.swift */; };
 		ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC79412016626400006E47 /* imageCollectionViewCell.swift */; };
@@ -112,7 +115,9 @@
 		19EBB3B72060430F000D371C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		19F381CA2033CEB40002445A /* FactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
 		2E14FFDF1FABD0A100B74330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2E32AC972075F0D900ABF263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E3748D1203E119200BA1CB0 /* Knockout.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Knockout.otf; sourceTree = "<group>"; };
+		2E4E83FA207BFFF7000993EA /* ARHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARHelpViewController.swift; sourceTree = "<group>"; };
 		2E556F0A1F991BD40030FA86 /* Psyche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psyche.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E556F0D1F991BD40030FA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E556F0F1F991BD40030FA86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Psyche/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -120,7 +125,8 @@
 		2E556F141F991BD40030FA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E556F171F991BD40030FA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E556F191F991BD40030FA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EA15CA4203E20060005E271 /* ARDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDescriptionController.swift; sourceTree = "<group>"; };
+		2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePhotoViewController.swift; sourceTree = "<group>"; };
+		2E83946F2070B14400F7E7B9 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		2EA15CA6203E56CD0005E271 /* ARPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPickerController.swift; sourceTree = "<group>"; };
 		ABCC793F20164BCA00006E47 /* MediaGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGallery.swift; sourceTree = "<group>"; };
 		ABCC79412016626400006E47 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = imageCollectionViewCell.swift; path = views/imageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -397,15 +403,15 @@
 				19EBB3B72060430F000D371C /* art.scnassets */,
 				191097202031043B000879AB /* Explore */,
 				2E556F0D1F991BD40030FA86 /* AppDelegate.swift */,
+				2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */,
+				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
+				2E4E83FA207BFFF7000993EA /* ARHelpViewController.swift */,
+				2EA15CA6203E56CD0005E271 /* ARPickerController.swift */,
 				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
 				19109765203106DC000879AB /* TimelineViewController.swift */,
-				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
-				2EA15CA6203E56CD0005E271 /* ARPickerController.swift */,
-				2EA15CA4203E20060005E271 /* ARDescriptionController.swift */,
 				2E3748D1203E119200BA1CB0 /* Knockout.otf */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
 				ABCC793F20164BCA00006E47 /* MediaGallery.swift */,
-				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
 				1982690520449B1700DF323F /* Fact+CoreDataClass.swift */,
 				1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */,
 				19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */,
@@ -420,6 +426,8 @@
 				0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */,
 				0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */,
 				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
+				2E83946F2070B14400F7E7B9 /* UIButtonExtension.swift */,
+				2E32AC972075F0D900ABF263 /* Images.xcassets */,
 			);
 			path = Psyche;
 			sourceTree = "<group>";
@@ -509,6 +517,7 @@
 				1910975C2031043B000879AB /* Where.txt in Resources */,
 				19EBB3B82060430F000D371C /* art.scnassets in Resources */,
 				191097612031043B000879AB /* Mission Cost.txt in Resources */,
+				2E32AC982075F0D900ABF263 /* Images.xcassets in Resources */,
 				191097542031043B000879AB /* Spacecraft size.txt in Resources */,
 				191097512031043B000879AB /* Multispectral Imager.txt in Resources */,
 				1910975D2031043B000879AB /* Time on Psyche.txt in Resources */,
@@ -529,7 +538,8 @@
 			files = (
 				19DA4F1B204473DB0020F533 /* FactsData.xcdatamodeld in Sources */,
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
-				2EA15CA5203E20060005E271 /* ARDescriptionController.swift in Sources */,
+				2E8394702070B14400F7E7B9 /* UIButtonExtension.swift in Sources */,
+				2E4E83FB207BFFF7000993EA /* ARHelpViewController.swift in Sources */,
 				1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */,
 				1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
@@ -537,6 +547,7 @@
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
 				0DEB0F732000220A00D7BB12 /* ARViewController.swift in Sources */,
 				EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */,
+				2E782985206D89B000E22BF3 /* SharePhotoViewController.swift in Sources */,
 				19F381CB2033CEB40002445A /* FactTableViewCell.swift in Sources */,
 				ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */,
 				2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */,
@@ -682,17 +693,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C83RT3C26Z;
+				DEVELOPMENT_TEAM = 7ZF9F5WLVV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Psyche;
+				PRODUCT_BUNDLE_IDENTIFIER = Psyche;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -704,17 +719,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C83RT3C26Z;
+				DEVELOPMENT_TEAM = 7ZF9F5WLVV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Psyche;
+				PRODUCT_BUNDLE_IDENTIFIER = Psyche;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
