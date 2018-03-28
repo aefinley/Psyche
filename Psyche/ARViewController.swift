@@ -64,6 +64,21 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
+    
+    @IBAction func takePhoto(_ sender: Any) {
+        
+        sceneView.snapshot();
+        
+        let alertController = UIAlertController(title: "Psyche", message:
+            "Photo Successfully Added to Library!", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        
+        self.present(alertController, animated: true, completion: nil)
+       
+    }
+    
+    
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         

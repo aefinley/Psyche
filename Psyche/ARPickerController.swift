@@ -20,7 +20,18 @@ class ARPickerController: UIViewController {
         else if(segue.identifier == "viewSatellite"){
             destination.sentValue = 1
         }
+        
+    }
+    
+    
+    
+        override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+                    }
 
 }
-}
+    
+
 
