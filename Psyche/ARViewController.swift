@@ -11,7 +11,9 @@ import SceneKit
 import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
-    var sentValue: Int?
+    
+    var sentValue = 0
+    var myImage: UIImage!
     //0 = asteroid
     //1= satellite
    //sceneView
@@ -47,7 +49,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
        
     }
        
-
     }
     
     
@@ -65,17 +66,39 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     }
     
     
+
     @IBAction func takePhoto(_ sender: Any) {
+    
+    
         
-        sceneView.snapshot();
+        myImage = sceneView.snapshot();
+     
+      
         
-        let alertController = UIAlertController(title: "Psyche", message:
-            "Photo Successfully Added to Library!", preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc =  storyBoard.instantiateViewController(withIdentifier: "SharePhoto") as! SharePhotoViewController
+      
+
+        vc.sentimage = myImage
         
-        self.present(alertController, animated: true, completion: nil)
-       
+        self.present(vc, animated: true, completion: nil)
     }
+    
+        
+    
+    
+  /*
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "goToShare"{
+            let destination: SharePhotoViewController = segue.destination as! SharePhotoViewController
+                destination.sentImage = self.myImage
+            }
+        
+    
+    }
+      */
+    
     
     
     

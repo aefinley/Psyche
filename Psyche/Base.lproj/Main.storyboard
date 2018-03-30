@@ -603,25 +603,27 @@
             <objects>
                 <viewController title="Augmented Reality" id="OtQ-a7-goA" userLabel="AR" customClass="ARViewController" customModule="Psyche" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="Wsa-rn-lZi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRH-Vn-WLg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="623" id="Pgu-Dg-SuY"/>
+                                </constraints>
                             </arscnView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gr3-Ct-Amj">
-                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gr3-Ct-Amj">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <barButtonItem title="HELP" id="lJs-0d-iD7">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="fn6-e2-mNt"/>
-                                    <barButtonItem systemItem="camera" id="CjD-aT-4uF">
+                                    <barButtonItem systemItem="camera" id="MDo-fF-S9L">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <action selector="takePhoto:" destination="OtQ-a7-goA" id="iwT-ra-k0h"/>
+                                            <action selector="takePhoto:" destination="OtQ-a7-goA" id="qgB-7S-9gR"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -630,10 +632,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="top" secondItem="bsU-wN-8LW" secondAttribute="top" id="1FL-Ts-Z6X"/>
-                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="trailing" secondItem="bsU-wN-8LW" secondAttribute="trailing" id="FiJ-7Z-WtF"/>
-                            <constraint firstAttribute="bottom" secondItem="VRH-Vn-WLg" secondAttribute="bottom" id="Jl0-hF-lGX"/>
-                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="leading" secondItem="bsU-wN-8LW" secondAttribute="leading" id="LyE-5H-b4I"/>
+                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="trailing" secondItem="gr3-Ct-Amj" secondAttribute="trailing" id="0mv-fo-iDi"/>
+                            <constraint firstAttribute="trailing" secondItem="VRH-Vn-WLg" secondAttribute="trailing" id="4fr-ch-E0K"/>
+                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="bottom" secondItem="gr3-Ct-Amj" secondAttribute="top" id="Rb4-E2-dLS"/>
+                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="leading" secondItem="gr3-Ct-Amj" secondAttribute="leading" id="a3a-9W-guy"/>
+                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="leading" secondItem="Wsa-rn-lZi" secondAttribute="leading" id="jBL-13-pDu"/>
+                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="top" secondItem="Wsa-rn-lZi" secondAttribute="top" id="riV-Cx-nqF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bsU-wN-8LW"/>
                     </view>
@@ -643,7 +647,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ta6-l3-udK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3793" y="89"/>
+            <point key="canvasLocation" x="3064.8000000000002" y="88.605697151424295"/>
+        </scene>
+        <!--Save/Share Photo-->
+        <scene sceneID="MkE-8e-jAY">
+            <objects>
+                <viewController storyboardIdentifier="SharePhoto" title="Save/Share Photo" id="cFA-sw-hG2" customClass="SharePhotoViewController" customModule="Psyche" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4cL-3j-uJY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asteroid" translatesAutoresizingMaskIntoConstraints="NO" id="ZSd-01-r0e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="623" id="Mf7-Q8-iyN"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnA-CB-grZ">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="stop" id="p3N-ME-PyB">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="OtQ-a7-goA" kind="show" id="Rdm-rB-a2A"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="uMZ-YQ-T1A"/>
+                                    <barButtonItem title="SAVE" id="eza-iv-7Qo">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="savePhoto:" destination="cFA-sw-hG2" id="bN9-rE-K4i"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kKI-zv-FG6"/>
+                                    <barButtonItem systemItem="action" id="d4q-aX-hwP">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JnA-CB-grZ" secondAttribute="trailing" id="8QQ-nL-1Tw"/>
+                            <constraint firstItem="ZSd-01-r0e" firstAttribute="leading" secondItem="JnA-CB-grZ" secondAttribute="leading" id="CHB-sB-ebs"/>
+                            <constraint firstItem="JnA-CB-grZ" firstAttribute="bottom" secondItem="jVR-Vh-4xe" secondAttribute="bottom" id="JOK-S6-a0Y"/>
+                            <constraint firstItem="JnA-CB-grZ" firstAttribute="leading" secondItem="4cL-3j-uJY" secondAttribute="leading" id="mhU-AM-Tk6"/>
+                            <constraint firstItem="ZSd-01-r0e" firstAttribute="bottom" secondItem="JnA-CB-grZ" secondAttribute="top" id="qGc-oN-AeM"/>
+                            <constraint firstItem="ZSd-01-r0e" firstAttribute="trailing" secondItem="JnA-CB-grZ" secondAttribute="trailing" id="uhL-W2-rpW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jVR-Vh-4xe"/>
+                    </view>
+                    <connections>
+                        <outlet property="sentImageView" destination="ZSd-01-r0e" id="tA5-6I-g3I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7qs-J8-R5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3902" y="89"/>
         </scene>
         <!--Mission Facts View Controller-->
         <scene sceneID="AcQ-pN-Ykh">
@@ -799,14 +860,14 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nv-HE-40D">
-                                                    <rect key="frame" x="72" y="-1" width="249" height="45"/>
+                                                    <rect key="frame" x="75" y="-1" width="241" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A72-EY-QZj">
-                                                    <rect key="frame" x="1" y="-1" width="66" height="45"/>
+                                                    <rect key="frame" x="-5" y="-1" width="68" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -1019,7 +1080,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="NxC-D4-mf0"/>
         <segue reference="hTr-Bg-ZdR"/>
-        <segue reference="L0A-mA-YJ2"/>
+        <segue reference="Rdm-rB-a2A"/>
         <segue reference="xWC-yM-ptI"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
