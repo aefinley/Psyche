@@ -22,7 +22,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         self.navigationController?.setNavigationBarHidden(false, animated: true)
+         self.navigationController?.setNavigationBarHidden(true, animated: true)
         // Set the view's delegate
         sceneView.delegate = self
         
@@ -54,7 +54,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+       
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
@@ -81,10 +81,11 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
 
         vc.sentimage = myImage
         
-        self.present(vc, animated: true, completion: nil)
+       self.present(vc, animated: true, completion: nil)
     }
     
-        
+    @IBAction func unwindToARViewController(segue: UIStoryboardSegue) {
+    }
     
     
   /*

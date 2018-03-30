@@ -30,8 +30,16 @@ class SharePhotoViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    
-    
+    /*
+    @IBAction func backToAr(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc =  storyBoard.instantiateViewController(withIdentifier: "ARController") as! ARViewController
+        
+        self.present(vc, animated: true, completion: nil)
+       
+    }
+    */
+
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -42,7 +50,7 @@ class SharePhotoViewController: UIViewController {
         
     
         
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         
        
     }

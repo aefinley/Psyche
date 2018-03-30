@@ -120,7 +120,10 @@ class ViewController: UIViewController {
         minuteLabel.text = (String)(format: "%02d", minute)
         
     }
-    
+    /*
+    @IBAction func unwindToHomeViewController(segue: UIStoryboardSegue) {
+    }
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -153,6 +156,8 @@ class ViewController: UIViewController {
             title.frame.origin.y = self.view.frame.height / 6
             title.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
         }
+        
+       
         
         //gesture created so if user clicks on outside view menu will close
         let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))

@@ -9,29 +9,33 @@
 import Foundation
 import UIKit
 class ARPickerController: UIViewController {
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! ARViewController
-        
     
-        if (segue.identifier == "viewAsteroid"){
+   
+  
+        override func viewWillAppear(_ animated: Bool) {
+          
+            
+    self.navigationController?.setNavigationBarHidden(false, animated: true)
+                    }
+   
+
+
+@IBAction func unwindToARPickerController(segue: UIStoryboardSegue) {
+}
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let destination = segue.destination as! ARViewController
+    
+    
+    if (segue.identifier == "viewAsteroid"){
         
-            destination.sentValue = 0
-        }
-        else if(segue.identifier == "viewSatellite"){
-            destination.sentValue = 1
-        }
-        
+        destination.sentValue = 0
+    }
+    else if(segue.identifier == "viewSatellite"){
+        destination.sentValue = 1
     }
     
-    
-    
-        override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-            
-            self.navigationController?.setNavigationBarHidden(false, animated: true)
-                    }
-
 }
-    
 
+    
+}
 
