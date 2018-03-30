@@ -608,9 +608,6 @@
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRH-Vn-WLg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="623" id="Pgu-Dg-SuY"/>
-                                </constraints>
                             </arscnView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gr3-Ct-Amj">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
@@ -632,12 +629,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="trailing" secondItem="gr3-Ct-Amj" secondAttribute="trailing" id="0mv-fo-iDi"/>
-                            <constraint firstAttribute="trailing" secondItem="VRH-Vn-WLg" secondAttribute="trailing" id="4fr-ch-E0K"/>
-                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="bottom" secondItem="gr3-Ct-Amj" secondAttribute="top" id="Rb4-E2-dLS"/>
-                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="leading" secondItem="gr3-Ct-Amj" secondAttribute="leading" id="a3a-9W-guy"/>
-                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="leading" secondItem="Wsa-rn-lZi" secondAttribute="leading" id="jBL-13-pDu"/>
-                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="top" secondItem="Wsa-rn-lZi" secondAttribute="top" id="riV-Cx-nqF"/>
+                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="trailing" secondItem="gr3-Ct-Amj" secondAttribute="trailing" id="Iu9-nB-QXH"/>
+                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="leading" secondItem="Wsa-rn-lZi" secondAttribute="leading" id="OH9-dv-MR5"/>
+                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="top" secondItem="Wsa-rn-lZi" secondAttribute="top" id="PFz-5L-FgP"/>
+                            <constraint firstItem="gr3-Ct-Amj" firstAttribute="bottom" secondItem="bsU-wN-8LW" secondAttribute="bottom" id="UAt-5w-t3n"/>
+                            <constraint firstAttribute="trailing" secondItem="VRH-Vn-WLg" secondAttribute="trailing" id="UKW-RJ-tF9"/>
+                            <constraint firstItem="gr3-Ct-Amj" firstAttribute="top" secondItem="VRH-Vn-WLg" secondAttribute="bottom" id="VhV-Oc-XKx"/>
+                            <constraint firstItem="VRH-Vn-WLg" firstAttribute="leading" secondItem="gr3-Ct-Amj" secondAttribute="leading" id="iGY-4i-xnp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bsU-wN-8LW"/>
                     </view>
@@ -647,7 +645,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ta6-l3-udK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3064.8000000000002" y="88.605697151424295"/>
+            <point key="canvasLocation" x="2924" y="89"/>
         </scene>
         <!--Save/Share Photo-->
         <scene sceneID="MkE-8e-jAY">
@@ -659,12 +657,12 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asteroid" translatesAutoresizingMaskIntoConstraints="NO" id="ZSd-01-r0e">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="623" id="Mf7-Q8-iyN"/>
-                                </constraints>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnA-CB-grZ">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5IQ-a9-LqT"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem systemItem="stop" id="p3N-ME-PyB">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -689,12 +687,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="JnA-CB-grZ" secondAttribute="trailing" id="8QQ-nL-1Tw"/>
-                            <constraint firstItem="ZSd-01-r0e" firstAttribute="leading" secondItem="JnA-CB-grZ" secondAttribute="leading" id="CHB-sB-ebs"/>
-                            <constraint firstItem="JnA-CB-grZ" firstAttribute="bottom" secondItem="jVR-Vh-4xe" secondAttribute="bottom" id="JOK-S6-a0Y"/>
-                            <constraint firstItem="JnA-CB-grZ" firstAttribute="leading" secondItem="4cL-3j-uJY" secondAttribute="leading" id="mhU-AM-Tk6"/>
-                            <constraint firstItem="ZSd-01-r0e" firstAttribute="bottom" secondItem="JnA-CB-grZ" secondAttribute="top" id="qGc-oN-AeM"/>
-                            <constraint firstItem="ZSd-01-r0e" firstAttribute="trailing" secondItem="JnA-CB-grZ" secondAttribute="trailing" id="uhL-W2-rpW"/>
+                            <constraint firstItem="JnA-CB-grZ" firstAttribute="top" secondItem="ZSd-01-r0e" secondAttribute="bottom" id="Jsc-3t-IAu"/>
+                            <constraint firstItem="ZSd-01-r0e" firstAttribute="trailing" secondItem="JnA-CB-grZ" secondAttribute="trailing" id="VQS-IU-Sn5"/>
+                            <constraint firstAttribute="trailing" secondItem="ZSd-01-r0e" secondAttribute="trailing" id="WWl-8p-ZfT"/>
+                            <constraint firstItem="JnA-CB-grZ" firstAttribute="bottom" secondItem="jVR-Vh-4xe" secondAttribute="bottom" id="aaK-oZ-H9P"/>
+                            <constraint firstItem="ZSd-01-r0e" firstAttribute="top" secondItem="4cL-3j-uJY" secondAttribute="top" id="bpA-ni-gGo"/>
+                            <constraint firstItem="ZSd-01-r0e" firstAttribute="leading" secondItem="JnA-CB-grZ" secondAttribute="leading" id="tYZ-F4-ka2"/>
+                            <constraint firstItem="ZSd-01-r0e" firstAttribute="leading" secondItem="4cL-3j-uJY" secondAttribute="leading" id="wly-Hb-Ucw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jVR-Vh-4xe"/>
                     </view>
@@ -704,7 +703,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qs-J8-R5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3902" y="89"/>
+            <point key="canvasLocation" x="3801" y="89"/>
         </scene>
         <!--Mission Facts View Controller-->
         <scene sceneID="AcQ-pN-Ykh">
