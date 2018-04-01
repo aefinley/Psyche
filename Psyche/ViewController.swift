@@ -82,8 +82,8 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func openMenuAction(_ sender: Any) {
-    
+    @IBAction func openMenuAction(_ sender: UIButton) {
+        sender.shake()
         if(menuShowing){
             menuWidth.constant = -300
         }
@@ -143,7 +143,7 @@ class ViewController: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        menuButton.pulsateMenu()
         //close menu if user clicks on main view
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
         

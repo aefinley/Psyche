@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 class ARPickerController: UIViewController {
     
+    @IBOutlet weak var satelliteBtn: UIButton!
     
+    @IBOutlet weak var asteroidBtn: UIButton!
     
     @IBOutlet weak var menu: UIImageView!
     
@@ -46,7 +48,8 @@ class ARPickerController: UIViewController {
         
     }
     
-    @IBAction func openMenuAction(_ sender: Any) {
+    @IBAction func openMenuAction(_ sender: UIButton) {
+        sender.shake()
         if(menuShowing){
             menuWidth.constant = -300
         }
@@ -61,6 +64,7 @@ class ARPickerController: UIViewController {
     }
     
     @IBAction func closeMenu(_ sender: Any) {
+        
         if(menuShowing){
             menuWidth.constant = -300
             UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
@@ -69,19 +73,62 @@ class ARPickerController: UIViewController {
         }
     }
     
+    @IBAction func asteroidBtnClick(_ sender: UIButton) {
+        
+        sender.flash()
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ARController") as! ARViewController
+        
+        nextViewController.sentValue = 0 //send value of 0 to view asteroid
+        
+        self.present(nextViewController, animated:true, completion:nil)
+        
+        
+    }
+    
+    
+    @IBAction func satelliteBtnClick(_ sender: UIButton) {
+        
+        sender.flash()
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ARController") as! ARViewController
+        
+        nextViewController.sentValue = 1 //send value of 1 to view satellite
+        
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    
+    
+    
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! ARViewController
         
         
         if (segue.identifier == "viewAsteroid"){
-            
+           
             destination.sentValue = 0
+           
         }
         else if(segue.identifier == "viewSatellite"){
             destination.sentValue = 1
-        }
+       
         
     }
+ 
+ 
+    }
+    
+   
+    */
+  
+    
+
     
     
     @IBAction func goToTimeline(_ sender: Any) {
@@ -118,10 +165,23 @@ class ARPickerController: UIViewController {
         
     }
     
+   
+        
+   
+   
+   
+    
+    
+
+    
+    
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        asteroidBtn.layer.cornerRadius = 8
+        satelliteBtn.layer.cornerRadius = 8
         //close menu if user clicks on main view
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
         

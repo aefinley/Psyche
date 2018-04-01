@@ -59,7 +59,8 @@ class TimelineBackgroundControllerViewController: UIViewController {
 
     
     
-    @IBAction func openMenu(_ sender: Any) {
+    @IBAction func openMenu(_ sender: UIButton) {
+        sender.shake()
         if(menuShowing){
             menuWidth.constant = -300
         }
@@ -74,6 +75,7 @@ class TimelineBackgroundControllerViewController: UIViewController {
     }
     
     @IBAction func closeMenu(_ sender: Any) {
+        
         if(menuShowing){
             menuWidth.constant = -300
             UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
