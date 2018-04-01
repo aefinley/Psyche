@@ -52,7 +52,7 @@ class TimelineBackgroundControllerViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
         if(menuShowing){
-            menuWidth.constant = -250
+            menuWidth.constant = -300
         }
        
     }
@@ -61,10 +61,10 @@ class TimelineBackgroundControllerViewController: UIViewController {
     
     @IBAction func openMenu(_ sender: Any) {
         if(menuShowing){
-            menuWidth.constant = -250
+            menuWidth.constant = -300
         }
         else{
-            menuWidth.constant = 0
+            menuWidth.constant = -5
             
             UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
             view.layoutIfNeeded()
@@ -75,7 +75,7 @@ class TimelineBackgroundControllerViewController: UIViewController {
     
     @IBAction func closeMenu(_ sender: Any) {
         if(menuShowing){
-            menuWidth.constant = -250
+            menuWidth.constant = -300
             UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
             view.layoutIfNeeded()
             menuShowing = false
@@ -112,7 +112,7 @@ class TimelineBackgroundControllerViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
         
         
-        menuWidth.constant = -250 //menu should be hidden when view loads, width is 300 so needs to be -300
+        menuWidth.constant = -300 //menu should be hidden when view loads, width is 300 so needs to be -300
         
         menu.layer.shadowOpacity = 1
         menu.layer.shadowRadius = 5
@@ -139,6 +139,17 @@ class TimelineBackgroundControllerViewController: UIViewController {
         }
 
     }
+    
+    
+    
+    @IBAction func goToAR(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "3DPicker") as! ARPickerController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    
 
     @IBAction func unwindToTimelineBackgroundViewController(segue: UIStoryboardSegue) {
     }
@@ -147,6 +158,7 @@ class TimelineBackgroundControllerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+ 
     
 
     

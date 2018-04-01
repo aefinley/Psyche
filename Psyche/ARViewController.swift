@@ -85,20 +85,20 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     }
     
     @IBAction func unwindToARViewController(segue: UIStoryboardSegue) {
+    
+    
     }
-    
-    
-  /*
-        
+  
+      /*
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "goToShare"{
             let destination: SharePhotoViewController = segue.destination as! SharePhotoViewController
                 destination.sentImage = self.myImage
             }
-        
+        */
     
-    }
-      */
+    
+    
     
     
     

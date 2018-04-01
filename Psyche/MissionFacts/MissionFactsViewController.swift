@@ -11,6 +11,68 @@ import UIKit
 import CoreData
 
 class MissionFactsViewController: UIViewController {
+    
+    
+    @IBOutlet weak var menuButton: UIButton!
+    
+    @IBOutlet weak var menu: UIImageView!
+    @IBOutlet weak var menuWidth: NSLayoutConstraint!
+    
+    var menuShowing = false
+    
+    override func viewWillAppear(_ animated: Bool){
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        if(menuShowing){
+            menuWidth.constant = -300
+        }
+    }
+    
+    
+    @IBAction func openNasa(_ sender: Any) {
+        if let url = URL(string: "http://nasa.gov/psyche"){
+            
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
+    }
+    }
+    
+        
+    @IBAction func openMenuAction(_ sender: Any) {
+        if(menuShowing){
+            menuWidth.constant = -300
+        }
+        else{
+            menuWidth.constant = -5
+            
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+        }
+        
+        menuShowing = !menuShowing
+    }
+    
+    @IBAction func closeMenu(_ sender: Any) {
+        
+        if(menuShowing){
+            menuWidth.constant = -300
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+            menuShowing = false
+    }
+    
+    }
+    
+    
+    
+    
+    
+    
+    
     @IBOutlet weak var engineeringFactsButton: UIButton!
     @IBOutlet weak var journeyFactsButton: UIButton!
     @IBOutlet weak var asteroidFactsButton: UIButton!
@@ -443,9 +505,40 @@ class MissionFactsViewController: UIViewController {
                 }
             }
         }
+        menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menuImageFlipped")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        
+        self.view.bringSubview(toFront: menu)
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(MissionFactsViewController.closeMenu))
+        
+        self.view.addGestureRecognizer(gesture)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     
-    }
+   
+ 
 
+
+    menuWidth.constant = -300 //menu should be hidden when view loads, width is 300 so needs to be -300
+    
+    menu.layer.shadowOpacity = 1
+    menu.layer.shadowRadius = 5
+    menu.image = #imageLiteral(resourceName: "menuImage")
+    //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+    
+    
+    self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+    self.view.bringSubview(toFront: menu)
+
+    }
+    
     override func didReceiveMemoryWarning() {
        //TODO
         
