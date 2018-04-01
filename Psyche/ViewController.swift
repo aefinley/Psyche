@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var menu: UIImageView!
 
+    
     @IBOutlet weak var menuWidth: NSLayoutConstraint!
+    
     
     @IBOutlet weak var nasaButton: UIButton!
     
@@ -62,8 +64,24 @@ class ViewController: UIViewController {
                 print("open url: \(success)")
             }) //open url when link clicked
     }
+        
+        
 
     }
+    
+    @IBAction func openASU(_ sender: Any) {
+        if let url = URL(string: "http://psyche.asu.edu"){
+            
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
+        
+    }
+    }
+    
+    
+    
     @IBAction func openMenuAction(_ sender: Any) {
     
         if(menuShowing){

@@ -24,17 +24,26 @@ class ARPickerController: UIViewController {
     
     
     @IBAction func openNasa(_ sender: Any) {
-        if(menuShowing){
-            menuWidth.constant = -300
-        }
-        else{
-            menuWidth.constant = -5
+    
+            if let url = URL(string: "http://nasa.gov/psyche"){
+                
+                
+                UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                    print("open url: \(success)")
+                }) //open url when link clicked
+            }
+    }
+    
+    
+    @IBAction func openASU(_ sender: Any) {
+        if let url = URL(string: "http://asu.edu/psyche"){
             
-            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
-            view.layoutIfNeeded()
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
         }
         
-        menuShowing = !menuShowing
     }
     
     @IBAction func openMenuAction(_ sender: Any) {

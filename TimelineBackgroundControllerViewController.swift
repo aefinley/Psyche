@@ -93,6 +93,15 @@ class TimelineBackgroundControllerViewController: UIViewController {
         }
     }
     
+    @IBAction func openASU(_ sender: Any) {
+        if let url = URL(string: "http://psyche.asu.edu"){
+            
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
+        }
+    }
     
     override func viewDidLoad() {
         
@@ -147,6 +156,24 @@ class TimelineBackgroundControllerViewController: UIViewController {
         
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "3DPicker") as! ARPickerController
         self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    @IBAction func goToGallery(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "mediaGallery") as! MediaGallery
+        self.present(nextViewController, animated:true, completion:nil)
+        
+    }
+
+    @IBAction func goToExplore(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Explore") as! MissionFactsViewController
+        self.present(nextViewController, animated:true, completion:nil)
+        
     }
     
     
