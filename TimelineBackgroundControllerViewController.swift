@@ -2,7 +2,7 @@
 //  TimelineBackgroundControllerViewController.swift
 //  Psyche
 //
-//  Created by TempGuest on 2/12/18.
+//  Created by Jennifer on 2/12/18.
 //  Copyright © 2018 Apple Inc. All rights reserved.
 //
 
@@ -49,6 +49,7 @@ class TimelineBackgroundControllerViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationItem.backBarButtonItem?.title = "TO TIMELINE"
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
         if(menuShowing){
@@ -185,6 +186,15 @@ class TimelineBackgroundControllerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func transition(_ sender: Any) {
+        performSegue(withIdentifier: "segueToTable", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dest = segue.destination as! TimelineTableController
+        let send = sender as! UIButton
+        dest.button = send.tag
+    }
  
     
 
