@@ -11,7 +11,9 @@ import SceneKit
 import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
-    var sentValue: Int?
+    
+    var sentValue = 0
+    var myImage: UIImage!
     //0 = asteroid
     //1= satellite
    //sceneView
@@ -20,7 +22,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         self.navigationController?.setNavigationBarHidden(false, animated: true)
+         self.navigationController?.setNavigationBarHidden(true, animated: true)
         // Set the view's delegate
         sceneView.delegate = self
         
@@ -47,13 +49,12 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
        
     }
        
-
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+       
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
@@ -63,6 +64,44 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         
     }
+    
+    
+
+    @IBAction func takePhoto(_ sender: Any) {
+    
+    
+        
+        myImage = sceneView.snapshot();
+     
+      
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc =  storyBoard.instantiateViewController(withIdentifier: "SharePhoto") as! SharePhotoViewController
+      
+
+        vc.sentimage = myImage
+        
+       self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func unwindToARViewController(segue: UIStoryboardSegue) {
+    
+    
+    }
+  
+      /*
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "goToShare"{
+            let destination: SharePhotoViewController = segue.destination as! SharePhotoViewController
+                destination.sentImage = self.myImage
+            }
+        */
+    
+    
+    
+    
+    
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

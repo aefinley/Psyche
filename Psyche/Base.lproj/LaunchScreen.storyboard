@@ -9,8 +9,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Knockout.otf">
-            <string>Knockout-HTF48-Featherweight</string>
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -25,39 +25,34 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="o08-R3-nKD">
                                 <rect key="frame" x="40" y="101" width="304" height="289"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="289" id="Bci-v7-KfV"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="289" id="eJ2-jb-CQv"/>
-                                    <constraint firstAttribute="width" constant="304" id="kta-r6-yX9"/>
-                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-LO-g4n">
-                                <rect key="frame" x="154" y="435" width="81" height="70"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crs-1p-aWh">
+                                <rect key="frame" x="114" y="442" width="157" height="26"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="2zg-u9-sRd"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="Af6-Ny-N5E"/>
-                                    <constraint firstAttribute="width" constant="94" id="OTI-HL-fZc"/>
-                                    <constraint firstAttribute="height" constant="83" id="Pko-pq-9Q7"/>
+                                    <constraint firstAttribute="height" constant="21" id="zRX-fL-Ykc"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcq-Zd-n8d">
-                                <rect key="frame" x="154" y="526" width="81" height="18"/>
-                                <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-LO-g4n">
+                                <rect key="frame" x="148" y="511" width="79" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Bdi-rG-5UT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3zP-LO-g4n" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4Ds-pD-7l6"/>
-                            <constraint firstItem="o08-R3-nKD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="Ay0-R0-Gdg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o08-R3-nKD" secondAttribute="trailing" constant="31" id="Chb-rT-j5E"/>
-                            <constraint firstItem="o08-R3-nKD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="J7d-lX-rzz"/>
-                            <constraint firstItem="rcq-Zd-n8d" firstAttribute="top" secondItem="3zP-LO-g4n" secondAttribute="bottom" constant="24" id="KEo-lQ-Ofn"/>
-                            <constraint firstItem="3zP-LO-g4n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="Pmg-fh-oQ8"/>
-                            <constraint firstItem="3zP-LO-g4n" firstAttribute="top" secondItem="o08-R3-nKD" secondAttribute="bottom" constant="32" id="kQD-ew-lH9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3zP-LO-g4n" secondAttribute="bottom" constant="162" id="ogv-jN-k0k"/>
-                            <constraint firstItem="rcq-Zd-n8d" firstAttribute="centerX" secondItem="o08-R3-nKD" secondAttribute="centerX" id="rdV-I8-mTF"/>
+                            <constraint firstItem="o08-R3-nKD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="5cz-0w-dXe"/>
+                            <constraint firstItem="Crs-1p-aWh" firstAttribute="top" secondItem="o08-R3-nKD" secondAttribute="bottom" constant="57" id="7JN-BL-imO"/>
+                            <constraint firstItem="Crs-1p-aWh" firstAttribute="centerX" secondItem="3zP-LO-g4n" secondAttribute="centerX" id="7a0-5C-0I9"/>
+                            <constraint firstItem="o08-R3-nKD" firstAttribute="centerX" secondItem="Crs-1p-aWh" secondAttribute="centerX" id="8dZ-sM-yEi"/>
+                            <constraint firstItem="o08-R3-nKD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="QqR-cC-tAh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3zP-LO-g4n" secondAttribute="bottom" constant="54" id="WCX-BK-xeE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o08-R3-nKD" secondAttribute="trailing" constant="31" id="ZMS-M3-M4K"/>
+                            <constraint firstItem="3zP-LO-g4n" firstAttribute="top" secondItem="Crs-1p-aWh" secondAttribute="bottom" constant="75" id="ZTR-vP-6DZ"/>
+                            <constraint firstItem="3zP-LO-g4n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="fj9-3S-0gt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

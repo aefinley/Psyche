@@ -46,6 +46,11 @@ class MediaGallery: UIViewController, UICollectionViewDelegate, UICollectionView
         
         return cell
     }
+    @IBAction func unwindToMediaGallery(segue: UIStoryboardSegue) {
+        
+    }
+    
+    
     
     
 }
