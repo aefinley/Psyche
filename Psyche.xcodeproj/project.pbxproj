@@ -55,6 +55,9 @@
 		2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA15CA6203E56CD0005E271 /* ARPickerController.swift */; };
 		ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC793F20164BCA00006E47 /* MediaGallery.swift */; };
 		ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC79412016626400006E47 /* imageCollectionViewCell.swift */; };
+		EE4A118E207BF1A3006FC5C5 /* TimelineTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */; };
+		EE4A1190207BF250006FC5C5 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A118F207BF250006FC5C5 /* TimelineCell.swift */; };
+		EE4A1192207BF685006FC5C5 /* TimelineCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */; };
 		EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA23B12028DAE60038F276 /* TimelineBackground.swift */; };
 		EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -124,6 +127,9 @@
 		2EA15CA6203E56CD0005E271 /* ARPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPickerController.swift; sourceTree = "<group>"; };
 		ABCC793F20164BCA00006E47 /* MediaGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGallery.swift; sourceTree = "<group>"; };
 		ABCC79412016626400006E47 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = imageCollectionViewCell.swift; path = views/imageCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableController.swift; sourceTree = "<group>"; };
+		EE4A118F207BF250006FC5C5 /* TimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
+		EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimelineCellView.swift; path = TimelineTable/TimelineCellView.swift; sourceTree = "<group>"; };
 		EEDA23B12028DAE60038F276 /* TimelineBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackground.swift; sourceTree = "<group>"; };
 		EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackgroundControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -401,6 +407,7 @@
 				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
 				2EA15CA6203E56CD0005E271 /* ARPickerController.swift */,
 				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
+				EE4A118C207BF16D006FC5C5 /* TimelineTable */,
 				19109765203106DC000879AB /* TimelineViewController.swift */,
 				2E3748D1203E119200BA1CB0 /* Knockout.otf */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
@@ -410,6 +417,7 @@
 				19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */,
 				19ADDA7B2033D3C2008CB288 /* MissionFacts */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
+				EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */,
 				2E556F141F991BD40030FA86 /* Assets.xcassets */,
 				2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */,
 				2E556F191F991BD40030FA86 /* Info.plist */,
@@ -421,6 +429,15 @@
 				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
 			);
 			path = Psyche;
+			sourceTree = "<group>";
+		};
+		EE4A118C207BF16D006FC5C5 /* TimelineTable */ = {
+			isa = PBXGroup;
+			children = (
+				EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */,
+				EE4A118F207BF250006FC5C5 /* TimelineCell.swift */,
+			);
+			path = TimelineTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,6 +544,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DA4F1B204473DB0020F533 /* FactsData.xcdatamodeld in Sources */,
+				EE4A1192207BF685006FC5C5 /* TimelineCellView.swift in Sources */,
+				EE4A118E207BF1A3006FC5C5 /* TimelineTableController.swift in Sources */,
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
 				1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */,
 				1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */,
@@ -537,6 +556,7 @@
 				EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */,
 				2E782985206D89B000E22BF3 /* SharePhotoViewController.swift in Sources */,
 				19F381CB2033CEB40002445A /* FactTableViewCell.swift in Sources */,
+				EE4A1190207BF250006FC5C5 /* TimelineCell.swift in Sources */,
 				ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */,
 				2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */,
 				EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */,
