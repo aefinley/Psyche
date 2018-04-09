@@ -45,6 +45,7 @@
 		19DA4F1B204473DB0020F533 /* FactsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */; };
 		19EBB3B82060430F000D371C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EBB3B72060430F000D371C /* art.scnassets */; };
 		19F381CB2033CEB40002445A /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F381CA2033CEB40002445A /* FactTableViewCell.swift */; };
+		2E32AC982075F0D900ABF263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E32AC972075F0D900ABF263 /* Images.xcassets */; };
 		2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3748D1203E119200BA1CB0 /* Knockout.otf */; };
 		2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0D1F991BD40030FA86 /* AppDelegate.swift */; };
 		2E556F101F991BD40030FA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0F1F991BD40030FA86 /* ViewController.swift */; };
@@ -113,6 +114,7 @@
 		19EBB3B72060430F000D371C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		19F381CA2033CEB40002445A /* FactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
 		2E14FFDF1FABD0A100B74330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2E32AC972075F0D900ABF263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E3748D1203E119200BA1CB0 /* Knockout.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Knockout.otf; sourceTree = "<group>"; };
 		2E556F0A1F991BD40030FA86 /* Psyche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psyche.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E556F0D1F991BD40030FA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -422,6 +424,7 @@
 				0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */,
 				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
 				2E83946F2070B14400F7E7B9 /* UIButtonExtension.swift */,
+				2E32AC972075F0D900ABF263 /* Images.xcassets */,
 			);
 			path = Psyche;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				1910975C2031043B000879AB /* Where.txt in Resources */,
 				19EBB3B82060430F000D371C /* art.scnassets in Resources */,
 				191097612031043B000879AB /* Mission Cost.txt in Resources */,
+				2E32AC982075F0D900ABF263 /* Images.xcassets in Resources */,
 				191097542031043B000879AB /* Spacecraft size.txt in Resources */,
 				191097512031043B000879AB /* Multispectral Imager.txt in Resources */,
 				1910975D2031043B000879AB /* Time on Psyche.txt in Resources */,
@@ -685,6 +689,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -710,6 +715,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

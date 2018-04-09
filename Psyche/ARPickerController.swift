@@ -38,7 +38,7 @@ class ARPickerController: UIViewController {
     
     
     @IBAction func openASU(_ sender: Any) {
-        if let url = URL(string: "http://asu.edu/psyche"){
+        if let url = URL(string: "http://psyche.asu.edu"){
             
             
             UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
