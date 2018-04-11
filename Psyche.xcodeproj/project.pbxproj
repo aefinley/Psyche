@@ -53,6 +53,8 @@
 		2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */; };
 		2E782985206D89B000E22BF3 /* SharePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */; };
 		2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA15CA6203E56CD0005E271 /* ARPickerController.swift */; };
+		AB548C45207805CD0040B490 /* MediaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB548C44207805CD0040B490 /* MediaDetailViewController.swift */; };
+		AB9156E82054DECF00B0F407 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9156E72054DECF00B0F407 /* myCell.swift */; };
 		ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC793F20164BCA00006E47 /* MediaGallery.swift */; };
 		ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC79412016626400006E47 /* imageCollectionViewCell.swift */; };
 		EE4A118E207BF1A3006FC5C5 /* TimelineTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */; };
@@ -125,6 +127,8 @@
 		2E556F191F991BD40030FA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePhotoViewController.swift; sourceTree = "<group>"; };
 		2EA15CA6203E56CD0005E271 /* ARPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPickerController.swift; sourceTree = "<group>"; };
+		AB548C44207805CD0040B490 /* MediaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailViewController.swift; sourceTree = "<group>"; };
+		AB9156E72054DECF00B0F407 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
 		ABCC793F20164BCA00006E47 /* MediaGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGallery.swift; sourceTree = "<group>"; };
 		ABCC79412016626400006E47 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = imageCollectionViewCell.swift; path = views/imageCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableController.swift; sourceTree = "<group>"; };
@@ -412,6 +416,8 @@
 				2E3748D1203E119200BA1CB0 /* Knockout.otf */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
 				ABCC793F20164BCA00006E47 /* MediaGallery.swift */,
+				AB548C44207805CD0040B490 /* MediaDetailViewController.swift */,
+				AB9156E72054DECF00B0F407 /* myCell.swift */,
 				1982690520449B1700DF323F /* Fact+CoreDataClass.swift */,
 				1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */,
 				19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */,
@@ -550,7 +556,9 @@
 				1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */,
 				1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
+				AB548C45207805CD0040B490 /* MediaDetailViewController.swift in Sources */,
 				ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */,
+				AB9156E82054DECF00B0F407 /* myCell.swift in Sources */,
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
 				0DEB0F732000220A00D7BB12 /* ARViewController.swift in Sources */,
 				EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */,
