@@ -140,9 +140,21 @@ class ViewController: UIViewController {
         countdownTitle3.text = (String)(format: "%02d", hour)
         countdownTitle4.text = (String)(format: "%02d", minute)
         
-        for count in countdownLabels {
-            count.sizeToFit()
+        let fontSizeNumbers = 0.18666666666 * self.view.frame.width
+        
+        for i in 0..<countdownLabels.count {
+            var boxWidth:CGFloat = 10 * fontSizeNumbers / 12
             
+            if i == 1 {
+                boxWidth *= 1.5333
+            }
+            
+            let boxHeight:CGFloat = (6 * fontSizeNumbers / 7)
+            let size = CGSize(width: boxWidth, height: boxHeight)
+            
+            countdownLabels[i].frame.size = size
+            
+            countdownTitles[i].center.x = countdownLabels[i].center.x
         }
         
     }
@@ -173,19 +185,24 @@ class ViewController: UIViewController {
 
         // change the sizes/fonts of the the titles and the clock
         let fontSizeNumbers = 0.18666666666 * self.view.frame.width
-        xBounds = [ -1.25, -0.4167, 0.4167, 1.25]
+        let startNum:CGFloat = -1.6
+        let numChars:CGFloat = 7
+        let space = abs(startNum / (numChars * 1.5))
+        
+        xBounds = [ startNum, 6*space + startNum, 15*space + startNum, 21*space + startNum]
         
         for i in 0..<countdownLabels.count {
             countdownLabels[i].font = UIFont(name: "Knockout", size: fontSizeNumbers)
-            countdownLabels[i].center.y = self.view.frame.size.height / 3
-            countdownLabels[i].sizeToFit()
-            countdownLabels[i].center.x = self.view.center.x + xBounds[i] * fontSizeNumbers        }
+            countdownLabels[i].frame.origin.y = 49 * self.view.frame.size.height / 200
+            
+            countdownLabels[i].frame.origin.x = (xBounds[i] + 2.3) * fontSizeNumbers
+        }
         
         let fontSizeTitles = 0.02213541666 * self.view.frame.width
         
         for i in 0..<countdownTitles.count {
             let title = countdownTitles[i]
-            title.frame.origin.y = countdownLabels[i].center.y - (countdownLabels[i].frame.height / 2) - fontSizeTitles
+            title.frame.origin.y = countdownLabels[i].center.y - (countdownLabels[i].frame.height / 2) - 2 * fontSizeTitles
             title.font = UIFont(name: "Helvetica", size: fontSizeTitles)
             title.sizeToFit()
             title.center.x = countdownLabels[i].center.x

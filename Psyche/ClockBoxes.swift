@@ -16,7 +16,12 @@ class ClockBoxes: UIView {
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         
-        xBounds = [ -1.25, -0.4167, 0.4167, 1.25]
+        let startNum:CGFloat = -1.6
+        let numChars:CGFloat = 7
+        let space = abs(startNum / (numChars * 1.5))
+        
+        xBounds = [ startNum, 6*space + startNum, 15*space + startNum, 21*space + startNum]
+        
         let fontSizeNumbers = 0.18666666666 * self.frame.width
         let purple = UIColor(red: 90/255, green: 37/255, blue: 83/255, alpha: 1.0)
         
@@ -24,8 +29,13 @@ class ClockBoxes: UIView {
         
         for i in 0..<xBounds.count {
 
-            let boxWidth:CGFloat = 9 * fontSizeNumbers / 12
-            let boxHeight:CGFloat = ( 4 * fontSizeNumbers / 5 )
+            var boxWidth:CGFloat = 10 * fontSizeNumbers / 12
+            
+            if i == 1 {
+                boxWidth *= 1.5333
+            }
+            
+            let boxHeight:CGFloat = (7 * fontSizeNumbers / 8)
             let boxHeightHalf = boxHeight / 2
             
             let startX:CGFloat = ( (xBounds[i] + 2.3) * fontSizeNumbers )
