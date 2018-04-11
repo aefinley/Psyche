@@ -29,6 +29,9 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var countdownTitle: UILabel!
+    @IBOutlet weak var countdownTitle2: UILabel!
+    @IBOutlet weak var countdownTitle3: UILabel!
+    @IBOutlet weak var countdownTitle4: UILabel!
     
     var menuShowing = false //boolean to see if menu is showing currently or not
     var countdownTimer:Timer!
@@ -122,7 +125,7 @@ class ViewController: UIViewController {
     // must expose this function to objective c
     @objc func countdownChanged() {
         
-        // one minute has passed, modify the count down time and update the UI
+        // modify the count down time and update the UI
         
         let launch = Date(timeIntervalSinceReferenceDate: nextEvent)
         let currentTime = Date()
@@ -132,9 +135,16 @@ class ViewController: UIViewController {
         let hour:Int = timeComponents.hour!
         let minute:Int = timeComponents.minute!
         
-        countdownTitle.text = (String)(format: "%02d", year) + "\t\t" + (String)(format: "%03d", day) + "\t\t" + (String)(format: "%02d", hour) + "\t\t" + (String)(format: "%02d", minute)
+        countdownTitle.text = (String)(format: "%02d", year)
+        countdownTitle2.text = (String)(format: "%03d", day)
+        countdownTitle3.text = (String)(format: "%02d", hour)
+        countdownTitle4.text = (String)(format: "%02d", minute)
         
-        countdownTitle.sizeToFit()
+        for count in countdownLabels {
+            count.sizeToFit()
+            
+        }
+        
     }
  
     override func viewDidLoad() {
@@ -159,25 +169,28 @@ class ViewController: UIViewController {
         
         // move the countdown labels to their correct positions
         countdownTitles = [yearTitle, dayTitle, hourTitle, minuteTitle]
-        
-        
+        countdownLabels = [countdownTitle, countdownTitle2, countdownTitle3, countdownTitle4]
+
         // change the sizes/fonts of the the titles and the clock
         let fontSizeNumbers = 0.18666666666 * self.view.frame.width
-        countdownTitle.font = UIFont(name: "Knockout", size: fontSizeNumbers)
-        countdownTitle.center.y = self.view.frame.size.height / 3
-        countdownTitle.sizeToFit()
-        countdownTitle.center.x = self.view.center.x
+        xBounds = [ -1.25, -0.4167, 0.4167, 1.25]
         
-        //xBounds = [CGFloat(2)/10, CGFloat(4)/10, CGFloat(6.5)/10, CGFloat(9)/10]
-        let width = self.view.frame.size.width
-        xBounds = [ CGFloat(-1)/4, CGFloat(-1)/10, CGFloat(1)/10, CGFloat(1)/4 ]
+        for i in 0..<countdownLabels.count {
+            countdownLabels[i].font = UIFont(name: "Knockout", size: fontSizeNumbers)
+            countdownLabels[i].center.y = self.view.frame.size.height / 3
+            countdownLabels[i].sizeToFit()
+            countdownLabels[i].center.x = self.view.center.x + xBounds[i] * fontSizeNumbers
+        }
+        
         let fontSizeTitles = 0.02213541666 * self.view.frame.width
         
         for i in 0..<countdownTitles.count {
             let title = countdownTitles[i]
-            title.frame.origin.y = self.view.frame.height / 6
-            title.center.x = countdownTitle.center.x + width * xBounds[i]
+            title.frame.origin.y = countdownLabels[i].center.y - (countdownLabels[i].frame.height / 2) - fontSizeTitles
             title.font = UIFont(name: "Helvetica", size: fontSizeTitles)
+            title.sizeToFit()
+            title.center.x = countdownLabels[i].center.x
+            
         }
        
         menuButton.addTarget(self, action: #selector(ViewController.openMenuAction(_:)), for: UIControlEvents.touchUpInside)
