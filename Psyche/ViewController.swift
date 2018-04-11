@@ -179,8 +179,7 @@ class ViewController: UIViewController {
             countdownLabels[i].font = UIFont(name: "Knockout", size: fontSizeNumbers)
             countdownLabels[i].center.y = self.view.frame.size.height / 3
             countdownLabels[i].sizeToFit()
-            countdownLabels[i].center.x = self.view.center.x + xBounds[i] * fontSizeNumbers
-        }
+            countdownLabels[i].center.x = self.view.center.x + xBounds[i] * fontSizeNumbers        }
         
         let fontSizeTitles = 0.02213541666 * self.view.frame.width
         
