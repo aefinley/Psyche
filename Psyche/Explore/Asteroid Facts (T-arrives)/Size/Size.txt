@@ -1,0 +1,9 @@
+Size:
+
+As asteroids go, Psyche is relatively large and has an irregular shape:
+	279 x 232 x 189 kilometers (173 x 144 x 117 miles).(11)
+	If Psyche were a perfect sphere, it would have a diameter of 226 kilometers (140 miles):
+		That is about the length of the state of Massachusetts (leaving out Cape Cod); If it were in Arizona it would stretch between Phoenix and Flagstaff!
+		A surface area of about 641,800 square kilometers (246,300 square miles), making it just smaller than the area of the state of Texas and quite a bit larger than the area of California.
+
+(11) Shepard, M. K., Richardson, J., Taylor, P. A., Rodriguez-Ford, L. A., Conrad, A., de Pater, I., ... & Close, L. M. (2017). Radar observations and shape model of asteroid 16 Psyche. Icarus, 281, 388-403.

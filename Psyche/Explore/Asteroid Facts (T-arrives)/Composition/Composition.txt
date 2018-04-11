@@ -1,0 +1,15 @@
+Composition:
+
+Psyche is likely made almost entirely of nickel-iron metal.
+
+Its bulk appears to be metal but its surface appears to have small areas that are rocky.
+	How do we know? Confirmed by measurements of:
+		Radar albedo (Radar albedo is the “ratio of a target’s radar cross section in a specified polarization to its projected area; hence, a measure of the target’s radar reflectivity”(4),(5))
+		Thermal inertia (Thermal inertia “refers to the ability of a material to conduct and store heat, and in planetary science, its measure of the subsurface's ability to store heat during the day and reradiate it during the night.”(6))
+
+
+(4) ??
+(4) http://echo.jpl.nasa.gov/asteroids/ostro_1998_encyc_ss.pdf
+(5) “Radar” is an acronym for ‘radio detection and ranging.’ Radar was developed to detect objects and determine their range (or position) by transmitting short bursts of microwaves. The strength and origin of "echoes" received from objects that were hit by the microwaves is then recorded.
+(6) What on Mars is a High Thermal-Inertia Surface?
+(6) https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA19357

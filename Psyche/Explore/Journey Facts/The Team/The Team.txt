@@ -1,0 +1,24 @@
+The Team:
+
+Principal Investigator (PI): Lindy Elkins-Tanton, Arizona State University (ASU)
+
+	The PI is responsible for overall mission success, and for the scientific integrity and execution of the mission within committed cost and schedule.
+	The PI oversees the team organization, decides science priorities and progress, and oversees delivery of mission data to NASA’s Planetary Data System.
+	The PI is the decision-maker within the Psyche team, and NASA is the ultimate decision-maker.
+	The PI is responsible for ensuring that all mission participants are playing their roles as defined by the Team Guidelines.
+
+Deputy Principal Investigator (Deputy PI): Jim Bell, ASU
+
+Co-Investigators:
+	Erik Asphaug, University of Arizona
+	David Bercovici, Yale University
+	Bruce Bills, Jet Propulsion Laboratory (JPL)
+	Richard Binzel, Massachusetts Institute of Technology (MIT)
+	William Bottke, Southwest Research Institute (SwRI)
+	Ralf Jaumann, Deutsches Zentrum für Luft- und Raumfahrt	Insoo Jun, JPL	David Lawrence, Johns Hopkins University, Applied Physics Laboratory (APL)	Simone Marchi, SwRI	Timothy McCoy, Smithsonian Institution	Ryan Park, JPL
+	Patrick Peplowski, APL	Thomas Prettyman, Planetary Science Institute	Carol Raymond, JPL	Chris Russell, University of California, Los Angeles	Benjamin Weiss, MIT	Dan Wenkert, JPL	Mark Wieczorek, Observatoire de la Côte d’Azur	David Williams, ASU	Maria Zuber, MIT
+
+Psyche Science Partners:
+	Applied Physics Laboratory (APL)	Deutsches Zentrum für Luft- und Raumfahrt (DLR)	General Dynamics	Glenn Research Center (GRC)	Jet Propulsion Laboratory (JPL)	Massachusetts Institute of Technology (MIT)	Malin Space Science Systems (MSSS)	Observatoire de la Côte d’Azur	Planetary Science Institute (PSI)	Smithsonian Institution	Southwest Research Institute (SwRI)	SSL	T esat Spacecom	University of Arizona	University of California Los Angeles (UCLA)	Yale University
+
+The mission is led by Arizona State University. NASA’s Jet Propulsion Laboratory is responsible for mission management, operations and navigation. The spacecraft’s solar-electric propulsion chassis will be built by SSL with a payload that includes an imager, magnetometer, and a gamma-ray spectrometer.

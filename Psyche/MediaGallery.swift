@@ -65,7 +65,7 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         
         //display detail view in DetailViewController
         let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let destView = mainStoryBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        let destView = mainStoryBoard.instantiateViewController(withIdentifier: "MediaDetailViewController") as! MediaDetailViewController
         destView.image = imgarr[indexPath.row]
         
         //sets imgarr, indexPath, and row in the DetailViewController
@@ -81,6 +81,9 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         
     }
 
+    
+    
+    
     
 }
 

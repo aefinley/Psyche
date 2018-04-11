@@ -11,7 +11,9 @@ import SceneKit
 import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
-    var sentValue: Int?
+    
+    var sentValue = 0
+    var myImage: UIImage!
     //0 = asteroid
     //1= satellite
    //sceneView
@@ -20,12 +22,12 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         self.navigationController?.setNavigationBarHidden(false, animated: true)
+         self.navigationController?.setNavigationBarHidden(true, animated: true)
         // Set the view's delegate
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
         
         // Create a new scene
         
@@ -34,26 +36,72 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     if (sentValue == 0){ //user selected to view asteroid
     
         let scene = SCNScene(named: "art.scnassets/asteroid.dae")!
+        let treeNode = scene.rootNode.childNode(withName: "asteroid", recursively: true)
+        treeNode?.position.z = -1
         self.sceneView.scene = scene
     }
     else if (sentValue == 1){ //user selected to view satellite
     
         let scene = SCNScene(named: "art.scnassets/satellite.scn")!
+        let treeNode = scene.rootNode.childNode(withName: "satellite", recursively: true)
+        treeNode?.position.z = -1
         self.sceneView.scene = scene
+       
     }
-
+       
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+       
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         
         // Run the view's session
         sceneView.session.run(configuration)
+        sceneView.allowsCameraControl = true
+        
+        
     }
+    
+    
+
+    @IBAction func takePhoto(_ sender: Any) {
+    
+    
+        
+        myImage = sceneView.snapshot();
+     
+      
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc =  storyBoard.instantiateViewController(withIdentifier: "SharePhoto") as! SharePhotoViewController
+      
+
+        vc.sentimage = myImage
+        
+       self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func unwindToARViewController(segue: UIStoryboardSegue) {
+    
+    
+    }
+  
+      /*
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "goToShare"{
+            let destination: SharePhotoViewController = segue.destination as! SharePhotoViewController
+                destination.sentImage = self.myImage
+            }
+        */
+    
+    
+    
+    
+    
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

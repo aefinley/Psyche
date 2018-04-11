@@ -15,18 +15,51 @@
 		0DEB0F7F2000313D00D7BB12 /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0DEB0F832000521200D7BB12 /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */; };
 		0DEB0F842000521200D7BB12 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */; };
+		1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910971E2030FFBB000879AB /* FactsTableViewController.swift */; };
+		1910974E2031043B000879AB /* Propulsion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097232031043B000879AB /* Propulsion.txt */; };
+		1910974F2031043B000879AB /* Radio Science.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097252031043B000879AB /* Radio Science.txt */; };
+		191097502031043B000879AB /* Deep Space Optical Communication (DSOC).txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097272031043B000879AB /* Deep Space Optical Communication (DSOC).txt */; };
+		191097512031043B000879AB /* Multispectral Imager.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097292031043B000879AB /* Multispectral Imager.txt */; };
+		191097522031043B000879AB /* Gamma Ray and Neutron Spectrometer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910972B2031043B000879AB /* Gamma Ray and Neutron Spectrometer.txt */; };
+		191097532031043B000879AB /* Bus size.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910972D2031043B000879AB /* Bus size.txt */; };
+		191097542031043B000879AB /* Spacecraft size.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910972F2031043B000879AB /* Spacecraft size.txt */; };
+		191097552031043B000879AB /* Gravity.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097322031043B000879AB /* Gravity.txt */; };
+		191097562031043B000879AB /* Appearance.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097342031043B000879AB /* Appearance.txt */; };
+		191097572031043B000879AB /* Discovery.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097362031043B000879AB /* Discovery.txt */; };
+		191097582031043B000879AB /* Density.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097382031043B000879AB /* Density.txt */; };
+		191097592031043B000879AB /* Composition.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910973A2031043B000879AB /* Composition.txt */; };
+		1910975A2031043B000879AB /* Beliefs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910973C2031043B000879AB /* Beliefs.txt */; };
+		1910975B2031043B000879AB /* Size.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910973E2031043B000879AB /* Size.txt */; };
+		1910975C2031043B000879AB /* Where.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097402031043B000879AB /* Where.txt */; };
+		1910975D2031043B000879AB /* Time on Psyche.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097422031043B000879AB /* Time on Psyche.txt */; };
+		1910975E2031043B000879AB /* The Team.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097452031043B000879AB /* The Team.txt */; };
+		1910975F2031043B000879AB /* Why.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097472031043B000879AB /* Why.txt */; };
+		191097602031043B000879AB /* Goals.txt in Resources */ = {isa = PBXBuildFile; fileRef = 191097492031043B000879AB /* Goals.txt */; };
+		191097612031043B000879AB /* Mission Cost.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910974B2031043B000879AB /* Mission Cost.txt */; };
+		191097622031043B000879AB /* Objectives.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910974D2031043B000879AB /* Objectives.txt */; };
+		1910976420310694000879AB /* MissionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910976320310694000879AB /* MissionFactsViewController.swift */; };
+		19109766203106DC000879AB /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19109765203106DC000879AB /* TimelineViewController.swift */; };
+		1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982690520449B1700DF323F /* Fact+CoreDataClass.swift */; };
+		1982690820449B1700DF323F /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */; };
+		19ADDA7E2033D437008CB288 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ADDA7D2033D437008CB288 /* DetailViewController.swift */; };
+		19DA4F1B204473DB0020F533 /* FactsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */; };
+		19EBB3B82060430F000D371C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EBB3B72060430F000D371C /* art.scnassets */; };
+		19F381CB2033CEB40002445A /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F381CA2033CEB40002445A /* FactTableViewCell.swift */; };
 		2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3748D1203E119200BA1CB0 /* Knockout.otf */; };
 		2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0D1F991BD40030FA86 /* AppDelegate.swift */; };
 		2E556F101F991BD40030FA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0F1F991BD40030FA86 /* ViewController.swift */; };
 		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
 		2E556F151F991BD40030FA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F141F991BD40030FA86 /* Assets.xcassets */; };
 		2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */; };
-		2EA15CA5203E20060005E271 /* ARDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA15CA4203E20060005E271 /* ARDescriptionController.swift */; };
+		2E782985206D89B000E22BF3 /* SharePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */; };
 		2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA15CA6203E56CD0005E271 /* ARPickerController.swift */; };
-		AB548C45207805CD0040B490 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB548C44207805CD0040B490 /* DetailViewController.swift */; };
+		AB548C45207805CD0040B490 /* MediaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB548C44207805CD0040B490 /* MediaDetailViewController.swift */; };
 		AB9156E82054DECF00B0F407 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9156E72054DECF00B0F407 /* myCell.swift */; };
 		ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC793F20164BCA00006E47 /* MediaGallery.swift */; };
 		ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCC79412016626400006E47 /* imageCollectionViewCell.swift */; };
+		EE4A118E207BF1A3006FC5C5 /* TimelineTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */; };
+		EE4A1190207BF250006FC5C5 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A118F207BF250006FC5C5 /* TimelineCell.swift */; };
+		EE4A1192207BF685006FC5C5 /* TimelineCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */; };
 		EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA23B12028DAE60038F276 /* TimelineBackground.swift */; };
 		EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +86,36 @@
 		0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 		0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		1910971E2030FFBB000879AB /* FactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsTableViewController.swift; sourceTree = "<group>"; };
+		191097232031043B000879AB /* Propulsion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Propulsion.txt; sourceTree = "<group>"; };
+		191097252031043B000879AB /* Radio Science.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Radio Science.txt"; sourceTree = "<group>"; };
+		191097272031043B000879AB /* Deep Space Optical Communication (DSOC).txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Deep Space Optical Communication (DSOC).txt"; sourceTree = "<group>"; };
+		191097292031043B000879AB /* Multispectral Imager.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Multispectral Imager.txt"; sourceTree = "<group>"; };
+		1910972B2031043B000879AB /* Gamma Ray and Neutron Spectrometer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Gamma Ray and Neutron Spectrometer.txt"; sourceTree = "<group>"; };
+		1910972D2031043B000879AB /* Bus size.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Bus size.txt"; sourceTree = "<group>"; };
+		1910972F2031043B000879AB /* Spacecraft size.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Spacecraft size.txt"; sourceTree = "<group>"; };
+		191097322031043B000879AB /* Gravity.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gravity.txt; sourceTree = "<group>"; };
+		191097342031043B000879AB /* Appearance.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appearance.txt; sourceTree = "<group>"; };
+		191097362031043B000879AB /* Discovery.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Discovery.txt; sourceTree = "<group>"; };
+		191097382031043B000879AB /* Density.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Density.txt; sourceTree = "<group>"; };
+		1910973A2031043B000879AB /* Composition.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Composition.txt; sourceTree = "<group>"; };
+		1910973C2031043B000879AB /* Beliefs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Beliefs.txt; sourceTree = "<group>"; };
+		1910973E2031043B000879AB /* Size.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Size.txt; sourceTree = "<group>"; };
+		191097402031043B000879AB /* Where.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Where.txt; sourceTree = "<group>"; };
+		191097422031043B000879AB /* Time on Psyche.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Time on Psyche.txt"; sourceTree = "<group>"; };
+		191097452031043B000879AB /* The Team.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "The Team.txt"; sourceTree = "<group>"; };
+		191097472031043B000879AB /* Why.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Why.txt; sourceTree = "<group>"; };
+		191097492031043B000879AB /* Goals.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Goals.txt; sourceTree = "<group>"; };
+		1910974B2031043B000879AB /* Mission Cost.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Mission Cost.txt"; sourceTree = "<group>"; };
+		1910974D2031043B000879AB /* Objectives.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Objectives.txt; sourceTree = "<group>"; };
+		1910976320310694000879AB /* MissionFactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionFactsViewController.swift; sourceTree = "<group>"; };
+		19109765203106DC000879AB /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		1982690520449B1700DF323F /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		19ADDA7D2033D437008CB288 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		19DA4F1A204473DB0020F533 /* FactsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FactsData.xcdatamodel; sourceTree = "<group>"; };
+		19EBB3B72060430F000D371C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		19F381CA2033CEB40002445A /* FactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
 		2E14FFDF1FABD0A100B74330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		2E3748D1203E119200BA1CB0 /* Knockout.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Knockout.otf; sourceTree = "<group>"; };
 		2E556F0A1F991BD40030FA86 /* Psyche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psyche.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,12 +125,15 @@
 		2E556F141F991BD40030FA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E556F171F991BD40030FA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E556F191F991BD40030FA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EA15CA4203E20060005E271 /* ARDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDescriptionController.swift; sourceTree = "<group>"; };
+		2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePhotoViewController.swift; sourceTree = "<group>"; };
 		2EA15CA6203E56CD0005E271 /* ARPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPickerController.swift; sourceTree = "<group>"; };
-		AB548C44207805CD0040B490 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AB548C44207805CD0040B490 /* MediaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailViewController.swift; sourceTree = "<group>"; };
 		AB9156E72054DECF00B0F407 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
 		ABCC793F20164BCA00006E47 /* MediaGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaGallery.swift; sourceTree = "<group>"; };
 		ABCC79412016626400006E47 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = imageCollectionViewCell.swift; path = views/imageCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableController.swift; sourceTree = "<group>"; };
+		EE4A118F207BF250006FC5C5 /* TimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
+		EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimelineCellView.swift; path = TimelineTable/TimelineCellView.swift; sourceTree = "<group>"; };
 		EEDA23B12028DAE60038F276 /* TimelineBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackground.swift; sourceTree = "<group>"; };
 		EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackgroundControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +152,237 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191097202031043B000879AB /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				191097212031043B000879AB /* Engineering Facts (T-Launch) */,
+				191097302031043B000879AB /* Asteroid Facts (T-arrives) */,
+				191097432031043B000879AB /* Journey Facts */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		191097212031043B000879AB /* Engineering Facts (T-Launch) */ = {
+			isa = PBXGroup;
+			children = (
+				191097222031043B000879AB /* Propulsion */,
+				191097242031043B000879AB /* Radio Science */,
+				191097262031043B000879AB /* Deep Space Optical Communication (DSOC) */,
+				191097282031043B000879AB /* Multispectral Imager */,
+				1910972A2031043B000879AB /* Gamma Ray and Neutron Spectrometer */,
+				1910972C2031043B000879AB /* Bus size */,
+				1910972E2031043B000879AB /* Spacecraft size */,
+			);
+			path = "Engineering Facts (T-Launch)";
+			sourceTree = "<group>";
+		};
+		191097222031043B000879AB /* Propulsion */ = {
+			isa = PBXGroup;
+			children = (
+				191097232031043B000879AB /* Propulsion.txt */,
+			);
+			path = Propulsion;
+			sourceTree = "<group>";
+		};
+		191097242031043B000879AB /* Radio Science */ = {
+			isa = PBXGroup;
+			children = (
+				191097252031043B000879AB /* Radio Science.txt */,
+			);
+			path = "Radio Science";
+			sourceTree = "<group>";
+		};
+		191097262031043B000879AB /* Deep Space Optical Communication (DSOC) */ = {
+			isa = PBXGroup;
+			children = (
+				191097272031043B000879AB /* Deep Space Optical Communication (DSOC).txt */,
+			);
+			path = "Deep Space Optical Communication (DSOC)";
+			sourceTree = "<group>";
+		};
+		191097282031043B000879AB /* Multispectral Imager */ = {
+			isa = PBXGroup;
+			children = (
+				191097292031043B000879AB /* Multispectral Imager.txt */,
+			);
+			path = "Multispectral Imager";
+			sourceTree = "<group>";
+		};
+		1910972A2031043B000879AB /* Gamma Ray and Neutron Spectrometer */ = {
+			isa = PBXGroup;
+			children = (
+				1910972B2031043B000879AB /* Gamma Ray and Neutron Spectrometer.txt */,
+			);
+			path = "Gamma Ray and Neutron Spectrometer";
+			sourceTree = "<group>";
+		};
+		1910972C2031043B000879AB /* Bus size */ = {
+			isa = PBXGroup;
+			children = (
+				1910972D2031043B000879AB /* Bus size.txt */,
+			);
+			path = "Bus size";
+			sourceTree = "<group>";
+		};
+		1910972E2031043B000879AB /* Spacecraft size */ = {
+			isa = PBXGroup;
+			children = (
+				1910972F2031043B000879AB /* Spacecraft size.txt */,
+			);
+			path = "Spacecraft size";
+			sourceTree = "<group>";
+		};
+		191097302031043B000879AB /* Asteroid Facts (T-arrives) */ = {
+			isa = PBXGroup;
+			children = (
+				191097312031043B000879AB /* Gravity */,
+				191097332031043B000879AB /* Appearance */,
+				191097352031043B000879AB /* Discovery */,
+				191097372031043B000879AB /* Density */,
+				191097392031043B000879AB /* Composition */,
+				1910973B2031043B000879AB /* Beliefs */,
+				1910973D2031043B000879AB /* Size */,
+				1910973F2031043B000879AB /* Where */,
+				191097412031043B000879AB /* Time on Psyche */,
+			);
+			path = "Asteroid Facts (T-arrives)";
+			sourceTree = "<group>";
+		};
+		191097312031043B000879AB /* Gravity */ = {
+			isa = PBXGroup;
+			children = (
+				191097322031043B000879AB /* Gravity.txt */,
+			);
+			path = Gravity;
+			sourceTree = "<group>";
+		};
+		191097332031043B000879AB /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				191097342031043B000879AB /* Appearance.txt */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		191097352031043B000879AB /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				191097362031043B000879AB /* Discovery.txt */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		191097372031043B000879AB /* Density */ = {
+			isa = PBXGroup;
+			children = (
+				191097382031043B000879AB /* Density.txt */,
+			);
+			path = Density;
+			sourceTree = "<group>";
+		};
+		191097392031043B000879AB /* Composition */ = {
+			isa = PBXGroup;
+			children = (
+				1910973A2031043B000879AB /* Composition.txt */,
+			);
+			path = Composition;
+			sourceTree = "<group>";
+		};
+		1910973B2031043B000879AB /* Beliefs */ = {
+			isa = PBXGroup;
+			children = (
+				1910973C2031043B000879AB /* Beliefs.txt */,
+			);
+			path = Beliefs;
+			sourceTree = "<group>";
+		};
+		1910973D2031043B000879AB /* Size */ = {
+			isa = PBXGroup;
+			children = (
+				1910973E2031043B000879AB /* Size.txt */,
+			);
+			path = Size;
+			sourceTree = "<group>";
+		};
+		1910973F2031043B000879AB /* Where */ = {
+			isa = PBXGroup;
+			children = (
+				191097402031043B000879AB /* Where.txt */,
+			);
+			path = Where;
+			sourceTree = "<group>";
+		};
+		191097412031043B000879AB /* Time on Psyche */ = {
+			isa = PBXGroup;
+			children = (
+				191097422031043B000879AB /* Time on Psyche.txt */,
+			);
+			path = "Time on Psyche";
+			sourceTree = "<group>";
+		};
+		191097432031043B000879AB /* Journey Facts */ = {
+			isa = PBXGroup;
+			children = (
+				191097442031043B000879AB /* The Team */,
+				191097462031043B000879AB /* Why */,
+				191097482031043B000879AB /* Goals */,
+				1910974A2031043B000879AB /* Cost */,
+				1910974C2031043B000879AB /* Objectives */,
+			);
+			path = "Journey Facts";
+			sourceTree = "<group>";
+		};
+		191097442031043B000879AB /* The Team */ = {
+			isa = PBXGroup;
+			children = (
+				191097452031043B000879AB /* The Team.txt */,
+			);
+			path = "The Team";
+			sourceTree = "<group>";
+		};
+		191097462031043B000879AB /* Why */ = {
+			isa = PBXGroup;
+			children = (
+				191097472031043B000879AB /* Why.txt */,
+			);
+			path = Why;
+			sourceTree = "<group>";
+		};
+		191097482031043B000879AB /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				191097492031043B000879AB /* Goals.txt */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		1910974A2031043B000879AB /* Cost */ = {
+			isa = PBXGroup;
+			children = (
+				1910974B2031043B000879AB /* Mission Cost.txt */,
+			);
+			path = Cost;
+			sourceTree = "<group>";
+		};
+		1910974C2031043B000879AB /* Objectives */ = {
+			isa = PBXGroup;
+			children = (
+				1910974D2031043B000879AB /* Objectives.txt */,
+			);
+			path = Objectives;
+			sourceTree = "<group>";
+		};
+		19ADDA7B2033D3C2008CB288 /* MissionFacts */ = {
+			isa = PBXGroup;
+			children = (
+				1910976320310694000879AB /* MissionFactsViewController.swift */,
+				1910971E2030FFBB000879AB /* FactsTableViewController.swift */,
+				19F381CA2033CEB40002445A /* FactTableViewCell.swift */,
+				19ADDA7D2033D437008CB288 /* DetailViewController.swift */,
+			);
+			path = MissionFacts;
+			sourceTree = "<group>";
+		};
 		2E556F011F991BD40030FA86 = {
 			isa = PBXGroup;
 			children = (
@@ -107,17 +404,26 @@
 		2E556F0C1F991BD40030FA86 /* Psyche */ = {
 			isa = PBXGroup;
 			children = (
+				19EBB3B72060430F000D371C /* art.scnassets */,
+				191097202031043B000879AB /* Explore */,
 				2E556F0D1F991BD40030FA86 /* AppDelegate.swift */,
+				2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */,
 				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
 				2EA15CA6203E56CD0005E271 /* ARPickerController.swift */,
-				2EA15CA4203E20060005E271 /* ARDescriptionController.swift */,
 				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
+				EE4A118C207BF16D006FC5C5 /* TimelineTable */,
+				19109765203106DC000879AB /* TimelineViewController.swift */,
 				2E3748D1203E119200BA1CB0 /* Knockout.otf */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
 				ABCC793F20164BCA00006E47 /* MediaGallery.swift */,
-				AB548C44207805CD0040B490 /* DetailViewController.swift */,
+				AB548C44207805CD0040B490 /* MediaDetailViewController.swift */,
 				AB9156E72054DECF00B0F407 /* myCell.swift */,
+				1982690520449B1700DF323F /* Fact+CoreDataClass.swift */,
+				1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */,
+				19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */,
+				19ADDA7B2033D3C2008CB288 /* MissionFacts */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
+				EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */,
 				2E556F141F991BD40030FA86 /* Assets.xcassets */,
 				2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */,
 				2E556F191F991BD40030FA86 /* Info.plist */,
@@ -129,6 +435,15 @@
 				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
 			);
 			path = Psyche;
+			sourceTree = "<group>";
+		};
+		EE4A118C207BF16D006FC5C5 /* TimelineTable */ = {
+			isa = PBXGroup;
+			children = (
+				EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */,
+				EE4A118F207BF250006FC5C5 /* TimelineCell.swift */,
+			);
+			path = TimelineTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,10 +512,33 @@
 			files = (
 				2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */,
 				2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */,
+				191097592031043B000879AB /* Composition.txt in Resources */,
+				1910975A2031043B000879AB /* Beliefs.txt in Resources */,
+				1910974F2031043B000879AB /* Radio Science.txt in Resources */,
+				2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */,
+				191097622031043B000879AB /* Objectives.txt in Resources */,
+				191097522031043B000879AB /* Gamma Ray and Neutron Spectrometer.txt in Resources */,
 				2E556F151F991BD40030FA86 /* Assets.xcassets in Resources */,
 				2E556F131F991BD40030FA86 /* Main.storyboard in Resources */,
 				0DEB0F832000521200D7BB12 /* TwitterShareExtensionUIResources.bundle in Resources */,
+				191097562031043B000879AB /* Appearance.txt in Resources */,
+				191097532031043B000879AB /* Bus size.txt in Resources */,
+				1910975B2031043B000879AB /* Size.txt in Resources */,
 				0DEB0F842000521200D7BB12 /* TwitterKitResources.bundle in Resources */,
+				191097582031043B000879AB /* Density.txt in Resources */,
+				191097602031043B000879AB /* Goals.txt in Resources */,
+				191097552031043B000879AB /* Gravity.txt in Resources */,
+				1910975C2031043B000879AB /* Where.txt in Resources */,
+				19EBB3B82060430F000D371C /* art.scnassets in Resources */,
+				191097612031043B000879AB /* Mission Cost.txt in Resources */,
+				191097542031043B000879AB /* Spacecraft size.txt in Resources */,
+				191097512031043B000879AB /* Multispectral Imager.txt in Resources */,
+				1910975D2031043B000879AB /* Time on Psyche.txt in Resources */,
+				1910975F2031043B000879AB /* Why.txt in Resources */,
+				1910975E2031043B000879AB /* The Team.txt in Resources */,
+				1910974E2031043B000879AB /* Propulsion.txt in Resources */,
+				191097502031043B000879AB /* Deep Space Optical Communication (DSOC).txt in Resources */,
+				191097572031043B000879AB /* Discovery.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,18 +549,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DA4F1B204473DB0020F533 /* FactsData.xcdatamodeld in Sources */,
+				EE4A1192207BF685006FC5C5 /* TimelineCellView.swift in Sources */,
+				EE4A118E207BF1A3006FC5C5 /* TimelineTableController.swift in Sources */,
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
-				2EA15CA5203E20060005E271 /* ARDescriptionController.swift in Sources */,
+				1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */,
+				1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
-				AB548C45207805CD0040B490 /* DetailViewController.swift in Sources */,
+				AB548C45207805CD0040B490 /* MediaDetailViewController.swift in Sources */,
 				ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */,
 				AB9156E82054DECF00B0F407 /* myCell.swift in Sources */,
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
 				0DEB0F732000220A00D7BB12 /* ARViewController.swift in Sources */,
 				EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */,
+				2E782985206D89B000E22BF3 /* SharePhotoViewController.swift in Sources */,
+				19F381CB2033CEB40002445A /* FactTableViewCell.swift in Sources */,
+				EE4A1190207BF250006FC5C5 /* TimelineCell.swift in Sources */,
 				ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */,
 				2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */,
 				EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */,
+				1910976420310694000879AB /* MissionFactsViewController.swift in Sources */,
+				1982690820449B1700DF323F /* Fact+CoreDataProperties.swift in Sources */,
+				19109766203106DC000879AB /* TimelineViewController.swift in Sources */,
+				19ADDA7E2033D437008CB288 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,16 +710,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3RCXMD99G3;
+				DEVELOPMENT_TEAM = 7ZF9F5WLVV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Psyche;
+				PRODUCT_BUNDLE_IDENTIFIER = Psyche;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -383,16 +735,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3RCXMD99G3;
+				DEVELOPMENT_TEAM = 7ZF9F5WLVV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
 				);
 				INFOPLIST_FILE = Psyche/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Psyche;
+				PRODUCT_BUNDLE_IDENTIFIER = Psyche;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Psyche/Psyche-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -421,6 +776,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				19DA4F1A204473DB0020F533 /* FactsData.xcdatamodel */,
+			);
+			currentVersion = 19DA4F1A204473DB0020F533 /* FactsData.xcdatamodel */;
+			name = FactsData.xcdatamodeld;
+			path = "Explore/Journey Facts/FactsData.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2E556F021F991BD40030FA86 /* Project object */;
 }
