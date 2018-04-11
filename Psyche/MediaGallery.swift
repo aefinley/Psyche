@@ -12,26 +12,20 @@ import UIKit
 class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
     
-    //for the menu
-    @IBOutlet weak var menuWidth: NSLayoutConstraint!
-    @IBOutlet weak var menu: UIImageView!
-    @IBOutlet weak var nasaButton: UIButton!
+    //for menu
     var menuShowing = false //boolean to see if menu is showing currently or not
-    
     
     @IBOutlet weak var myCollectionView: UICollectionView!
     
-    //create a seperate video array.
     var imgarr:[UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //back button
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
-        
         let itemSize = UIScreen.main.bounds.width/2 - 6
-        
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsetsMake(20, 0, 60, 0)
         layout.itemSize = CGSize(width: itemSize, height: itemSize)
@@ -43,6 +37,7 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         
         
         
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,53 +45,42 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
     }
     
     
-    //num of views
+    //number of items
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imgarr.count //changed
+        return imgarr.count
     }
     
-    //populate
+    //populate cells
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! myCell
-        cell.myImageView.image = imgarr[indexPath.row] //changed
+        cell.myImageView.image = imgarr[indexPath.row]
         cell.layer.borderWidth = 0
         cell.layer.cornerRadius = 20
-        
-        
         return cell
         
     }
     
-    
-    //replace this and segue to a detailed view.
-    
+    //for selecting specific images in the collectionview
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        //var imagee = imgarr[indexPath.row]
+        //display detail view in DetailViewController
+        let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let destView = mainStoryBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        destView.image = imgarr[indexPath.row]
         
-        let imageView = UIImageView(image: imgarr[indexPath.row])
-        imageView.frame =  self.view.bounds //self.view.frame
-        imageView.backgroundColor = .black
-        imageView.contentMode = .center
-        imageView.isUserInteractionEnabled = true
+        //sets imgarr, indexPath, and row in the DetailViewController
+        destView.imgArr = imgarr
+        destView.indexPath = indexPath
+        destView.trow = indexPath.row
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
-        imageView.addGestureRecognizer(tap)
+        let max = imgarr.count
+        destView.max = max
         
-        self.view.addSubview(imageView)
+        self.navigationController?.pushViewController(destView, animated: true)
+        
+        
     }
- 
-    
-    
-    
-    
-    
-    // Use to back from full mode
-    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
-        sender.view?.removeFromSuperview()
-    }
-    
-   
+
     
 }
 

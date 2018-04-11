@@ -126,6 +126,7 @@ class ViewController: UIViewController{
     
      //To be used to fetch images
      func getImages(){
+        print("fetching images now. loading..")
         var pagedata:String = ""
         var i = 1, added = 16
         while added == 16 {
@@ -159,8 +160,9 @@ class ViewController: UIViewController{
             }
             i+=1
         }
+        print("done fetching images")
         
-    } //end fetch images?
+    } //end fetch images
     
     
     
