@@ -28,6 +28,9 @@ class SharePhotoViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
+        
+        
+   
     }
     
     /*
@@ -39,6 +42,20 @@ class SharePhotoViewController: UIViewController {
        
     }
     */
+    
+    
+    @IBAction func sharePhoto(_ sender: Any) {
+        
+        if let image = sentImageView.image {
+            if let jpgImage = UIImageJPEGRepresentation(image, 0.8) {
+                let vc = UIActivityViewController(activityItems: [jpgImage], applicationActivities: [])
+                // add the following line if using doing universal and need iPad
+                vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+                present(vc, animated: true)
+            }
+        }
+    }
+    
 
     
     override func viewWillAppear(_ animated: Bool) {

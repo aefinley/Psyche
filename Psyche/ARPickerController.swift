@@ -16,6 +16,10 @@ class ARPickerController: UIViewController {
     
     @IBOutlet weak var menu: UIImageView!
     
+    
+    @IBOutlet weak var ARLabel: UILabel!
+    
+    
      var menuShowing = false //boolean to see if menu is showing currently or not
     
     
@@ -179,6 +183,8 @@ class ARPickerController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        ARLabel.textColor = UIColor.white;
         
         asteroidBtn.layer.cornerRadius = 8
         satelliteBtn.layer.cornerRadius = 8

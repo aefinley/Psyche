@@ -34,18 +34,71 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     
     if (sentValue == 0){ //user selected to view asteroid
-    
+        //create a new scene
         let scene = SCNScene(named: "art.scnassets/asteroid.dae")!
-        let treeNode = scene.rootNode.childNode(withName: "asteroid", recursively: true)
-        treeNode?.position.z = -1
+        
+        //create and add camera to scene
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        scene.rootNode.addChildNode(cameraNode)
+        
+        
+        //place the camera
+        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
+        
+        //create and add light
+        /*
+        let lightNode = SCNNode()
+        lightNode.light = SCNLight()
+        lightNode.light!.type = SCNLight.LightType.omni
+        lightNode.position = SCNVector3(x:0, y: 10, z: 10)
+        scene.rootNode.addChildNode(lightNode)
+        
+        let ambientLightNode = SCNNode()
+        ambientLightNode.light = SCNLight()
+        ambientLightNode.light!.type = SCNLight.LightType.ambient
+        ambientLightNode.light!.color = UIColor.darkGray
+        scene.rootNode.addChildNode(ambientLightNode)
+      */
+        //let treeNode = scene.rootNode.childNode(withName: "asteroid", recursively: true)
+        //treeNode?.position.z = -1
         self.sceneView.scene = scene
     }
     else if (sentValue == 1){ //user selected to view satellite
-    
+
+        //create a new scene
         let scene = SCNScene(named: "art.scnassets/satellite.scn")!
-        let treeNode = scene.rootNode.childNode(withName: "satellite", recursively: true)
-        treeNode?.position.z = -1
+        
+        //create and add camera to scene
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        scene.rootNode.addChildNode(cameraNode)
+        
+        
+        //place the camera
+        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
+        
+        //create and add light
+        /*
+        let lightNode = SCNNode()
+        lightNode.light = SCNLight()
+        lightNode.light!.type = SCNLight.LightType.omni
+        lightNode.position = SCNVector3(x:0, y: 10, z: 10)
+        scene.rootNode.addChildNode(lightNode)
+        
+        let ambientLightNode = SCNNode()
+        ambientLightNode.light = SCNLight()
+        ambientLightNode.light!.type = SCNLight.LightType.ambient
+        ambientLightNode.light!.color = UIColor.darkGray
+        scene.rootNode.addChildNode(ambientLightNode)
+        */
+        
+        //let treeNode = scene.rootNode.childNode(withName: "satellite", recursively: true)
+        //treeNode?.position.z = -1
         self.sceneView.scene = scene
+  
+    
+        
        
     }
        
@@ -61,7 +114,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         // Run the view's session
         sceneView.session.run(configuration)
         sceneView.allowsCameraControl = true
-        
+       
         
     }
     
