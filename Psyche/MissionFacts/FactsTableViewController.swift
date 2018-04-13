@@ -12,6 +12,9 @@ import CoreData
 class FactsTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var buttonSelected:Int?
     
+    @IBOutlet weak var image: UIImageView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
     var category = ""
     var factsList = [Fact]()
     //let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).managedObjectContext!
@@ -50,10 +53,16 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func getCategory(categoryType:Int) -> String {
         if(categoryType == 0) { //tag0 = Engineering
+            titleLabel.text = "ENGINEERING FACTS"
+            image.image = #imageLiteral(resourceName: "Building")
             return "Engineering"
         } else if(categoryType == 1) { //tag1 = Journey
+            titleLabel.text = "JOURNEY FACTS"
+            image.image = #imageLiteral(resourceName: "Journey")
             return "Journey"
         } else { //tag2 = Asteroid
+            titleLabel.text = "ASTEROID FACTS"
+            image.image = #imageLiteral(resourceName: "Asteroid")
             return "Asteroid"
         }
     }
@@ -62,8 +71,6 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //self.factsTable.rowHeight = 150.0 //changes cell height
         self.factsTable.separatorStyle = UITableViewCellSeparatorStyle.none //take out lines between cells
         
         if factsList.isEmpty {
@@ -79,24 +86,8 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "factCell", for: indexPath) as! FactTableViewCell
         cell.layer.borderWidth = 0.0
         cell.factTitle.text = factsList[indexPath.row].title
-        //image?
-        cell.factImage.image = UIImage(data: factsList[indexPath.row].image as Data)
+        cell.factImage.image = UIImage(data: factsList[indexPath.row].image)
         return cell
-        
-        //fetch data and print username (might use this for printing titles to cells)
-//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
-//        //request.predicate = NSPredicate(format: "age = %@", "12")
-//        request.returnsObjectsAsFaults = false
-//        do {
-//            let result = try context.fetch(request)
-//            for data in result as! [NSManagedObject] {
-//                print(data.value(forKey: "username") as! String)
-//            }
-//
-//        } catch {
-//
-//            print("Failed")
-//        }
     }
     
     override func didReceiveMemoryWarning() {

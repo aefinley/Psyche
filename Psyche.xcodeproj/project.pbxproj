@@ -397,14 +397,15 @@
 				19EBB3B72060430F000D371C /* art.scnassets */,
 				191097202031043B000879AB /* Explore */,
 				2E556F0D1F991BD40030FA86 /* AppDelegate.swift */,
-				2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */,
+				2E3748D1203E119200BA1CB0 /* Knockout.otf */,
+				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
 				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
 				2EA15CA6203E56CD0005E271 /* ARPickerController.swift */,
-				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
-				19109765203106DC000879AB /* TimelineViewController.swift */,
-				2E3748D1203E119200BA1CB0 /* Knockout.otf */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
+				19109765203106DC000879AB /* TimelineViewController.swift */,
 				ABCC793F20164BCA00006E47 /* MediaGallery.swift */,
+				2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */,
+				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
 				1982690520449B1700DF323F /* Fact+CoreDataClass.swift */,
 				1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */,
 				19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */,
@@ -418,7 +419,6 @@
 				0DEB0F7B2000312A00D7BB12 /* TwitterKit.framework */,
 				0DEB0F822000521200D7BB12 /* TwitterKitResources.bundle */,
 				0DEB0F812000521200D7BB12 /* TwitterShareExtensionUIResources.bundle */,
-				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
 			);
 			path = Psyche;
 			sourceTree = "<group>";
@@ -685,7 +685,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7ZF9F5WLVV;
+				DEVELOPMENT_TEAM = C83RT3C26Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
@@ -710,7 +710,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7ZF9F5WLVV;
+				DEVELOPMENT_TEAM = C83RT3C26Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
