@@ -139,6 +139,23 @@ class ViewController: UIViewController {
         hourLabel.text = (String)(format: "%02d", hour)
         minuteLabel.text = (String)(format: "%02d", minute)
         
+        let fontSizeNumbers = 0.18666666666 * self.view.frame.width
+        
+        for i in 0..<countdownLabels.count {
+            var boxWidth:CGFloat = 10 * fontSizeNumbers / 12
+            
+            if i == 1 {
+                boxWidth *= 1.5333
+            }
+            
+            let boxHeight:CGFloat = (6 * fontSizeNumbers / 7)
+            let size = CGSize(width: boxWidth, height: boxHeight)
+            
+            countdownLabels[i].frame.size = size
+            
+            countdownTitles[i].center.x = countdownLabels[i].center.x
+        }
+        
     }
  
     override func viewDidLoad() {
@@ -157,21 +174,38 @@ class ViewController: UIViewController {
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
         self.view.bringSubview(toFront: menu)
         
-        // starts the count down timer, executes countdownChanged every 60 seconds
-        countdownTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(countdownChanged), userInfo: nil, repeats: true)
+        // starts the count down timer, executes countdownChanged every second
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countdownChanged), userInfo: nil, repeats: true)
         countdownChanged()
         
-        // move the countdown labels to their correct positions'
-        countdownLabels = [yearLabel, dayLabel, hourLabel, minuteLabel]
+        // move the countdown labels to their correct positions
         countdownTitles = [yearTitle, dayTitle, hourTitle, minuteTitle]
-        xBounds = [CGFloat(2)/10, CGFloat(4)/10, CGFloat(7)/10, CGFloat(9)/10]
+        countdownLabels = [yearLabel, dayLabel, hourLabel, minuteLabel]
+        
+        // change the sizes/fonts of the the titles and the clock
+        let fontSizeNumbers = 0.18666666666 * self.view.frame.width
+        let startNum:CGFloat = -1.6
+        let numChars:CGFloat = 7
+        let space = abs(startNum / (numChars * 1.5))
+        
+        xBounds = [ startNum, 6*space + startNum, 15*space + startNum, 21*space + startNum]
+        
         for i in 0..<countdownLabels.count {
-            let label = countdownLabels[i]
-            label.frame.origin.y = self.view.frame.height / 6
-            label.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
+            countdownLabels[i].font = UIFont(name: "Knockout", size: fontSizeNumbers)
+            countdownLabels[i].frame.origin.y = 49 * self.view.frame.size.height / 200
+            
+            countdownLabels[i].frame.origin.x = (xBounds[i] + 2.3) * fontSizeNumbers
+        }
+        
+        let fontSizeTitles = 0.02213541666 * self.view.frame.width
+        
+        for i in 0..<countdownTitles.count {
             let title = countdownTitles[i]
-            title.frame.origin.y = self.view.frame.height / 6
-            title.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
+            title.frame.origin.y = countdownLabels[i].center.y - (countdownLabels[i].frame.height / 2) - 2 * fontSizeTitles
+            title.font = UIFont(name: "Helvetica", size: fontSizeTitles)
+            title.sizeToFit()
+            title.center.x = countdownLabels[i].center.x
+            
         }
         
             //dnaflk

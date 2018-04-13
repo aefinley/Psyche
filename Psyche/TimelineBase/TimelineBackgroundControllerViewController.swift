@@ -191,9 +191,10 @@ class TimelineBackgroundControllerViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dest = segue.destination as! TimelineTableController
-        let send = sender as! UIButton
-        dest.button = send.tag
+        if let dest = segue.destination as? TimelineTableController {
+            let send = sender as! UIButton
+            dest.button = send.tag
+        }
     }
  
     
