@@ -38,7 +38,7 @@
 		191097612031043B000879AB /* Mission Cost.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910974B2031043B000879AB /* Mission Cost.txt */; };
 		191097622031043B000879AB /* Objectives.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910974D2031043B000879AB /* Objectives.txt */; };
 		1910976420310694000879AB /* MissionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910976320310694000879AB /* MissionFactsViewController.swift */; };
-		19109766203106DC000879AB /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19109765203106DC000879AB /* TimelineViewController.swift */; };
+		19475F522082BA7D00C21EC2 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19475F512082BA7D00C21EC2 /* TimelineViewController.swift */; };
 		1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982690520449B1700DF323F /* Fact+CoreDataClass.swift */; };
 		1982690820449B1700DF323F /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */; };
 		19ADDA7E2033D437008CB288 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ADDA7D2033D437008CB288 /* DetailViewController.swift */; };
@@ -110,7 +110,7 @@
 		1910974B2031043B000879AB /* Mission Cost.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Mission Cost.txt"; sourceTree = "<group>"; };
 		1910974D2031043B000879AB /* Objectives.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Objectives.txt; sourceTree = "<group>"; };
 		1910976320310694000879AB /* MissionFactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionFactsViewController.swift; sourceTree = "<group>"; };
-		19109765203106DC000879AB /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		19475F512082BA7D00C21EC2 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		1982690520449B1700DF323F /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		19ADDA7D2033D437008CB288 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -415,7 +415,6 @@
 				8827C1CE20813E3F007BEE0E /* TimelineBase */,
 				EE4A118C207BF16D006FC5C5 /* TimelineTable */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
-				19109765203106DC000879AB /* TimelineViewController.swift */,
 				ABCC793F20164BCA00006E47 /* MediaGallery.swift */,
 				2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */,
 				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
@@ -441,8 +440,8 @@
 		8827C1CE20813E3F007BEE0E /* TimelineBase */ = {
 			isa = PBXGroup;
 			children = (
+				19475F512082BA7D00C21EC2 /* TimelineViewController.swift */,
 				EEDA23B12028DAE60038F276 /* TimelineBackground.swift */,
-				19109765203106DC000879AB /* TimelineViewController.swift */,
 				EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */,
 			);
 			path = TimelineBase;
@@ -566,6 +565,7 @@
 				EE4A118E207BF1A3006FC5C5 /* TimelineTableController.swift in Sources */,
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
 				1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */,
+				19475F522082BA7D00C21EC2 /* TimelineViewController.swift in Sources */,
 				1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
 				AB548C45207805CD0040B490 /* MediaDetailViewController.swift in Sources */,
@@ -583,7 +583,6 @@
 				EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */,
 				1910976420310694000879AB /* MissionFactsViewController.swift in Sources */,
 				1982690820449B1700DF323F /* Fact+CoreDataProperties.swift in Sources */,
-				19109766203106DC000879AB /* TimelineViewController.swift in Sources */,
 				19ADDA7E2033D437008CB288 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
