@@ -21,17 +21,10 @@ extension Fact {
     @NSManaged  var desc: String
     @NSManaged  var image: Data
     @NSManaged  var title: String
+    @NSManaged  var date: String
+    @NSManaged  var timeImage: Data
 
     public func add(title:String, desc:String, categoryType:String, image:UIImage) {
-        
-        
-        //func add() {
-        //let factData: NSEntityDescription? = NSEntityDescription.entity(forEntityName: "Fact", in: self.appDelegate.coreDataStack.manageObjectContext)
-        //if factData!= nil {
-        //var newFact: Fact = Fact(entity: factData!, insertInto: self.appDelegate.coreDataStack.manageObjectContext)
-        //newFact.title = self.title.text!
-        //newFact.desc = self.desc.text!
-        //self.appDelegatecoreDataStack.saveContext()
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -62,11 +55,5 @@ extension Fact {
         } catch {
             print("Failed saving")
         }
-        //do {
-        //    try managedObjectContext?.save()
-        //} catch let error {
-        //    print(error.localizedDescription)
-        //}
-        
     }
 }

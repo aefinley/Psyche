@@ -14,11 +14,15 @@ class FactTableViewCell: UITableViewCell {
     
     @IBOutlet weak var factDescription: UITextView!
     @IBOutlet weak var factTitle: UILabel!
-    @IBOutlet weak var factImage: UIImageView!{
-        didSet {
-            //images in cells have rounded edges
-        }
-    }
+    @IBOutlet weak var factImage: UIImageView!
+    
+     override func didMoveToSuperview() {
+        factImage.layer.cornerRadius = factImage.frame.size.width / 2.0
+        factImage.clipsToBounds = true
+        factImage.contentMode = .scaleAspectFit
+        //self.factImage.layer.cornerRadius = 75
+        //factImage.layer.masksToBounds = true
+     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
