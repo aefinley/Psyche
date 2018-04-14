@@ -19,6 +19,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // back button is viewable
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
         titleLabel.text = selectedFact.title
         descLabel.text = selectedFact.desc
         factImage.image = UIImage(data: selectedFact.image  as Data)

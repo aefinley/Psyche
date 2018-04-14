@@ -71,6 +71,10 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // back button is viewable
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        //self.factsTable.rowHeight = 150.0 //changes cell height
         self.factsTable.separatorStyle = UITableViewCellSeparatorStyle.none //take out lines between cells
         
         if factsList.isEmpty {

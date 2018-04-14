@@ -13,6 +13,9 @@
         <array key="Helvetica.ttc">
             <string>Helvetica-Bold</string>
         </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
         <array key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
         </array>
@@ -1308,7 +1311,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l77-Di-TUg"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PT7-sQ-dCb"/>
+                    <navigationItem key="navigationItem" id="PT7-sQ-dCb">
+                        <barButtonItem key="backBarButtonItem" title="TO EXPLORE" id="NpO-wc-N4J"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="asteroidFactsButton" destination="gGB-BR-z7t" id="yYT-MO-P2p"/>
                         <outlet property="engineeringFactsButton" destination="WuT-JY-3zU" id="oSY-xd-43c"/>
@@ -1335,17 +1340,6 @@
                                 <rect key="frame" x="0.0" y="60" width="374" height="94"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iou-mI-fNB">
-                                <rect key="frame" x="15" y="20" width="69" height="23"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="21"/>
-                                <state key="normal" title="TO EXPLORE">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="aOk-Qx-oZt" kind="unwind" unwindAction="unwindFromFactsTableWithSegue:" id="2Jh-Gu-v48"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGS-5e-Svc">
                                 <rect key="frame" x="15" y="33" width="344" height="27"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -1362,18 +1356,18 @@
                                         <rect key="frame" x="0.0" y="28" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pHK-Ds-ob7" id="eYl-8Q-ntR">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="99"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nv-HE-40D">
-                                                    <rect key="frame" x="64" y="-38" width="235" height="13"/>
+                                                    <rect key="frame" x="65" y="-34" width="230" height="10"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A72-EY-QZj">
-                                                    <rect key="frame" x="-23" y="-38" width="77" height="13"/>
+                                                    <rect key="frame" x="-22" y="-34" width="78" height="10"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -1381,7 +1375,7 @@
                                         <connections>
                                             <outlet property="factImage" destination="A72-EY-QZj" id="861-sS-ioF"/>
                                             <outlet property="factTitle" destination="3nv-HE-40D" id="aYG-2S-QQu"/>
-                                            <segue destination="dkM-Zt-Pgf" kind="presentation" identifier="DetailViewSegue" id="bCS-yM-0Bv"/>
+                                            <segue destination="dkM-Zt-Pgf" kind="show" identifier="DetailViewSegue" id="bCS-yM-0Bv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1398,6 +1392,9 @@
                         <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Jp8-Ie-83O"/>
                     </view>
+                    <navigationItem key="navigationItem" id="25F-kn-SW3">
+                        <barButtonItem key="backBarButtonItem" title="TO FACT CATEGORY" id="LSu-Zi-ldE"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="factsTable" destination="5OY-jd-wAt" id="zfX-F3-Cd6"/>
                         <outlet property="image" destination="htS-fN-WAl" id="1bT-CG-hOg"/>
@@ -1405,7 +1402,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t2c-wG-Jkv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="aOk-Qx-oZt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1751" y="2148"/>
         </scene>
@@ -1493,43 +1489,28 @@
             <objects>
                 <viewController id="dkM-Zt-Pgf" customClass="DetailViewController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tY0-1y-eCt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="detailed fact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQj-pB-3oz">
-                                <rect key="frame" x="16" y="73" width="343" height="30"/>
+                                <rect key="frame" x="16" y="52" width="343" height="19"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xj-ar-7wS">
-                                <rect key="frame" x="0.0" y="111" width="375" height="205"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iqA-cd-Rvy">
-                                <rect key="frame" x="16" y="324" width="343" height="331"/>
+                                <rect key="frame" x="16" y="186" width="343" height="405"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Vyf-mc-U9d">
-                                <rect key="frame" x="315" y="20" width="44" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0n-tX-CVF">
-                                <rect key="frame" x="16" y="23" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="21"/>
-                                <state key="normal" title="TO FACT CATEGORY">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="fhv-J6-HSR" kind="unwind" unwindAction="unwindFromDetailWithSegue:" id="xdD-uP-QN5"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1542,7 +1523,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4eJ-ae-dbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="fhv-J6-HSR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3257" y="1863"/>
         </scene>
