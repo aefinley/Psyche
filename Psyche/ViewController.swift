@@ -139,6 +139,23 @@ class ViewController: UIViewController {
         hourLabel.text = (String)(format: "%02d", hour)
         minuteLabel.text = (String)(format: "%02d", minute)
         
+        let fontSizeNumbers = 0.18666666666 * self.view.frame.width
+        
+        for i in 0..<countdownLabels.count {
+            var boxWidth:CGFloat = 10 * fontSizeNumbers / 12
+            
+            if i == 1 {
+                boxWidth *= 1.5333
+            }
+            
+            let boxHeight:CGFloat = (6 * fontSizeNumbers / 7)
+            let size = CGSize(width: boxWidth, height: boxHeight)
+            
+            countdownLabels[i].frame.size = size
+            
+            countdownTitles[i].center.x = countdownLabels[i].center.x
+        }
+        
     }
  
     override func viewDidLoad() {
@@ -157,56 +174,136 @@ class ViewController: UIViewController {
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
         self.view.bringSubview(toFront: menu)
         
-        // starts the count down timer, executes countdownChanged every 60 seconds
-        countdownTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(countdownChanged), userInfo: nil, repeats: true)
+        // starts the count down timer, executes countdownChanged every second
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countdownChanged), userInfo: nil, repeats: true)
         countdownChanged()
         
-        // move the countdown labels to their correct positions'
-        countdownLabels = [yearLabel, dayLabel, hourLabel, minuteLabel]
+        // move the countdown labels to their correct positions
         countdownTitles = [yearTitle, dayTitle, hourTitle, minuteTitle]
-        xBounds = [CGFloat(2)/10, CGFloat(4)/10, CGFloat(7)/10, CGFloat(9)/10]
+        countdownLabels = [yearLabel, dayLabel, hourLabel, minuteLabel]
+        
+        // change the sizes/fonts of the the titles and the clock
+        let fontSizeNumbers = 0.18666666666 * self.view.frame.width
+        let startNum:CGFloat = -1.6
+        let numChars:CGFloat = 7
+        let space = abs(startNum / (numChars * 1.5))
+        
+        xBounds = [ startNum, 6*space + startNum, 15*space + startNum, 21*space + startNum]
+        
         for i in 0..<countdownLabels.count {
-            let label = countdownLabels[i]
-            label.frame.origin.y = self.view.frame.height / 6
-            label.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
-            let title = countdownTitles[i]
-            title.frame.origin.y = self.view.frame.height / 6
-            title.frame.origin.x = xBounds[i] * self.view.frame.width - (self.view.frame.width / 7)
-        
-        
-
+            countdownLabels[i].font = UIFont(name: "Knockout", size: fontSizeNumbers)
+            countdownLabels[i].frame.origin.y = 49 * self.view.frame.size.height / 200
+            
+            countdownLabels[i].frame.origin.x = (xBounds[i] + 2.3) * fontSizeNumbers
         }
         
-       
-        menuButton.addTarget(self, action: #selector(ViewController.openMenuAction(_:)), for: UIControlEvents.touchUpInside)
+        let fontSizeTitles = 0.02213541666 * self.view.frame.width
         
-        //gesture created so if user clicks on outside view menu will close
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
+        for i in 0..<countdownTitles.count {
+            let title = countdownTitles[i]
+            title.frame.origin.y = countdownLabels[i].center.y - (countdownLabels[i].frame.height / 2) - 2 * fontSizeTitles
+            title.font = UIFont(name: "Helvetica", size: fontSizeTitles)
+            title.sizeToFit()
+            title.center.x = countdownLabels[i].center.x
+            
+        }
         
-        self.view.addGestureRecognizer(gesture)
-        
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-        
-        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
-        
+            //dnaflk
+            menuButton.addTarget(self, action: #selector(ViewController.openMenuAction(_:)), for: UIControlEvents.touchUpInside)
+            
+            //gesture created so if user clicks on outside view menu will close
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
+            
+            self.view.addGestureRecognizer(gesture)
+            
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            
+            self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+            self.navigationController?.navigationBar.tintColor = UIColor.white
+            
+            self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+            
+            
+            menuWidth.constant = -300 //menu should be hidden when view loads, width is 300 so needs to be -300
+            
+            menu.layer.shadowOpacity = 1
+            menu.layer.shadowRadius = 5
+            menu.image = #imageLiteral(resourceName: "menuImage")
+            //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+            
+            
+            self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+            self.view.bringSubview(toFront: menu)
+            
+            getImages()
+        }
+            
+            
+            
     
-        menuWidth.constant = -300 //menu should be hidden when view loads, width is 300 so needs to be -300
+    
+    //fetch images from website, store in core data
+    
+    var imageArray = [UIImage]()
+    
+     //To be used to fetch images
+     func getImages(){
+        print("fetching images now. loading..")
+        var pagedata:String = ""
+        var i = 1, added = 16
+        while added == 16 {
+            added=0
+            let url: URL = URL(string: "https://psyche.asu.edu/galleries/images/page/" + String(i))!
+            do{
+                try pagedata = String(contentsOf: url)
+            } catch _ {}
+            let arr = pagedata.split(separator: "<")
+            var findend=false
+            finder: for str in arr {
+                if findend{
+                    let stri = str.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
+                    if stri == "/section>" {
+                        break finder
+                    }
+                    if stri.hasPrefix("img") {
+                        var looker = stri.split(separator: " ")[3]
+                        var end = looker.suffix(5)
+                        looker = looker.prefix(upTo: looker.index(looker.endIndex, offsetBy: -13)) + end
+                        //print(looker)
+                        do{
+                            try imageArray.append(UIImage(data: Data(contentsOf: URL(string: String(looker.suffix(from: looker.index(looker.startIndex, offsetBy: 5))).trimmingCharacters(in: CharacterSet(charactersIn: "\"")))!))!)
+                        } catch _ {}
+                        added+=1
+                    }
+                }
+                if str.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines) == "section class=\"gallery-grid container\">" {
+                    findend=true
+                }
+            }
+            i+=1
+        }
+        print("done fetching images")
         
-        menu.layer.shadowOpacity = 1
-        menu.layer.shadowRadius = 5
-        menu.image = #imageLiteral(resourceName: "menuImage")
-        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        } //end fetch images
+       
+            
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
-        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
-        self.view.bringSubview(toFront: menu)
+        if segue.destination is MediaGallery
+        {
+            let imgarr = segue.destination as? MediaGallery
+            imgarr?.imgarr = imageArray
+        }
     }
     
-    @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue) {
+   
+}
+
+
+
+
+func unwindToHomeScreen(segue: UIStoryboardSegue) {
     }
 
-}
+
 
