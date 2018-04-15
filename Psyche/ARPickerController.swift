@@ -11,10 +11,15 @@ import UIKit
 class ARPickerController: UIViewController {
     
     
+    @IBOutlet weak var ARLabel: UILabel!
     
     @IBOutlet weak var menu: UIImageView!
     
      var menuShowing = false //boolean to see if menu is showing currently or not
+    
+    @IBOutlet weak var asteroidBtn: UIButton!
+    
+    @IBOutlet weak var satelliteBtn: UIButton!
     
     
     @IBOutlet weak var menuWidth: NSLayoutConstraint!
@@ -36,7 +41,7 @@ class ARPickerController: UIViewController {
     
     
     @IBAction func openASU(_ sender: Any) {
-        if let url = URL(string: "http://asu.edu/psyche"){
+        if let url = URL(string: "http://psyche.asu.edu"){
             
             
             UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
@@ -68,6 +73,12 @@ class ARPickerController: UIViewController {
             menuShowing = false
         }
     }
+    
+   @IBAction func unwindToARPickerController(segue:UIStoryboardSegue) { }
+    
+    
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! ARViewController
@@ -123,6 +134,12 @@ class ARPickerController: UIViewController {
         
         super.viewDidLoad()
         //close menu if user clicks on main view
+        
+        ARLabel.textColor = UIColor.white;
+        asteroidBtn.layer.cornerRadius = 8
+        satelliteBtn.layer.cornerRadius = 8
+        
+        
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
         
         menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
@@ -176,8 +193,6 @@ class ARPickerController: UIViewController {
    
     }
 
-        @IBAction func unwindToARPickerController(segue: UIStoryboardSegue) {
-}
 
 
     

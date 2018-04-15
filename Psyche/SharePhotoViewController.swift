@@ -39,6 +39,29 @@ class SharePhotoViewController: UIViewController {
        
     }
     */
+    
+    
+    @IBAction func sharePhoto(_ sender: Any) {
+        
+        if let image = sentImageView.image{
+            
+            if let jpgImage = UIImageJPEGRepresentation(image, 0.8){
+                
+                let vc = UIActivityViewController(activityItems: [jpgImage], applicationActivities: [])
+                
+                vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+                
+                present(vc, animated: true)
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    @IBAction func unwindToSharePhotoController(segue:UIStoryboardSegue) { }
 
     
     override func viewWillAppear(_ animated: Bool) {
