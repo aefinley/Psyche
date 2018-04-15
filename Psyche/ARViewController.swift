@@ -69,7 +69,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     }
        
     }
-    
+    @IBAction func unwindToARViewController(segue:UIStoryboardSegue) { }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

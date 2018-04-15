@@ -39,6 +39,7 @@ class SharePhotoViewController: UIViewController {
        
     }
     */
+    @IBAction func unwindToSharePhotoController(segue:UIStoryboardSegue) { }
 
     
     override func viewWillAppear(_ animated: Bool) {
