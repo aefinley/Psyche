@@ -14,9 +14,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     var sentValue = 0
     var myImage: UIImage!
-    //0 = asteroid
-    //1= satellite
-   //sceneView
+  
     
     @IBOutlet weak var sceneView: ARSCNView!
     override func viewDidLoad() {
@@ -36,15 +34,36 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     if (sentValue == 0){ //user selected to view asteroid
     
         let scene = SCNScene(named: "art.scnassets/asteroid.dae")!
-        let treeNode = scene.rootNode.childNode(withName: "asteroid", recursively: true)
-        treeNode?.position.z = -1
+        
+        let cameraNode = SCNNode()
+        
+        cameraNode.camera = SCNCamera()
+        
+        scene.rootNode.addChildNode(cameraNode)
+        
+        //place the camera
+        
+        cameraNode.position = SCNVector3(x:0, y:0, z:15)
+        
         self.sceneView.scene = scene
     }
     else if (sentValue == 1){ //user selected to view satellite
     
         let scene = SCNScene(named: "art.scnassets/satellite.scn")!
-        let treeNode = scene.rootNode.childNode(withName: "satellite", recursively: true)
-        treeNode?.position.z = -1
+        
+        //create and add camera to scene
+        
+        let cameraNode = SCNNode()
+        
+        cameraNode.camera = SCNCamera()
+        
+        scene.rootNode.addChildNode(cameraNode)
+        
+        //place the camera
+        
+        cameraNode.position = SCNVector3(x:0, y:0, z:15)
+     
+        
         self.sceneView.scene = scene
        
     }
@@ -84,25 +103,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
        self.present(vc, animated: true, completion: nil)
     }
     
-    @IBAction func unwindToARViewController(segue: UIStoryboardSegue) {
-    
-    
-    }
-  
-      /*
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "goToShare"{
-            let destination: SharePhotoViewController = segue.destination as! SharePhotoViewController
-                destination.sentImage = self.myImage
-            }
-        */
-    
-    
-    
-    
-    
-    
-    
+
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
