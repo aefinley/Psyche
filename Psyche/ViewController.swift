@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
 
     
+    @IBOutlet weak var twitterFeed: UIView!
     @IBOutlet weak var menu: UIImageView!
 
     
@@ -207,7 +208,6 @@ class ViewController: UIViewController {
             title.center.x = countdownLabels[i].center.x
             
         }
-        
             //dnaflk
             menuButton.addTarget(self, action: #selector(ViewController.openMenuAction(_:)), for: UIControlEvents.touchUpInside)
             
