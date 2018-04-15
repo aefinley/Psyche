@@ -17,7 +17,7 @@ class FactTableViewCell: UITableViewCell {
     @IBOutlet weak var factImage: UIImageView!
     
      override func didMoveToSuperview() {
-        factImage.layer.cornerRadius = factImage.frame.size.width / 2.0
+        factImage.layer.cornerRadius = factImage.frame.size.width / 3.5
         factImage.clipsToBounds = true
         factImage.contentMode = .scaleAspectFit
         //self.factImage.layer.cornerRadius = 75
