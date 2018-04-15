@@ -1150,7 +1150,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EXPLORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etI-RY-eeJ">
                                 <rect key="frame" x="89" y="44" width="69" height="22"/>
-                                <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1166,35 +1166,16 @@
                                 </connections>
                             </button>
                             <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ofP-t7-Jpj" customClass="UIImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="603"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AR icon" translatesAutoresizingMaskIntoConstraints="NO" id="ENZ-k7-JiF">
-                                        <rect key="frame" x="26" y="291" width="45" height="39"/>
+                                        <rect key="frame" x="47" y="310" width="48" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dbM-Ji-1ze">
-                                        <rect key="frame" x="69" y="417" width="73" height="66"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" link="YES" image="YES"/>
-                                        </accessibility>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEo-8a-dLv">
-                                        <rect key="frame" x="69" y="491" width="73" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="17"/>
-                                        <state key="normal" title="nasa.gov/psyche">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="openNasa:" destination="1UJ-Mk-SKe" eventType="touchUpInside" id="Smi-ef-Kgp"/>
-                                            <action selector="openNasa:" destination="eUc-cD-MwX" eventType="touchUpInside" id="u9I-nh-xCv"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrU-e4-8fZ">
-                                        <rect key="frame" x="29" y="224" width="128" height="44"/>
+                                        <rect key="frame" x="50" y="243" width="204" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                         <state key="normal" title="GALLERY">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1203,27 +1184,27 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gallery icon" translatesAutoresizingMaskIntoConstraints="NO" id="vom-4r-I9a">
-                                        <rect key="frame" x="34" y="231" width="37" height="37"/>
+                                        <rect key="frame" x="55" y="250" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U63-Rd-TzI">
-                                        <rect key="frame" x="25" y="349" width="132" height="44"/>
+                                        <rect key="frame" x="46" y="372" width="208" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                         <state key="normal" title="SEARCH">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home icon" translatesAutoresizingMaskIntoConstraints="NO" id="jpG-NY-bHN">
-                                        <rect key="frame" x="29" y="93" width="45" height="44"/>
+                                        <rect key="frame" x="50" y="112" width="45" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="KK2-CZ-1LE">
-                                        <rect key="frame" x="33" y="353" width="37" height="37"/>
+                                        <rect key="frame" x="57" y="376" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP7-55-rl8">
-                                        <rect key="frame" x="155" y="51" width="37" height="34"/>
+                                        <rect key="frame" x="247" y="54" width="37" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="closeMenuButton">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1236,9 +1217,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m45-pP-rO3">
-                                        <rect key="frame" x="33" y="291" width="142" height="44"/>
+                                        <rect key="frame" x="54" y="310" width="200" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                         <state key="normal" title="3D EXPERIENCE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1247,9 +1228,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g75-3S-h9O">
-                                        <rect key="frame" x="29" y="156" width="128" height="44"/>
+                                        <rect key="frame" x="50" y="175" width="204" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                         <state key="normal" title="TIMELINE">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1258,26 +1239,13 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline icon" translatesAutoresizingMaskIntoConstraints="NO" id="xzo-Hn-42L">
-                                        <rect key="frame" x="34" y="156" width="45" height="44"/>
+                                        <rect key="frame" x="50" y="175" width="50" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qia-5H-4Xq">
-                                        <rect key="frame" x="70" y="529" width="72" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="17"/>
-                                        <state key="normal" title="psyche.asu.edu">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="openASU:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9QI-9b-3KP"/>
-                                            <action selector="openASU:" destination="SEu-zG-VQ9" eventType="touchUpInside" id="bDh-tp-Tgv"/>
-                                            <action selector="openASU:" destination="1UJ-Mk-SKe" eventType="touchUpInside" id="q2X-yH-085"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhd-1V-QWY">
-                                        <rect key="frame" x="15" y="93" width="131" height="44"/>
+                                        <rect key="frame" x="55" y="112" width="199" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                         <state key="normal" title="HOME">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1285,10 +1253,42 @@
                                             <segue destination="TuE-DV-UuR" kind="unwind" unwindAction="unwindToHomeScreenWithSegue:" id="ESe-Pa-mIB"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dbM-Ji-1ze">
+                                        <rect key="frame" x="118" y="458" width="73" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" link="YES" image="YES"/>
+                                        </accessibility>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEo-8a-dLv">
+                                        <rect key="frame" x="107" y="532" width="95" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="20"/>
+                                        <state key="normal" title="nasa.gov/psyche">
+                                            <color key="titleColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openNasa:" destination="1UJ-Mk-SKe" eventType="touchUpInside" id="Smi-ef-Kgp"/>
+                                            <action selector="openNasa:" destination="eUc-cD-MwX" eventType="touchUpInside" id="u9I-nh-xCv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qia-5H-4Xq">
+                                        <rect key="frame" x="113" y="570" width="83" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="20"/>
+                                        <state key="normal" title="psyche.asu.edu">
+                                            <color key="titleColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openASU:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9QI-9b-3KP"/>
+                                            <action selector="openASU:" destination="SEu-zG-VQ9" eventType="touchUpInside" id="bDh-tp-Tgv"/>
+                                            <action selector="openASU:" destination="1UJ-Mk-SKe" eventType="touchUpInside" id="q2X-yH-085"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="sTH-Aa-ipJ"/>
+                                    <constraint firstAttribute="width" constant="300" id="sTH-Aa-ipJ"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGINEERING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-pb-6b4">
@@ -1349,7 +1349,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5OY-jd-wAt">
-                                <rect key="frame" x="0.0" y="223" width="374" height="362"/>
+                                <rect key="frame" x="0.0" y="222" width="374" height="363"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -1357,18 +1357,18 @@
                                         <rect key="frame" x="0.0" y="28" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pHK-Ds-ob7" id="eYl-8Q-ntR">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nv-HE-40D">
-                                                    <rect key="frame" x="93" y="8" width="241" height="76"/>
+                                                    <rect key="frame" x="92" y="8" width="242" height="79"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="30"/>
                                                     <color key="textColor" red="0.047058823530000002" green="0.021470159230000001" blue="0.025092575440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A72-EY-QZj">
-                                                    <rect key="frame" x="2" y="8" width="84" height="76"/>
+                                                    <rect key="frame" x="3" y="8" width="83" height="79"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
