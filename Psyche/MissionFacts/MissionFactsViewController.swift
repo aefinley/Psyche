@@ -513,7 +513,7 @@ class MissionFactsViewController: UIViewController {
         let entityDescription = NSEntityDescription.entity(forEntityName: "Fact", in: insertContext)
         
         // create a fetch request
-        let request: NSFetchRequest<Fact> = Fact.fetchRequest() as! NSFetchRequest<Fact>
+        let request: NSFetchRequest<Fact> = Fact.fetchRequest()
         
         // associate the request with contact handler
         request.entity = entityDescription
@@ -523,7 +523,7 @@ class MissionFactsViewController: UIViewController {
         
         request.predicate = pred
         
-        if let fetchResult = (try? viewContext.fetch(request)) as? [Fact] {
+        if let fetchResult = (try? viewContext.fetch(request)) {
        // Jennifer's Code
             let num = fetchResult.count
             
@@ -533,7 +533,7 @@ class MissionFactsViewController: UIViewController {
                     let newItem = Fact(entity: ent!, insertInto: insertContext)
                     newItem.title = titles[i]
                     newItem.desc = descriptions[i]
-                    newItem.image = UIImagePNGRepresentation(images[i])!
+                    newItem.image = UIImagePNGRepresentation(images[i])! as NSData
                     switch i {
                     case 0...6:
                         newItem.categoryType = "Engineering"

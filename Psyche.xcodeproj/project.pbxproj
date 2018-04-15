@@ -39,8 +39,6 @@
 		191097622031043B000879AB /* Objectives.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1910974D2031043B000879AB /* Objectives.txt */; };
 		1910976420310694000879AB /* MissionFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910976320310694000879AB /* MissionFactsViewController.swift */; };
 		19475F522082BA7D00C21EC2 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19475F512082BA7D00C21EC2 /* TimelineViewController.swift */; };
-		1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982690520449B1700DF323F /* Fact+CoreDataClass.swift */; };
-		1982690820449B1700DF323F /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */; };
 		19ADDA7E2033D437008CB288 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ADDA7D2033D437008CB288 /* DetailViewController.swift */; };
 		19DA4F1B204473DB0020F533 /* FactsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */; };
 		19EBB3B82060430F000D371C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EBB3B72060430F000D371C /* art.scnassets */; };
@@ -61,6 +59,8 @@
 		EE4A118E207BF1A3006FC5C5 /* TimelineTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */; };
 		EE4A1190207BF250006FC5C5 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A118F207BF250006FC5C5 /* TimelineCell.swift */; };
 		EE4A1192207BF685006FC5C5 /* TimelineCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */; };
+		EEC3E76E2082BDD6002BF345 /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC3E76C2082BDD6002BF345 /* Fact+CoreDataClass.swift */; };
+		EEC3E76F2082BDD6002BF345 /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC3E76D2082BDD6002BF345 /* Fact+CoreDataProperties.swift */; };
 		EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA23B12028DAE60038F276 /* TimelineBackground.swift */; };
 		EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -111,8 +111,6 @@
 		1910974D2031043B000879AB /* Objectives.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Objectives.txt; sourceTree = "<group>"; };
 		1910976320310694000879AB /* MissionFactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionFactsViewController.swift; sourceTree = "<group>"; };
 		19475F512082BA7D00C21EC2 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
-		1982690520449B1700DF323F /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
-		1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		19ADDA7D2033D437008CB288 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		19DA4F1A204473DB0020F533 /* FactsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FactsData.xcdatamodel; sourceTree = "<group>"; };
 		19EBB3B72060430F000D371C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -136,6 +134,8 @@
 		EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableController.swift; sourceTree = "<group>"; };
 		EE4A118F207BF250006FC5C5 /* TimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
 		EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCellView.swift; sourceTree = "<group>"; };
+		EEC3E76C2082BDD6002BF345 /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EEC3E76D2082BDD6002BF345 /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EEDA23B12028DAE60038F276 /* TimelineBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackground.swift; sourceTree = "<group>"; };
 		EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackgroundControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -404,6 +404,8 @@
 		2E556F0C1F991BD40030FA86 /* Psyche */ = {
 			isa = PBXGroup;
 			children = (
+				EEC3E76C2082BDD6002BF345 /* Fact+CoreDataClass.swift */,
+				EEC3E76D2082BDD6002BF345 /* Fact+CoreDataProperties.swift */,
 				8827C1CC20813E2B007BEE0E /* ClockBoxes.swift */,
 				19EBB3B72060430F000D371C /* art.scnassets */,
 				191097202031043B000879AB /* Explore */,
@@ -420,8 +422,6 @@
 				ABCC79412016626400006E47 /* imageCollectionViewCell.swift */,
 				AB548C44207805CD0040B490 /* MediaDetailViewController.swift */,
 				AB9156E72054DECF00B0F407 /* myCell.swift */,
-				1982690520449B1700DF323F /* Fact+CoreDataClass.swift */,
-				1982690620449B1700DF323F /* Fact+CoreDataProperties.swift */,
 				19DA4F19204473DB0020F533 /* FactsData.xcdatamodeld */,
 				19ADDA7B2033D3C2008CB288 /* MissionFacts */,
 				2E556F111F991BD40030FA86 /* Main.storyboard */,
@@ -566,9 +566,10 @@
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
 				1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */,
 				19475F522082BA7D00C21EC2 /* TimelineViewController.swift in Sources */,
-				1982690720449B1700DF323F /* Fact+CoreDataClass.swift in Sources */,
+				EEC3E76E2082BDD6002BF345 /* Fact+CoreDataClass.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
 				AB548C45207805CD0040B490 /* MediaDetailViewController.swift in Sources */,
+				EEC3E76F2082BDD6002BF345 /* Fact+CoreDataProperties.swift in Sources */,
 				8827C1CD20813E2B007BEE0E /* ClockBoxes.swift in Sources */,
 				ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */,
 				AB9156E82054DECF00B0F407 /* myCell.swift in Sources */,
@@ -582,7 +583,6 @@
 				2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */,
 				EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */,
 				1910976420310694000879AB /* MissionFactsViewController.swift in Sources */,
-				1982690820449B1700DF323F /* Fact+CoreDataProperties.swift in Sources */,
 				19ADDA7E2033D437008CB288 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -725,7 +725,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C83RT3C26Z;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",
@@ -750,7 +750,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C83RT3C26Z;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Psyche",

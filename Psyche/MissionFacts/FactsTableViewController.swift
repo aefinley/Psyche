@@ -27,7 +27,7 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         let entityDescription = NSEntityDescription.entity(forEntityName: "Fact", in: managedObjectContext)
             
         // create a fetch request
-        let request: NSFetchRequest<Fact> = Fact.fetchRequest() as! NSFetchRequest<Fact>
+        let request: NSFetchRequest<Fact> = Fact.fetchRequest()
             
         // associate the request with contact handler
         request.entity = entityDescription
@@ -90,7 +90,7 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "factCell", for: indexPath) as! FactTableViewCell
         cell.layer.borderWidth = 0.0
         cell.factTitle.text = factsList[indexPath.row].title
-        cell.factImage.image = UIImage(data: factsList[indexPath.row].image)
+        cell.factImage.image = UIImage(data: factsList[indexPath.row].image as! Data)
         return cell
     }
     
