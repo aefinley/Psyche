@@ -11,7 +11,6 @@ import UIKit
 
 class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
-    
     //for menu
     var menuShowing = false //boolean to see if menu is showing currently or not
     
@@ -79,6 +78,21 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         self.navigationController?.pushViewController(destView, animated: true)
         
         
+    }
+    
+    @IBAction func redirect(_ sender: UIBarButtonItem) {
+        var url:URL
+        switch sender.tag {
+        case 0:
+            url = URL(string: "https://www.facebook.com/NASAPsyche")!
+        case 1:
+            url = URL(string: "https://www.twitter.com/NASAPsyche")!
+        case 2:
+            url = URL(string: "https://www.instagram.com/nasapsyche")!
+        default:
+            url = URL(string: "https://www.google.com")!
+        }
+        UIApplication.shared.open(url, options: [:])
     }
 
     

@@ -81,15 +81,16 @@ class ARPickerController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! ARViewController
+        if let destination = segue.destination as? ARViewController {
         
         
-        if (segue.identifier == "viewAsteroid"){
+            if (segue.identifier == "viewAsteroid"){
             
-            destination.sentValue = 0
-        }
-        else if(segue.identifier == "viewSatellite"){
-            destination.sentValue = 1
+                destination.sentValue = 0
+            }
+            else if(segue.identifier == "viewSatellite"){
+                destination.sentValue = 1
+            }
         }
         
     }

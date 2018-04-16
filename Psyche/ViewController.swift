@@ -235,7 +235,7 @@ class ViewController: UIViewController {
             self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
             self.view.bringSubview(toFront: menu)
             
-            getImages()
+            //getImages()
         }
             
             
@@ -296,14 +296,15 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue) {
+    }
    
 }
 
 
 
 
-func unwindToHomeScreen(segue: UIStoryboardSegue) {
-    }
+
 
 
 

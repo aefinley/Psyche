@@ -13,8 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate{
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Twitter.sharedInstance().start(withConsumerKey:"tzMhH05lzEgNcAn4EB48CPnFA", consumerSecret:"6GYaAVzcGCM3f3OabouqFrM2H0SBFt7hcQzO60HxGV6mIbtomJ")

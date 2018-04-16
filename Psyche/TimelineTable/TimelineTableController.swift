@@ -17,7 +17,7 @@ class TimelineTableController: UITableViewController {
     
     var colors:[UIColor] = [UIColor]()
     let titles = [ "t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
-    let diamonds = [ #imageLiteral(resourceName: "1.12.18Artboard 6"), #imageLiteral(resourceName: "1.12.18Artboard 10"), #imageLiteral(resourceName: "1.12.18Artboard 11"), #imageLiteral(resourceName: "1.12.18Artboard 7"), #imageLiteral(resourceName: "1.12.18Artboard 7") ]
+    let diamonds = [ #imageLiteral(resourceName: "orangeDot"), #imageLiteral(resourceName: "darkerOrgangeDot"), #imageLiteral(resourceName: "pinkDot"), #imageLiteral(resourceName: "darkPurpleDot"), #imageLiteral(resourceName: "darkPurpleDot") ]
     var button:Int!
     
     
