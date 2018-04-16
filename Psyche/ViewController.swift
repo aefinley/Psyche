@@ -239,8 +239,34 @@ class ViewController: UIViewController {
         }
             
             
-            
+    @IBAction func goToTimeline(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Timeline") as! TimelineBackgroundControllerViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
     
+    
+    @IBAction func goToExplore(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Explore") as! MissionFactsViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    @IBAction func goToGallery(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MediaGallery") as! MediaGallery
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    @IBAction func goTo3d(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "3DPicker") as! ARPickerController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
     
     //fetch images from website, store in core data
     
