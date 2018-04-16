@@ -17,8 +17,9 @@ class TimelineTableController: UITableViewController {
     
     var colors:[UIColor] = [UIColor]()
     let titles = [ "t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
-    let diamonds = [ #imageLiteral(resourceName: "1.12.18Artboard 6"), #imageLiteral(resourceName: "1.12.18Artboard 10"), #imageLiteral(resourceName: "1.12.18Artboard 11"), #imageLiteral(resourceName: "1.12.18Artboard 7"), #imageLiteral(resourceName: "1.12.18Artboard 7") ]
+    let diamonds = [ #imageLiteral(resourceName: "orangeDot"), #imageLiteral(resourceName: "darkerOrgangeDot"), #imageLiteral(resourceName: "pinkDot"), #imageLiteral(resourceName: "darkPurpleDot"), #imageLiteral(resourceName: "darkPurpleDot") ]
     var button:Int!
+    let descriptions = [ "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION ", "DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION "]
     
     
     override func viewDidLoad() {
@@ -28,7 +29,8 @@ class TimelineTableController: UITableViewController {
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
-        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 400
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,35 +68,27 @@ class TimelineTableController: UITableViewController {
         let screenWidth = self.tableView.bounds.width
 
         // moving things around
-        cell.diamond.frame.origin.x = screenWidth / 5 - cell.diamond.frame.width / 2
-        cell.diamond.frame.origin.y = screenHeight / 8
+        //cell.diamond.frame.origin.x = screenWidth / 5 - cell.diamond.frame.width / 2
+        //cell.diamond.frame.origin.y = screenHeight / 8
         
-        cell.labelYear.frame.origin.x = screenWidth / 20
-        cell.labelYear.frame.origin.y = screenHeight / 9
+        //cell.labelYear.frame.origin.x = screenWidth / 20
+        //cell.labelYear.frame.origin.y = screenHeight / 9
         
-        cell.pictureForEvent.frame.origin.x = screenWidth / 4
-        cell.pictureForEvent.frame.origin.y = screenHeight / 4
+        //cell.pictureForEvent.frame.origin.x = screenWidth / 4
+        //cell.pictureForEvent.frame.origin.y = screenHeight / 4
         
-        cell.labelTitle.frame.origin.x = screenWidth / 3
-        cell.labelTitle.center.y = cell.diamond.center.y
+       // cell.labelTitle.frame.origin.x = screenWidth / 3
+       // cell.labelTitle.center.y = cell.diamond.center.y
         
-        cell.labelDescription.frame.origin.x = screenWidth / 3
-        cell.labelDescription.frame.origin.y = 3/4 * screenHeight
+       // cell.labelDescription.frame.origin.x = screenWidth / 3
+       // cell.labelDescription.frame.origin.y = 3/4 * screenHeight
         
         // make a fetch to get the image/year and set it
         
         let index = indexPath.row
         
-        let viewCell:TimelineCellView = TimelineCellView(frame: CGRect(x: 0, y: 0, width: self.tableView.bounds.size.width, height: self.tableView.bounds.size.height))
-        viewCell.firstColor = self.colors[index / 2]
-        viewCell.secondColor = self.colors[(index + 1) / 2]
         
         
-        
-        
-        viewCell.backgroundColor = UIColor(red: 37/255, green: 22/255, blue: 51/255, alpha: 1.0)
-        
-        cell.backgroundView = viewCell
         cell.diamond.image = diamonds[index / 2]
         cell.labelYear.textColor = colors[index / 2]
         cell.labelYear.text = "20" + String(index + 18)
@@ -103,6 +97,13 @@ class TimelineTableController: UITableViewController {
         cell.labelDescription.textColor = .white
         cell.labelTitle.text = titles[index]
         cell.labelTitle.font = UIFont(name: "Helvetica", size: cell.labelTitle.font.pointSize)
+        cell.labelDescription.text = descriptions[0]
+        cell.pictureForEvent.image = #imageLiteral(resourceName: "launchScreenLogo-1")
+        let viewCell:TimelineCellView = TimelineCellView(frame: CGRect(x: 0, y: 0, width: self.tableView.bounds.size.width, height: self.tableView.bounds.size.height))
+        viewCell.firstColor = self.colors[index / 2]
+        viewCell.secondColor = self.colors[(index + 1) / 2]
+        viewCell.backgroundColor = UIColor(red: 37/255, green: 22/255, blue: 51/255, alpha: 1.0)
+        cell.backgroundView = viewCell
         
         return cell
     }
