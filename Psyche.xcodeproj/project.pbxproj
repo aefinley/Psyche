@@ -59,8 +59,8 @@
 		EE4A118E207BF1A3006FC5C5 /* TimelineTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */; };
 		EE4A1190207BF250006FC5C5 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A118F207BF250006FC5C5 /* TimelineCell.swift */; };
 		EE4A1192207BF685006FC5C5 /* TimelineCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */; };
-		EEC3E76E2082BDD6002BF345 /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC3E76C2082BDD6002BF345 /* Fact+CoreDataClass.swift */; };
-		EEC3E76F2082BDD6002BF345 /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC3E76D2082BDD6002BF345 /* Fact+CoreDataProperties.swift */; };
+		EE84D86E2083F3E0008075AC /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84D86C2083F3E0008075AC /* Fact+CoreDataClass.swift */; };
+		EE84D86F2083F3E0008075AC /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84D86D2083F3E0008075AC /* Fact+CoreDataProperties.swift */; };
 		EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDA23B12028DAE60038F276 /* TimelineBackground.swift */; };
 		EEF5CA0220320F17001FBFDF /* TimelineBackgroundControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -134,8 +134,8 @@
 		EE4A118D207BF1A3006FC5C5 /* TimelineTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableController.swift; sourceTree = "<group>"; };
 		EE4A118F207BF250006FC5C5 /* TimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
 		EE4A1191207BF685006FC5C5 /* TimelineCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCellView.swift; sourceTree = "<group>"; };
-		EEC3E76C2082BDD6002BF345 /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
-		EEC3E76D2082BDD6002BF345 /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE84D86C2083F3E0008075AC /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE84D86D2083F3E0008075AC /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EEDA23B12028DAE60038F276 /* TimelineBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackground.swift; sourceTree = "<group>"; };
 		EEF5CA0120320F17001FBFDF /* TimelineBackgroundControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBackgroundControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -404,8 +404,8 @@
 		2E556F0C1F991BD40030FA86 /* Psyche */ = {
 			isa = PBXGroup;
 			children = (
-				EEC3E76C2082BDD6002BF345 /* Fact+CoreDataClass.swift */,
-				EEC3E76D2082BDD6002BF345 /* Fact+CoreDataProperties.swift */,
+				EE84D86C2083F3E0008075AC /* Fact+CoreDataClass.swift */,
+				EE84D86D2083F3E0008075AC /* Fact+CoreDataProperties.swift */,
 				8827C1CC20813E2B007BEE0E /* ClockBoxes.swift */,
 				19EBB3B72060430F000D371C /* art.scnassets */,
 				191097202031043B000879AB /* Explore */,
@@ -566,10 +566,10 @@
 				0DEB0F752000230C00D7BB12 /* SocialController.swift in Sources */,
 				1910971F2030FFBB000879AB /* FactsTableViewController.swift in Sources */,
 				19475F522082BA7D00C21EC2 /* TimelineViewController.swift in Sources */,
-				EEC3E76E2082BDD6002BF345 /* Fact+CoreDataClass.swift in Sources */,
+				EE84D86E2083F3E0008075AC /* Fact+CoreDataClass.swift in Sources */,
 				2E556F101F991BD40030FA86 /* ViewController.swift in Sources */,
 				AB548C45207805CD0040B490 /* MediaDetailViewController.swift in Sources */,
-				EEC3E76F2082BDD6002BF345 /* Fact+CoreDataProperties.swift in Sources */,
+				EE84D86F2083F3E0008075AC /* Fact+CoreDataProperties.swift in Sources */,
 				8827C1CD20813E2B007BEE0E /* ClockBoxes.swift in Sources */,
 				ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */,
 				AB9156E82054DECF00B0F407 /* myCell.swift in Sources */,

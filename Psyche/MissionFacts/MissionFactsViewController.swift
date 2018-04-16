@@ -539,16 +539,16 @@ class MissionFactsViewController: UIViewController {
                         newItem.categoryType = "Engineering"
                     case 7...10:
                         newItem.categoryType = "Engineering"
-                        //newItem.date = dates[i - 7]
-                        //newItem.timeImage = UIImagePNGRepresentation(timeImages[i])!
+                        newItem.date = dates[i - 7]
+                        newItem.timelineImage = UIImagePNGRepresentation(timelineImages[i])! as NSData
                     case 11...19:
                         newItem.categoryType = "Asteroid"
                     case 20...24:
                         newItem.categoryType = "Journey"
                     case 25...30:
                         newItem.categoryType = "Journey"
-                        //newItem.date = dates[i - 21]
-                        //newItem.timeImage = UIImagePNGRepresentation(timeImages[i])!
+                        newItem.date = dates[i - 21]
+                        newItem.timelineImage = UIImagePNGRepresentation(timelineImages[i])! as NSData
                     default:
                         newItem.categoryType = "None"
                     }

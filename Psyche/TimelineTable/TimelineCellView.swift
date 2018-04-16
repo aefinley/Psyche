@@ -17,8 +17,8 @@ class TimelineCellView: UIView {
         
         // finding the size of the screen
         let screenWidth = self.bounds.width
-        //let screenHeight = self.bounds.height
-        let screenHeight:CGFloat = 400.0 // height of cell
+        let screenHeight = self.bounds.height
+        //let screenHeight:CGFloat = 400.0 // height of cell
         
         let context = UIGraphicsGetCurrentContext()!
         

@@ -16,10 +16,10 @@ class TimelineTableController: UITableViewController {
     let purple = UIColor(red: 167/255, green: 62/255, blue: 92/255, alpha: 1.0)
     
     var colors:[UIColor] = [UIColor]()
-    let titles = [ "t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
-    let diamonds = [ #imageLiteral(resourceName: "1.12.18Artboard 6"), #imageLiteral(resourceName: "1.12.18Artboard 10"), #imageLiteral(resourceName: "1.12.18Artboard 11"), #imageLiteral(resourceName: "1.12.18Artboard 7"), #imageLiteral(resourceName: "1.12.18Artboard 7") ]
     var button:Int!
+    var eventsList = [Fact]()
     
+    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,12 @@ class TimelineTableController: UITableViewController {
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
+        if eventsList.isEmpty {
+            query()
+        }
+        
+        //tableView.rowHeight = UITableViewAutomaticDimension
+        //tableView.estimatedRowHeight = 400
         
     }
     
@@ -71,17 +77,17 @@ class TimelineTableController: UITableViewController {
         
         cell.labelYear.frame.origin.x = screenWidth / 20
         cell.labelYear.frame.origin.y = screenHeight / 9
+        cell.labelYear.isHidden = true
         
-        cell.pictureForEvent.frame.origin.x = screenWidth / 4
+        cell.pictureForEvent.frame.origin.x = screenWidth / 3
         cell.pictureForEvent.frame.origin.y = screenHeight / 4
         
         cell.labelTitle.frame.origin.x = screenWidth / 3
         cell.labelTitle.center.y = cell.diamond.center.y
         
         cell.labelDescription.frame.origin.x = screenWidth / 3
-        cell.labelDescription.frame.origin.y = 3/4 * screenHeight
-        
-        // make a fetch to get the image/year and set it
+        cell.labelDescription.frame.origin.y = 1/2 * screenHeight
+        //cell.labelDescription.isHidden = false
         
         let index = indexPath.row
         
@@ -95,63 +101,58 @@ class TimelineTableController: UITableViewController {
         viewCell.backgroundColor = UIColor(red: 37/255, green: 22/255, blue: 51/255, alpha: 1.0)
         
         cell.backgroundView = viewCell
-        cell.diamond.image = diamonds[index / 2]
+        
+        var indexMission:Int = 0
+        
+        for i in 0..<eventsList.count {
+            
+            if index == eventsList[i].timelineEvent {
+                indexMission = i
+            }
+        }
+        
+        cell.diamond.image = UIImage(data: eventsList[indexMission].timelineImage! as Data)
+        cell.pictureForEvent.image = UIImage(data: eventsList[indexMission].image! as Data)
+        
         cell.labelYear.textColor = colors[index / 2]
-        cell.labelYear.text = "20" + String(index + 18)
         
         cell.labelTitle.textColor = .white
         cell.labelDescription.textColor = .white
-        cell.labelTitle.text = titles[index]
+        
+        cell.labelTitle.text = eventsList[indexMission].date
+        
+        cell.labelDescription.text = eventsList[indexMission].title
+        
+        cell.labelDescription.font = UIFont(name: "Helvetica", size: cell.labelTitle.font.pointSize)
+        
         cell.labelTitle.font = UIFont(name: "Helvetica", size: cell.labelTitle.font.pointSize)
+        cell.labelTitle.sizeToFit()
         
         return cell
     }
     
-    
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func query() {
+        // get a handler to the contact entity
+        let entityDescription = NSEntityDescription.entity(forEntityName: "Fact", in: managedObjectContext)
+        
+        // create a fetch request
+        let request: NSFetchRequest<Fact> = Fact.fetchRequest()
+        
+        // associate the request with contact handler
+        request.entity = entityDescription
+        
+        // build the search request predicate (query)
+        let pred = NSPredicate(format: "(date != nil)")
+        request.predicate = pred
+        
+        // perform the query and process the query results
+        do {
+            eventsList = try managedObjectContext.fetch(request as! NSFetchRequest<NSFetchRequestResult>) as! [Fact]
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
+    }
     
 }
 

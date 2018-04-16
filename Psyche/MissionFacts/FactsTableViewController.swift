@@ -90,7 +90,7 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "factCell", for: indexPath) as! FactTableViewCell
         cell.layer.borderWidth = 0.0
         cell.factTitle.text = factsList[indexPath.row].title
-        cell.factImage.image = UIImage(data: factsList[indexPath.row].image as! Data)
+        cell.factImage.image = UIImage(data: factsList[indexPath.row].image! as Data)
         return cell
     }
     
