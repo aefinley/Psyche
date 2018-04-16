@@ -40,8 +40,6 @@ class ViewController: UIViewController {
     var xBounds:[CGFloat] = []
     var countdownTitles:[UILabel] = []
 
-    //create listener for buttons
-    
     var viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let insertContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let titles = [
@@ -90,6 +88,8 @@ class ViewController: UIViewController {
         "Jan 2026 - Oct 2027", //29 - J 10 darkPurple
         "Nov 2017", //30 - J 3 darkerOrange
     ]
+    
+    var timelineEventOrder = [1, 3, 4, 5, 0, 6, 7, 8, 9, 2]
     
     var timelineImages = [#imageLiteral(resourceName: "orangeDot"), #imageLiteral(resourceName: "darkerOrgangeDot"), #imageLiteral(resourceName: "pinkDot"), #imageLiteral(resourceName: "pinkDot"), #imageLiteral(resourceName: "orangeDot"), #imageLiteral(resourceName: "darkPurpleDot"), #imageLiteral(resourceName: "darkPurpleDot"), #imageLiteral(resourceName: "darkPurpleDot"), #imageLiteral(resourceName: "darkPurpleDot"), #imageLiteral(resourceName: "darkerOrgangeDot")] //this should be the correct order
     
@@ -616,34 +616,34 @@ class ViewController: UIViewController {
             title.center.x = countdownLabels[i].center.x
             
         }
-            //dnaflk
-            menuButton.addTarget(self, action: #selector(ViewController.openMenuAction(_:)), for: UIControlEvents.touchUpInside)
+        //dnaflk
+        menuButton.addTarget(self, action: #selector(ViewController.openMenuAction(_:)), for: UIControlEvents.touchUpInside)
             
-            //gesture created so if user clicks on outside view menu will close
-            let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
+        //gesture created so if user clicks on outside view menu will close
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
             
-            self.view.addGestureRecognizer(gesture)
+        self.view.addGestureRecognizer(gesture)
             
-            self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
             
-            self.navigationController?.navigationBar.barStyle = UIBarStyle.black
-            self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
             
-            self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
-            
-            
-            menuWidth.constant = -300 //menu should be hidden when view loads, width is 300 so needs to be -300
-            
-            menu.layer.shadowOpacity = 1
-            menu.layer.shadowRadius = 5
-            menu.image = #imageLiteral(resourceName: "menuImage")
-            //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
             
             
-            self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
-            self.view.bringSubview(toFront: menu)
+        menuWidth.constant = -300 //menu should be hidden when view loads, width is 300 so needs to be -300
             
-            //getImages()
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menuImage")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+            
+            
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
+        
+        //getImages()
         
         asteroidImg.append(contentsOf: journeyImg)
         enginImg.append(contentsOf: asteroidImg)
@@ -664,11 +664,15 @@ class ViewController: UIViewController {
         request.predicate = pred
         
         if let fetchResult = (try? viewContext.fetch(request)) {
-            // Jennifer's Code
+            
             let num = fetchResult.count
             
             if num == 0 {
+                
+                var timelineIndex = 0
+                
                 for i in 0 ..< titles.count {
+                    
                     let ent = NSEntityDescription.entity(forEntityName: "Fact", in: insertContext)
                     let newItem = Fact(entity: ent!, insertInto: insertContext)
                     newItem.title = titles[i]
@@ -679,16 +683,23 @@ class ViewController: UIViewController {
                         newItem.categoryType = "Engineering"
                     case 7...10:
                         newItem.categoryType = "Engineering"
-                        //newItem.date = dates[i - 7]
-                    //newItem.timeImage = UIImagePNGRepresentation(timeImages[i])!
+                        newItem.date = dates[timelineIndex]
+                        newItem.timelineImage = UIImagePNGRepresentation(timelineImages[timelineIndex])! as NSData
+                        newItem.timelineEvent = Int32(timelineEventOrder[timelineIndex])
+                        //print("timelineEventOrder index: \(timelineEventOrder[timelineIndex])")
+                        timelineIndex+=1
+                        
                     case 11...19:
                         newItem.categoryType = "Asteroid"
                     case 20...24:
                         newItem.categoryType = "Journey"
                     case 25...30:
                         newItem.categoryType = "Journey"
-                        //newItem.date = dates[i - 21]
-                    //newItem.timeImage = UIImagePNGRepresentation(timeImages[i])!
+                        newItem.date = dates[timelineIndex]
+                        newItem.timelineImage = UIImagePNGRepresentation(timelineImages[timelineIndex])! as NSData
+                        newItem.timelineEvent = Int32(timelineEventOrder[timelineIndex])
+                        
+                        timelineIndex+=1
                     default:
                         newItem.categoryType = "None"
                     }
@@ -704,7 +715,8 @@ class ViewController: UIViewController {
                 }
             }
         }
-        }
+        
+    } // end viewDidLoad
             
             
             
