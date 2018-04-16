@@ -2,14 +2,15 @@
 //  Fact+CoreDataClass.swift
 //  Psyche
 //
-//  Created by Allison Finley on 2/26/18.
+//  Created by TempGuest on 4/16/18.
 //  Copyright © 2018 Apple Inc. All rights reserved.
-//  Definition of Fact
+//
 //
 
 import Foundation
 import CoreData
 
-public class Fact: NSManagedObject {
-    }
 
+public class Fact: NSManagedObject {
+
+}
