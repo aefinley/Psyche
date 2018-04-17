@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
         
         titleLabel.text = selectedFact.title
         descLabel.text = selectedFact.desc
-        factImage.image = UIImage(data: selectedFact.image  as Data)
+        factImage.image = UIImage(data: selectedFact.image as! Data)
     }
     
 }
