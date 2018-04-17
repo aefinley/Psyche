@@ -44,6 +44,7 @@
 		19EBB3B82060430F000D371C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EBB3B72060430F000D371C /* art.scnassets */; };
 		19F381CB2033CEB40002445A /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F381CA2033CEB40002445A /* FactTableViewCell.swift */; };
 		2E3748D2203E119200BA1CB0 /* Knockout.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3748D1203E119200BA1CB0 /* Knockout.otf */; };
+		2E544EB620869F560048D7F7 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E544EB520869F560048D7F7 /* UIButtonExtension.swift */; };
 		2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0D1F991BD40030FA86 /* AppDelegate.swift */; };
 		2E556F101F991BD40030FA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E556F0F1F991BD40030FA86 /* ViewController.swift */; };
 		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
@@ -118,6 +119,7 @@
 		19F381CA2033CEB40002445A /* FactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
 		2E14FFDF1FABD0A100B74330 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		2E3748D1203E119200BA1CB0 /* Knockout.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Knockout.otf; sourceTree = "<group>"; };
+		2E544EB520869F560048D7F7 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		2E556F0A1F991BD40030FA86 /* Psyche.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psyche.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E556F0D1F991BD40030FA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E556F0F1F991BD40030FA86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Psyche/ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -417,6 +419,7 @@
 				2E5777A62085CC2D000341ED /* ARMenuController.swift */,
 				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
 				2EA15CA6203E56CD0005E271 /* ARPickerController.swift */,
+				2E544EB520869F560048D7F7 /* UIButtonExtension.swift */,
 				8827C1CE20813E3F007BEE0E /* TimelineBase */,
 				EE4A118C207BF16D006FC5C5 /* TimelineTable */,
 				0DEB0F742000230C00D7BB12 /* SocialController.swift */,
@@ -584,6 +587,7 @@
 				19F381CB2033CEB40002445A /* FactTableViewCell.swift in Sources */,
 				EE4A1190207BF250006FC5C5 /* TimelineCell.swift in Sources */,
 				ABCC794020164BCA00006E47 /* MediaGallery.swift in Sources */,
+				2E544EB620869F560048D7F7 /* UIButtonExtension.swift in Sources */,
 				2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */,
 				EEDA23B22028DAE60038F276 /* TimelineBackground.swift in Sources */,
 				1910976420310694000879AB /* MissionFactsViewController.swift in Sources */,
