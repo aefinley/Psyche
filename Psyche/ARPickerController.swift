@@ -51,7 +51,8 @@ class ARPickerController: UIViewController {
         
     }
     
-    @IBAction func openMenuAction(_ sender: Any) {
+    @IBAction func openMenuAction(_ sender: UIButton) {
+        sender.shake()
         if(menuShowing){
             menuWidth.constant = -300
         }
