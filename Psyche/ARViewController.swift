@@ -103,7 +103,15 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
        self.present(vc, animated: true, completion: nil)
     }
     
-
+    
+    @IBAction func goToHelpMenu(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ARMenuController") as! ARMenuController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

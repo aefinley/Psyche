@@ -731,7 +731,7 @@
         <!--Menu Controller-->
         <scene sceneID="fvf-4M-x7o">
             <objects>
-                <viewController storyboardIdentifier="ARMenuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CXI-SG-zNb" customClass="ARMenuController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARMenuController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CXI-SG-zNb" customClass="ARMenuController" customModule="Psyche" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a5y-99-bk5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -743,13 +743,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lez-FZ-Vha">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lez-FZ-Vha">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <barButtonItem systemItem="stop" id="NL9-0B-rg0">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="TQ2-eW-fKm" kind="unwind" unwindAction="unwindToARViewControllerWithSegue:" id="Gho-Hs-beN"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="erv-qT-oYO"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="R2M-mb-fuu"/>
@@ -757,18 +759,86 @@
                                 <color key="barTintColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AUGMENTED REALITY GESTURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-ud-Aai">
-                                <rect key="frame" x="68" y="20" width="239" height="40"/>
+                                <rect key="frame" x="68" y="54" width="245" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="28"/>
                                 <color key="textColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="expand" translatesAutoresizingMaskIntoConstraints="NO" id="CeS-Fu-o4w">
+                                <rect key="frame" x="56" y="216" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinch" translatesAutoresizingMaskIntoConstraints="NO" id="skE-js-C4N">
+                                <rect key="frame" x="56" y="302" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petraArtboard 5outline" translatesAutoresizingMaskIntoConstraints="NO" id="D7Q-mq-LDR">
+                                <rect key="frame" x="56" y="474" width="60" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petraArtboard 3outline" translatesAutoresizingMaskIntoConstraints="NO" id="kxj-aL-6lS">
+                                <rect key="frame" x="56" y="381" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rotate" translatesAutoresizingMaskIntoConstraints="NO" id="jBb-YG-ipv">
+                                <rect key="frame" x="56" y="141" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSA-UV-Omt">
+                                <rect key="frame" x="136" y="161" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ROTATE THE MODEL">
+                                        <attributes>
+                                            <color key="NSColor" red="0.93725490199999995" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ZOOM IN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSh-dT-RTH">
+                                <rect key="frame" x="136" y="231" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TWO FINGER DRAG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JM-7q-VGT">
+                                <rect key="frame" x="136" y="401" width="164" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOUBLE TAP TO EXIT CAMERA VIEW" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-sG-FqQ">
+                                <rect key="frame" x="136" y="475" width="206" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ZOOM OUT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVO-8m-nDl">
+                                <rect key="frame" x="136" y="323" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lez-FZ-Vha" firstAttribute="leading" secondItem="Bf1-h4-eaj" secondAttribute="leading" id="aky-UZ-S6U"/>
+                            <constraint firstItem="Lez-FZ-Vha" firstAttribute="trailing" secondItem="Bf1-h4-eaj" secondAttribute="trailing" id="lRO-Ys-44g"/>
+                            <constraint firstItem="Lez-FZ-Vha" firstAttribute="bottom" secondItem="Bf1-h4-eaj" secondAttribute="bottom" id="uCg-8b-lNg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Bf1-h4-eaj"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIl-WQ-IW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="TQ2-eW-fKm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2872.8000000000002" y="-605.84707646176912"/>
         </scene>
@@ -1006,6 +1076,9 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Ewg-GK-n1j"/>
                                     <barButtonItem title="HELP" id="lJs-0d-iD7">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="goToHelpMenu:" destination="OtQ-a7-goA" id="lfU-Ce-hnF"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="fn6-e2-mNt"/>
                                     <barButtonItem systemItem="camera" id="MDo-fF-S9L">
@@ -1699,6 +1772,7 @@
         <image name="closeMenuButton" width="128" height="128"/>
         <image name="darkPurpleDot" width="229" height="228"/>
         <image name="darkerOrgangeDot" width="229" height="229"/>
+        <image name="expand" width="72" height="84"/>
         <image name="exploreIcon" width="64" height="60"/>
         <image name="fFacebook-Icon" width="30" height="30"/>
         <image name="fInstagram-Icon" width="30" height="30"/>
@@ -1709,7 +1783,11 @@
         <image name="home icon" width="85" height="75"/>
         <image name="nasaWhiteLogo" width="504" height="504"/>
         <image name="orangeDot" width="229" height="228"/>
+        <image name="petraArtboard 3outline" width="96" height="65"/>
+        <image name="petraArtboard 5outline" width="85" height="69"/>
+        <image name="pinch" width="65" height="74"/>
         <image name="pinkDot" width="229" height="229"/>
+        <image name="rotate" width="56" height="51"/>
         <image name="search" width="60" height="64"/>
         <image name="timeline icon" width="72" height="73"/>
     </resources>

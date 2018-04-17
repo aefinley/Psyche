@@ -10,8 +10,9 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ARMenuController: UIViewController, ARSCNViewDelegate {
+class ARMenuController: UIViewController {
     
+    @IBAction func unwindToARHelpMenu(segue:UIStoryboardSegue) { }
     
     
 }
