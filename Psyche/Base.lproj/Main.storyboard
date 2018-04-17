@@ -5,6 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1585,24 +1587,27 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="399.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VDU-D1-6HR">
-                                            <rect key="frame" x="16" y="29" width="51" height="51"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VDU-D1-6HR">
+                                            <rect key="frame" x="50.5" y="46" width="51" height="51"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="51" id="8nZ-rG-X8N"/>
+                                                <constraint firstAttribute="height" constant="51" id="szY-6G-M3X"/>
+                                            </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BGI-Dg-ySF">
-                                            <rect key="frame" x="67" y="110" width="240" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BGI-Dg-ySF">
+                                            <rect key="frame" x="120" y="123" width="225" height="175.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="BGI-Dg-ySF" secondAttribute="height" multiplier="32:25" id="Teo-1x-mXB"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hs-uf-eNH">
-                                            <rect key="frame" x="124" y="47" width="172" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hs-uf-eNH">
+                                            <rect key="frame" x="120" y="50" width="42" height="43"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMU-ZW-Qnb">
-                                            <rect key="frame" x="166" y="285" width="141" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMU-ZW-Qnb">
+                                            <rect key="frame" x="120" y="328" width="240" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -1615,6 +1620,19 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TMU-ZW-Qnb" firstAttribute="top" secondItem="BGI-Dg-ySF" secondAttribute="bottom" constant="30" id="0Ps-0e-rn6"/>
+                                        <constraint firstItem="3hs-uf-eNH" firstAttribute="leading" secondItem="TMU-ZW-Qnb" secondAttribute="leading" id="3LC-Ld-ldr"/>
+                                        <constraint firstItem="VDU-D1-6HR" firstAttribute="centerY" secondItem="3hs-uf-eNH" secondAttribute="centerY" id="6pM-Ft-k1h"/>
+                                        <constraint firstItem="BGI-Dg-ySF" firstAttribute="top" secondItem="3hs-uf-eNH" secondAttribute="bottom" constant="30" id="E3V-5G-0NT"/>
+                                        <constraint firstItem="VDU-D1-6HR" firstAttribute="centerX" secondItem="n62-Fg-IjI" secondAttribute="centerX" multiplier="0.405" id="HJP-Vw-gOF"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BGI-Dg-ySF" secondAttribute="trailing" constant="30" id="YGY-hn-Vcd"/>
+                                        <constraint firstAttribute="bottom" secondItem="TMU-ZW-Qnb" secondAttribute="bottom" constant="50" id="cvh-Z6-ycO"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TMU-ZW-Qnb" secondAttribute="trailing" constant="30" id="gyN-Y2-pDE"/>
+                                        <constraint firstItem="3hs-uf-eNH" firstAttribute="top" secondItem="n62-Fg-IjI" secondAttribute="top" constant="50" id="hEj-Wi-WUo"/>
+                                        <constraint firstItem="3hs-uf-eNH" firstAttribute="leading" secondItem="VDU-D1-6HR" secondAttribute="trailing" constant="18.5" id="id6-iH-3H1"/>
+                                        <constraint firstItem="3hs-uf-eNH" firstAttribute="leading" secondItem="BGI-Dg-ySF" secondAttribute="leading" id="lhx-wk-wfm"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="diamond" destination="VDU-D1-6HR" id="yO1-Vn-Rct"/>
@@ -1633,7 +1651,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBV-4e-EkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-375" y="1738"/>
+            <point key="canvasLocation" x="-375.19999999999999" y="1737.481259370315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g6E-oZ-2FM">
