@@ -51,6 +51,12 @@ class SharePhotoViewController: UIViewController {
                 
                 vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
                 
+                vc.popoverPresentationController?.sourceView = self.view
+                
+                vc.excludedActivityTypes = [ UIActivityType.airDrop]
+                
+                self.present(vc, animated: true, completion: nil)
+                
                 present(vc, animated: true)
             }
         }
