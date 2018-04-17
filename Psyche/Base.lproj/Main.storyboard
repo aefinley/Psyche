@@ -774,7 +774,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petraArtboard 5outline" translatesAutoresizingMaskIntoConstraints="NO" id="D7Q-mq-LDR">
-                                <rect key="frame" x="56" y="474" width="60" height="51"/>
+                                <rect key="frame" x="56" y="527" width="60" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="onetap" translatesAutoresizingMaskIntoConstraints="NO" id="1kb-Yf-uSF">
+                                <rect key="frame" x="56" y="455" width="60" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="petraArtboard 3outline" translatesAutoresizingMaskIntoConstraints="NO" id="kxj-aL-6lS">
@@ -813,8 +817,8 @@
                                 <color key="textColor" red="0.93725490199999995" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOUBLE TAP TO EXIT CAMERA VIEW" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-sG-FqQ">
-                                <rect key="frame" x="136" y="475" width="206" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SINGLE TAP TO FIX POSITION OF MODEL" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1K-Oy-qxB">
+                                <rect key="frame" x="136" y="458" width="206" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -822,6 +826,13 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ZOOM OUT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVO-8m-nDl">
                                 <rect key="frame" x="136" y="323" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOUBLE TAP TO EXIT CAMERA VIEW" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuY-sG-FqQ">
+                                <rect key="frame" x="136" y="528" width="206" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.34901960780000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -1782,6 +1793,7 @@
         <image name="hamburgerMenu" width="514" height="534"/>
         <image name="home icon" width="85" height="75"/>
         <image name="nasaWhiteLogo" width="504" height="504"/>
+        <image name="onetap" width="54" height="48"/>
         <image name="orangeDot" width="229" height="228"/>
         <image name="petraArtboard 3outline" width="96" height="65"/>
         <image name="petraArtboard 5outline" width="85" height="69"/>
