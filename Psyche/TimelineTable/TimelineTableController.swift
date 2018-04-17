@@ -27,6 +27,8 @@ class TimelineTableController: UITableViewController {
         // no lines in between cells
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         self.navigationController?.setNavigationBarHidden(false, animated: true)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 400
         
         if eventsList.isEmpty {
             query()
@@ -64,25 +66,25 @@ class TimelineTableController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TimelineCell", for: indexPath) as! TimelineCell
-        let screenHeight = self.tableView.bounds.height
-        let screenWidth = self.tableView.bounds.width
+        //let screenHeight = self.tableView.bounds.height
+        //let screenWidth = self.tableView.bounds.width
         
         // moving things around
-        cell.diamond.frame.origin.x = screenWidth / 5 - cell.diamond.frame.width / 2
-        cell.diamond.frame.origin.y = screenHeight / 8
+        //cell.diamond.frame.origin.x = screenWidth / 5 - cell.diamond.frame.width / 2
+        //cell.diamond.frame.origin.y = screenHeight / 8
         
-        cell.labelYear.frame.origin.x = screenWidth / 20
-        cell.labelYear.frame.origin.y = screenHeight / 9
+        //cell.labelYear.frame.origin.x = screenWidth / 20
+        //cell.labelYear.frame.origin.y = screenHeight / 9
         cell.labelYear.isHidden = true
         
-        cell.pictureForEvent.frame.origin.x = screenWidth / 3
-        cell.pictureForEvent.frame.origin.y = screenHeight / 4
+        //cell.pictureForEvent.frame.origin.x = screenWidth / 3
+        //cell.pictureForEvent.frame.origin.y = screenHeight / 4
         
-        cell.labelTitle.frame.origin.x = screenWidth / 3
-        cell.labelTitle.center.y = cell.diamond.center.y
+        //cell.labelTitle.frame.origin.x = screenWidth / 3
+        //cell.labelTitle.center.y = cell.diamond.center.y
         
-        cell.labelDescription.frame.origin.x = screenWidth / 3
-        cell.labelDescription.frame.origin.y = 1/2 * screenHeight
+        //cell.labelDescription.frame.origin.x = screenWidth / 3
+        //cell.labelDescription.frame.origin.y = 1/2 * screenHeight
         //cell.labelDescription.isHidden = false
         
         let index = indexPath.row
