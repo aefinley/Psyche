@@ -49,6 +49,7 @@
 		2E556F131F991BD40030FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F111F991BD40030FA86 /* Main.storyboard */; settings = {ASSET_TAGS = (menuView, ); }; };
 		2E556F151F991BD40030FA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F141F991BD40030FA86 /* Assets.xcassets */; };
 		2E556F181F991BD40030FA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E556F161F991BD40030FA86 /* LaunchScreen.storyboard */; };
+		2E5777A72085CC2D000341ED /* ARMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5777A62085CC2D000341ED /* ARMenuController.swift */; };
 		2E782985206D89B000E22BF3 /* SharePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */; };
 		2EA15CA7203E56CD0005E271 /* ARPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA15CA6203E56CD0005E271 /* ARPickerController.swift */; };
 		8827C1CD20813E2B007BEE0E /* ClockBoxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8827C1CC20813E2B007BEE0E /* ClockBoxes.swift */; };
@@ -124,6 +125,7 @@
 		2E556F141F991BD40030FA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E556F171F991BD40030FA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E556F191F991BD40030FA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5777A62085CC2D000341ED /* ARMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMenuController.swift; sourceTree = "<group>"; };
 		2E782984206D89AF00E22BF3 /* SharePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePhotoViewController.swift; sourceTree = "<group>"; };
 		2EA15CA6203E56CD0005E271 /* ARPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPickerController.swift; sourceTree = "<group>"; };
 		8827C1CC20813E2B007BEE0E /* ClockBoxes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockBoxes.swift; sourceTree = "<group>"; };
@@ -412,6 +414,7 @@
 				2E556F0D1F991BD40030FA86 /* AppDelegate.swift */,
 				2E3748D1203E119200BA1CB0 /* Knockout.otf */,
 				2E556F0F1F991BD40030FA86 /* ViewController.swift */,
+				2E5777A62085CC2D000341ED /* ARMenuController.swift */,
 				0DEB0F722000220900D7BB12 /* ARViewController.swift */,
 				2EA15CA6203E56CD0005E271 /* ARPickerController.swift */,
 				8827C1CE20813E3F007BEE0E /* TimelineBase */,
@@ -571,6 +574,7 @@
 				AB548C45207805CD0040B490 /* MediaDetailViewController.swift in Sources */,
 				EE193B5C208544EE003C05E6 /* Fact+CoreDataProperties.swift in Sources */,
 				8827C1CD20813E2B007BEE0E /* ClockBoxes.swift in Sources */,
+				2E5777A72085CC2D000341ED /* ARMenuController.swift in Sources */,
 				ABCC79422016626400006E47 /* imageCollectionViewCell.swift in Sources */,
 				AB9156E82054DECF00B0F407 /* myCell.swift in Sources */,
 				2E556F0E1F991BD40030FA86 /* AppDelegate.swift in Sources */,
