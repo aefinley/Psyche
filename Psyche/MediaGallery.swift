@@ -26,7 +26,7 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
     
     var imgarr:[UIImage] = []
     
-    
+    var viewContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -192,8 +192,8 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         
         myCollectionView.collectionViewLayout = layout
         
-        
-        
+        let pics = PictureObj.getAll(context: viewContext)
+        for pic in pics! { imgarr.append(UIImage(data: pic)!) }
         
     }
     
