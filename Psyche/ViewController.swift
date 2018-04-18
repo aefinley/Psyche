@@ -644,7 +644,8 @@ class ViewController: UIViewController {
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
         self.view.bringSubview(toFront: menu)
         
-        getImages()
+        if let _ = PictureObj.getAll(context: viewContext) {}
+        else { getImages() }
         
         asteroidImg.append(contentsOf: journeyImg)
         enginImg.append(contentsOf: asteroidImg)
@@ -752,7 +753,7 @@ class ViewController: UIViewController {
                         looker = looker.prefix(upTo: looker.index(looker.endIndex, offsetBy: -13)) + end
                         //print(looker)
                         do{
-                            try imageArray.append(UIImage(data: Data(contentsOf: URL(string: String(looker.suffix(from: looker.index(looker.startIndex, offsetBy: 5))).trimmingCharacters(in: CharacterSet(charactersIn: "\"")))!))!)
+                            try imageArray.append(UIImage(data: PictureObj.add(pic: Data(contentsOf: URL(string: String(looker.suffix(from: looker.index(looker.startIndex, offsetBy: 5))).trimmingCharacters(in: CharacterSet(charactersIn: "\"")))!), context: viewContext))!)
                         } catch _ {}
                         added+=1
                     }
@@ -769,12 +770,7 @@ class ViewController: UIViewController {
        
             
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.destination is MediaGallery
-        {
-            let imgarr = segue.destination as? MediaGallery
-            imgarr?.imgarr = imageArray
-        }
+        if let send = sender as? UIButton { closeMenu(send) }
     }
     
     @IBAction func unwindToHomeScreen(segue: UIStoryboardSegue) {
