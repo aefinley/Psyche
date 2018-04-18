@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TimelineTableController: UITableViewController {
+class TimelineTableController: UITableViewController, UIToolbarDelegate {
     
     let lightOrange = UIColor(red: 251/255, green: 158/255, blue: 1/255, alpha: 1.0)
     let darkOrange = UIColor(red: 245/255, green: 113/255, blue: 51/255, alpha: 1.0)
@@ -27,9 +27,10 @@ class TimelineTableController: UITableViewController {
         // no lines in between cells
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        self.navigationController?.isToolbarHidden = false;
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 400
+        
+        self.navigationController?.toolbar.delegate = self
         
         if eventsList.isEmpty {
             query()
@@ -149,6 +150,11 @@ class TimelineTableController: UITableViewController {
         }
         
     }
+    
+    func position(for bar: UIBarPositioning) -> UIBarPosition {
+        return UIBarPosition.topAttached
+    }
+    
     
 }
 
