@@ -284,7 +284,7 @@
             <objects>
                 <viewController storyboardIdentifier="Timeline" id="eUc-cD-MwX" customClass="TimelineBackgroundControllerViewController" customModule="Psyche" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Timeline" id="lwS-4B-tfR" customClass="TimelineBackground" customModule="Psyche" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIMELINE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dN-Hg-kas">
@@ -454,7 +454,7 @@
                                 </connections>
                             </button>
                             <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShM-s4-Fjv" customClass="UIImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="300" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGq-Rd-9A5">
                                         <rect key="frame" x="247" y="65" width="37" height="34"/>
@@ -615,7 +615,7 @@
             <objects>
                 <viewController id="Mkb-HV-u9b" customClass="MediaGallery" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rbs-ej-0sg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d3U-sJ-kPE">
@@ -662,7 +662,7 @@
                                 </connections>
                             </collectionView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZu-b2-1fX">
-                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="iC0-Es-Z83"/>
@@ -687,7 +687,7 @@
                                 </items>
                             </toolbar>
                             <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCG-3O-rlk" customClass="UIImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="300" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhB-5y-0wG">
                                         <rect key="frame" x="246" y="52" width="37" height="34"/>
@@ -1290,11 +1290,11 @@
             <objects>
                 <viewController storyboardIdentifier="Explore" id="1UJ-Mk-SKe" customClass="MissionFactsViewController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4wF-eg-f9R">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6W-Zc-Apd">
-                                <rect key="frame" x="0.0" y="286" width="375" height="159"/>
+                                <rect key="frame" x="0.0" y="316" width="375" height="176"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="journey"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
@@ -1306,7 +1306,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuT-JY-3zU">
-                                <rect key="frame" x="0.0" y="126" width="375" height="160"/>
+                                <rect key="frame" x="0.0" y="139" width="375" height="177"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="building"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
@@ -1318,7 +1318,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGB-BR-z7t">
-                                <rect key="frame" x="0.0" y="445" width="375" height="159"/>
+                                <rect key="frame" x="0.0" y="492" width="375" height="176"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="asteroid"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
@@ -1330,26 +1330,26 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="bvR-rQ-1CP">
-                                <rect key="frame" x="0.0" y="250" width="375" height="36"/>
+                                <rect key="frame" x="0.0" y="277" width="375" height="39"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="nX4-PL-qq9">
-                                <rect key="frame" x="0.0" y="410" width="375" height="35"/>
+                                <rect key="frame" x="0.0" y="454" width="375" height="38"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="za9-fX-1l0">
-                                <rect key="frame" x="0.0" y="567" width="375" height="37"/>
+                                <rect key="frame" x="0.0" y="627" width="375" height="41"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JOURNEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slk-mg-D3a">
-                                <rect key="frame" x="303" y="418" width="56" height="19"/>
+                                <rect key="frame" x="303" y="462" width="56" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ASTEROID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaG-wo-Sd0">
-                                <rect key="frame" x="303" y="576" width="56" height="19"/>
+                                <rect key="frame" x="303" y="637" width="56" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1487,14 +1487,14 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGINEERING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-pb-6b4">
-                                <rect key="frame" x="279" y="258" width="80" height="20"/>
+                                <rect key="frame" x="279" y="285" width="80" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-j9-sbh">
-                                <rect key="frame" x="315" y="82" width="44" height="31"/>
+                                <rect key="frame" x="315" y="82" width="44" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1533,18 +1533,18 @@
             <objects>
                 <viewController id="8si-5B-J1E" customClass="FactsTableViewController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yOa-1y-l45">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGS-5e-Svc">
-                                <rect key="frame" x="15" y="54" width="344" height="40"/>
+                                <rect key="frame" x="15" y="60" width="344" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5OY-jd-wAt">
-                                <rect key="frame" x="0.0" y="269" width="374" height="334"/>
+                                <rect key="frame" x="0.0" y="297" width="374" height="370"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -1552,7 +1552,7 @@
                                         <rect key="frame" x="0.0" y="28" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pHK-Ds-ob7" id="eYl-8Q-ntR">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A72-EY-QZj">
@@ -1593,11 +1593,15 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nasaWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Wy1-kz-rV0">
-                                <rect key="frame" x="315" y="63" width="44" height="31"/>
+                                <rect key="frame" x="315" y="63" width="44" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7OC-4K-4Wc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htS-fN-WAl">
+                                <rect key="frame" x="0.0" y="126" width="374" height="174"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OC-4K-4Wc">
+                                <rect key="frame" x="0.0" y="10" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <barButtonItem title="TO EXPLORE" id="llx-nS-pqO">
@@ -1609,10 +1613,6 @@
                                 </items>
                                 <color key="barTintColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htS-fN-WAl">
-                                <rect key="frame" x="0.0" y="114" width="374" height="157"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Jp8-Ie-83O"/>
@@ -1717,50 +1717,53 @@
             <objects>
                 <viewController id="dkM-Zt-Pgf" customClass="DetailViewController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tY0-1y-eCt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xj-ar-7wS">
-                                <rect key="frame" x="0.0" y="97" width="375" height="186"/>
+                                <rect key="frame" x="0.0" y="107" width="375" height="206"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iqA-cd-Rvy">
-                                <rect key="frame" x="16" y="301" width="343" height="290"/>
+                                <rect key="frame" x="16" y="334" width="343" height="321"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Odx-qg-v2a">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <barButtonItem title="TO FACT CATEGORY" id="rQu-WA-wUg">
-                                        <connections>
-                                            <segue destination="52V-sQ-019" kind="unwind" unwindAction="unwindFromDetailWithSegue:" id="46D-DH-FvH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                                <color key="barTintColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="detailed fact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQj-pB-3oz">
-                                <rect key="frame" x="16" y="40" width="343" height="58"/>
+                                <rect key="frame" x="16" y="44" width="343" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odx-qg-v2a">
+                                <rect key="frame" x="0.0" y="8" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem title="TO FACT CATEGORY" id="rQu-WA-wUg">
+                                        <connections>
+                                            <action selector="goBack:" destination="dkM-Zt-Pgf" id="bnO-bZ-Uia"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K9h-Xq-yEY"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="rQu-WA-wUg" id="qTa-kx-F9J"/>
                         <outlet property="descLabel" destination="iqA-cd-Rvy" id="MTd-OD-iA1"/>
                         <outlet property="factImage" destination="0xj-ar-7wS" id="iVa-P6-6YJ"/>
                         <outlet property="titleLabel" destination="QQj-pB-3oz" id="1nA-tK-Txw"/>
+                        <segue destination="52V-sQ-019" kind="unwind" identifier="backToTimeline" unwindAction="unwindToTimelineWithSegue:" id="dQX-vg-A5N"/>
+                        <segue destination="52V-sQ-019" kind="unwind" identifier="backToFactTable" unwindAction="unwindFromDetailWithSegue:" id="VA6-Z7-l3B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4eJ-ae-dbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1788,12 +1791,13 @@
             <objects>
                 <tableViewController id="Cg8-oe-Yuh" customClass="TimelineTableController" customModule="Psyche" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="400" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FrB-Tt-UtF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <toolbar key="tableHeaderView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="grM-5y-5AX">
+                        <toolbar key="tableHeaderView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="grM-5y-5AX">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.1843137255" green="0.12549019610000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <items>
                                 <barButtonItem title="TO TIMELINE" id="0hP-BE-zwA">
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1844,13 +1848,26 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hs-sM-NIc">
+                                            <rect key="frame" x="305" y="258" width="22" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="22" id="UuY-i0-org"/>
+                                                <constraint firstAttribute="height" constant="22" id="eeT-AR-8Rb"/>
+                                            </constraints>
+                                            <state key="normal" image="OrangePlus"/>
+                                            <connections>
+                                                <segue destination="dkM-Zt-Pgf" kind="show" id="ZGd-td-sjf"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="TMU-ZW-Qnb" firstAttribute="top" secondItem="BGI-Dg-ySF" secondAttribute="bottom" constant="30" id="0Ps-0e-rn6"/>
                                         <constraint firstItem="3hs-uf-eNH" firstAttribute="leading" secondItem="TMU-ZW-Qnb" secondAttribute="leading" id="3LC-Ld-ldr"/>
                                         <constraint firstItem="VDU-D1-6HR" firstAttribute="centerY" secondItem="3hs-uf-eNH" secondAttribute="centerY" id="6pM-Ft-k1h"/>
+                                        <constraint firstItem="1hs-sM-NIc" firstAttribute="leading" secondItem="BGI-Dg-ySF" secondAttribute="trailing" constant="-40" id="9bC-Ad-KKj"/>
                                         <constraint firstItem="BGI-Dg-ySF" firstAttribute="top" secondItem="3hs-uf-eNH" secondAttribute="bottom" constant="30" id="E3V-5G-0NT"/>
                                         <constraint firstItem="VDU-D1-6HR" firstAttribute="centerX" secondItem="n62-Fg-IjI" secondAttribute="centerX" multiplier="0.405" id="HJP-Vw-gOF"/>
+                                        <constraint firstItem="1hs-sM-NIc" firstAttribute="top" secondItem="BGI-Dg-ySF" secondAttribute="bottom" constant="-40" id="R5Y-WY-xHU"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BGI-Dg-ySF" secondAttribute="trailing" constant="30" id="YGY-hn-Vcd"/>
                                         <constraint firstAttribute="bottom" secondItem="TMU-ZW-Qnb" secondAttribute="bottom" constant="50" id="cvh-Z6-ycO"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TMU-ZW-Qnb" secondAttribute="trailing" constant="30" id="gyN-Y2-pDE"/>
@@ -1860,6 +1877,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="buttonToFact" destination="1hs-sM-NIc" id="Njs-Tt-Vjl"/>
                                     <outlet property="diamond" destination="VDU-D1-6HR" id="yO1-Vn-Rct"/>
                                     <outlet property="labelDescription" destination="TMU-ZW-Qnb" id="ez2-bo-Kcn"/>
                                     <outlet property="labelTitle" destination="3hs-uf-eNH" id="vRd-H9-Sbh"/>
@@ -1908,6 +1926,7 @@
         <image name="EngineeringButton" width="7339" height="3836"/>
         <image name="Journey" width="2918" height="2167"/>
         <image name="JourneyButton" width="1203" height="658"/>
+        <image name="OrangePlus" width="14" height="12"/>
         <image name="closeMenuButton" width="128" height="128"/>
         <image name="darkPurpleDot" width="229" height="228"/>
         <image name="darkerOrgangeDot" width="229" height="229"/>
@@ -1916,7 +1935,7 @@
         <image name="fFacebook-Icon" width="30" height="30"/>
         <image name="fInstagram-Icon" width="30" height="30"/>
         <image name="fTwitter-Icon" width="30" height="30"/>
-        <image name="gallery icon" width="38" height="54"/>
+        <image name="gallery icon" width="45" height="45"/>
         <image name="gradient" width="375" height="33"/>
         <image name="hamburgerMenu" width="514" height="534"/>
         <image name="home icon" width="85" height="75"/>
@@ -1931,10 +1950,11 @@
         <image name="timeline icon" width="72" height="73"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Qrw-a6-lB2"/>
+        <segue reference="ZGd-td-sjf"/>
+        <segue reference="eO6-Lv-N2y"/>
         <segue reference="L0A-mA-YJ2"/>
-        <segue reference="DFx-P5-V49"/>
-        <segue reference="Ceb-9p-KO5"/>
+        <segue reference="lTh-R6-caJ"/>
+        <segue reference="pB3-uF-Utd"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.18269470330000001" green="0.12640148400000001" blue="0.2757191658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

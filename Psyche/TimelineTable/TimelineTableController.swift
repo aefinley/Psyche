@@ -27,9 +27,9 @@ class TimelineTableController: UITableViewController {
         // no lines in between cells
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        self.navigationController?.isToolbarHidden = false;
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 400
+        
         
         if eventsList.isEmpty {
             query()
@@ -124,6 +124,8 @@ class TimelineTableController: UITableViewController {
         cell.labelTitle.font = UIFont(name: "Helvetica", size: cell.labelTitle.font.pointSize)
         cell.labelTitle.sizeToFit()
         
+        cell.buttonToFact.tag = indexMission
+        
         return cell
     }
     
@@ -149,6 +151,22 @@ class TimelineTableController: UITableViewController {
         }
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? DetailViewController {
+            
+            dest.originalView = "TIMELINE"
+            let button = sender as? UIButton
+            let index = button!.tag
+            
+            dest.selectedFact = eventsList[index]
+        }
+    }
+    
+    @IBAction func unwindToTimeline(segue: UIStoryboardSegue) {
+        
+    }
+    
     
 }
 
