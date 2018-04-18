@@ -26,7 +26,8 @@ class TimelineTableController: UITableViewController {
         colors = [lightOrange, darkOrange, pink, purple, purple, purple, purple]
         // no lines in between cells
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.isToolbarHidden = false;
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 400
         

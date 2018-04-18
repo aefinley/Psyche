@@ -15,6 +15,7 @@ class TimelineViewController: UIViewController {
         // set background to purple
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)
         
     }
