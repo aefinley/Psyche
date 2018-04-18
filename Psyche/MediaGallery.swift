@@ -11,6 +11,14 @@ import UIKit
 
 class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
+    
+    @IBOutlet weak var menuButton: UIButton!
+    
+    
+    @IBOutlet weak var menu: UIImageView!
+    
+    @IBOutlet weak var menuWidth: NSLayoutConstraint!
+    
     //for menu
     var menuShowing = false //boolean to see if menu is showing currently or not
     
@@ -18,15 +26,165 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
     
     var imgarr:[UIImage] = []
     
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        if(menuShowing){
+            menuWidth.constant = -300
+        }
+    }
+    
+    
+    @IBAction func openMenuAction(_ sender: UIButton) {
+        sender.shake()
+        if(menuShowing){
+            menuWidth.constant = -300
+        }
+        else{
+            menuWidth.constant = -5
+            
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+        }
+        
+        menuShowing = !menuShowing
+    }
+    
+    @IBAction func closeMenu(_ sender: UIButton) {
+        if(menuShowing){
+            menuWidth.constant = -300
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+            menuShowing = false
+        }
+    }
+    
+    
+    @IBAction func goToTimeline(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Timeline") as! TimelineBackgroundControllerViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    
+    @IBAction func goHome(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Home") as! ViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    @IBAction func goToExplore(_ sender: Any) {
+        
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Explore") as! MissionFactsViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    
+    
+    @IBAction func goToAr(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "3DPicker") as! ARPickerController
+        self.present(nextViewController, animated:true, completion:nil)
+
+    }
+    
+    
+    @IBAction func openNasa(_ sender: Any) {
+        
+        if let url = URL(string: "http://nasa.gov/psyche"){
+            
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
+        }
+    }
+    
+    
+    
+    @IBAction func openASU(_ sender: Any) {
+        if let url = URL(string: "http://psyche.asu.edu"){
+            
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //close menu if user clicks on main view
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+        
+        menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menuImageFlipped")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
+        menuButton.addTarget(self, action: #selector(ViewController.openMenuAction(_:)), for: UIControlEvents.touchUpInside)
+        
+        //gesture created so if user clicks on outside view menu will close
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
+        
+        self.view.addGestureRecognizer(gesture)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+        
+        
+        menuWidth.constant = -300 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menuImage")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        
+        
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         //back button
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         let itemSize = UIScreen.main.bounds.width/2 - 6
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsetsMake(20, 0, 60, 0)
+        layout.sectionInset = UIEdgeInsetsMake(70, 0, 60, 0)
+    
         layout.itemSize = CGSize(width: itemSize, height: itemSize)
         
         layout.minimumInteritemSpacing = 4
@@ -38,6 +196,9 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         
         
     }
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

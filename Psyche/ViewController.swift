@@ -491,8 +491,8 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func openMenuAction(_ sender: Any) {
-    
+    @IBAction func openMenuAction(_ sender: UIButton) {
+        sender.shake()
         if(menuShowing){
             menuWidth.constant = -300
         }
@@ -644,7 +644,7 @@ class ViewController: UIViewController {
         self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
         self.view.bringSubview(toFront: menu)
         
-        //getImages()
+        getImages()
         
         asteroidImg.append(contentsOf: journeyImg)
         enginImg.append(contentsOf: asteroidImg)
