@@ -107,6 +107,7 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
             if(segue.identifier == "DetailViewSegue") {
                 let viewController = segue.destination as! DetailViewController
                 viewController.selectedFact = fact
+                viewController.originalView = "FACT CATEGORY"
             }
         }
 

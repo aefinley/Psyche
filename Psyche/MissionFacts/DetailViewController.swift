@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     var originalView:String!
     
     
+    @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UITextView!
     @IBOutlet weak var factImage: UIImageView!
@@ -22,15 +23,17 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         // back button is viewable
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        backButton.title = "TO " + originalView
         
         titleLabel.text = selectedFact.title
         descLabel.text = selectedFact.desc
-        factImage.image = UIImage(data: selectedFact.image as! Data)
+        factImage.image = UIImage(data: selectedFact.image! as Data)
     }
     
     @IBAction func goBack(_ sender: Any) {
-        if originalView == "Timeline" {
+        if originalView == "TIMELINE" {
             performSegue(withIdentifier: "backToTimeline", sender: sender)
         }
         else {

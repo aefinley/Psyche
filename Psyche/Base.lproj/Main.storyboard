@@ -1552,7 +1552,7 @@
                                         <rect key="frame" x="0.0" y="28" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pHK-Ds-ob7" id="eYl-8Q-ntR">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A72-EY-QZj">
@@ -1758,6 +1758,7 @@
                         <viewLayoutGuide key="safeArea" id="K9h-Xq-yEY"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="rQu-WA-wUg" id="qTa-kx-F9J"/>
                         <outlet property="descLabel" destination="iqA-cd-Rvy" id="MTd-OD-iA1"/>
                         <outlet property="factImage" destination="0xj-ar-7wS" id="iVa-P6-6YJ"/>
                         <outlet property="titleLabel" destination="QQj-pB-3oz" id="1nA-tK-Txw"/>

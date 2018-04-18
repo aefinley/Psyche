@@ -155,7 +155,7 @@ class TimelineTableController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dest = segue.destination as? DetailViewController {
             
-            dest.originalView = "Timeline"
+            dest.originalView = "TIMELINE"
             let button = sender as? UIButton
             let index = button!.tag
             
