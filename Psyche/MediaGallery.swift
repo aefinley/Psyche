@@ -11,6 +11,14 @@ import UIKit
 
 class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
+    
+    @IBOutlet weak var menuButton: UIButton!
+    
+    
+    @IBOutlet weak var menu: UIImageView!
+    
+    @IBOutlet weak var menuWidth: NSLayoutConstraint!
+    
     //for menu
     var menuShowing = false //boolean to see if menu is showing currently or not
     
@@ -18,8 +26,107 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
     
     var imgarr:[UIImage] = []
     
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        if(menuShowing){
+            menuWidth.constant = -300
+        }
+    }
+    
+    
+    @IBAction func openMenuAction(_ sender: Any) {
+        if(menuShowing){
+            menuWidth.constant = -300
+        }
+        else{
+            menuWidth.constant = -5
+            
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+        }
+        
+        menuShowing = !menuShowing
+    }
+    
+    @IBAction func closeMenu(_ sender: UIButton) {
+        if(menuShowing){
+            menuWidth.constant = -300
+            UIView.animate(withDuration: 0.3, animations: { self.view.layoutIfNeeded()})
+            view.layoutIfNeeded()
+            menuShowing = false
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //close menu if user clicks on main view
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+        
+        menuWidth.constant = -175 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menuImageFlipped")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
+        menuButton.addTarget(self, action: #selector(ViewController.openMenuAction(_:)), for: UIControlEvents.touchUpInside)
+        
+        //gesture created so if user clicks on outside view menu will close
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
+        
+        self.view.addGestureRecognizer(gesture)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color
+        
+        
+        menuWidth.constant = -300 //menu should be hidden when view loads, width is 300 so needs to be -300
+        
+        menu.layer.shadowOpacity = 1
+        menu.layer.shadowRadius = 5
+        menu.image = #imageLiteral(resourceName: "menuImage")
+        //self.menu.bringSubview(toFront: menu); //makes sure menu view does not get mixed with twitter feed
+        
+        
+        self.menu.layer.zPosition = 1 //ensures that menu view is on top of the main view
+        self.view.bringSubview(toFront: menu)
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         //back button
         self.navigationController?.setNavigationBarHidden(false, animated: true)
@@ -38,6 +145,9 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         
         
     }
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
