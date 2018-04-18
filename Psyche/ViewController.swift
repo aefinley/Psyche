@@ -563,13 +563,19 @@ class ViewController: UIViewController {
             countdownLabels[i].frame.size = size
             
             countdownTitles[i].center.x = countdownLabels[i].center.x
+            
+            countdownTitles[i].isHidden = false
+            countdownLabels[i].isHidden = false
         }
+        
+        
         
     }
  
     override func viewDidLoad() {
         super.viewDidLoad()
         menuButton.pulsateMenu()
+        
         
         //close menu if user clicks on main view
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.1843, green: 0.1255, blue: 0.2745, alpha: 1.0)  //this code was generated online, I had to find the exact RGB values for deep purple background color

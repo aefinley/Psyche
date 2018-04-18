@@ -148,7 +148,7 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         //gesture created so if user clicks on outside view menu will close
         let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.closeMenu))
         
-        self.view.addGestureRecognizer(gesture)
+        //self.view.addGestureRecognizer(gesture) // this breaks the gallery
         
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         

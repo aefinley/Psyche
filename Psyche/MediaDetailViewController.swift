@@ -99,7 +99,7 @@ class MediaDetailViewController: UIViewController {
         nextImageView.backgroundColor = .black
         prevImageView.backgroundColor = .black
         
-        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     

@@ -72,7 +72,7 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // back button is viewable
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         
         //self.factsTable.rowHeight = 150.0 //changes cell height
         self.factsTable.separatorStyle = UITableViewCellSeparatorStyle.none //take out lines between cells
@@ -100,7 +100,7 @@ class FactsTableViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let x = sender as? UIButton {}
+        if let _ = sender as? UIBarButtonItem { }
         else {
             let selectedIndex: IndexPath = self.factsTable.indexPath(for: sender as! UITableViewCell)!
             let fact = factsList[selectedIndex.row]
