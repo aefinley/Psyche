@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TimelineTableController: UITableViewController, UIToolbarDelegate {
+class TimelineTableController: UITableViewController {
     
     let lightOrange = UIColor(red: 251/255, green: 158/255, blue: 1/255, alpha: 1.0)
     let darkOrange = UIColor(red: 245/255, green: 113/255, blue: 51/255, alpha: 1.0)
@@ -30,7 +30,6 @@ class TimelineTableController: UITableViewController, UIToolbarDelegate {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 400
         
-        self.navigationController?.toolbar.delegate = self
         
         if eventsList.isEmpty {
             query()
