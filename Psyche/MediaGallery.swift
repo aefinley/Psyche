@@ -63,13 +63,62 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
     }
     
     
+    @IBAction func goToTimeline(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Timeline") as! TimelineBackgroundControllerViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    
+    @IBAction func goHome(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Home") as! ViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    @IBAction func goToExplore(_ sender: Any) {
+        
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "Explore") as! MissionFactsViewController
+        self.present(nextViewController, animated:true, completion:nil)
+    }
     
     
     
+    @IBAction func goToAr(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "3DPicker") as! ARPickerController
+        self.present(nextViewController, animated:true, completion:nil)
+
+    }
+    
+    
+    @IBAction func openNasa(_ sender: Any) {
+        
+        if let url = URL(string: "http://nasa.gov/psyche"){
+            
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
+        }
+    }
     
     
     
-    
+    @IBAction func openASU(_ sender: Any) {
+        if let url = URL(string: "http://psyche.asu.edu"){
+            
+            
+            UIApplication.shared.open(url, options: [:], completionHandler: { (success) in
+                print("open url: \(success)")
+            }) //open url when link clicked
+        }
+    }
     
     
     

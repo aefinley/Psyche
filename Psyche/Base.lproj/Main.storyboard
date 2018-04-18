@@ -643,7 +643,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d3U-sJ-kPE">
-                                <rect key="frame" x="0.0" y="429" width="375" height="133"/>
+                                <rect key="frame" x="0.0" y="93" width="375" height="469"/>
                                 <color key="backgroundColor" red="0.18541383743286133" green="0.12634751200675964" blue="0.27638038992881775" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HY9-gn-QoA">
                                     <size key="itemSize" width="116" height="114"/>
@@ -744,6 +744,7 @@
                                             <color key="titleColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="openNasa:" destination="Mkb-HV-u9b" eventType="touchUpInside" id="Ao7-OL-qlG"/>
                                             <action selector="openNasa:" destination="eUc-cD-MwX" eventType="touchUpInside" id="FOl-yO-Ioc"/>
                                             <action selector="openNasa:" destination="1UJ-Mk-SKe" eventType="touchUpInside" id="rda-KU-O64"/>
                                         </connections>
@@ -759,37 +760,42 @@
                                             <action selector="openASU:" destination="1UJ-Mk-SKe" eventType="touchUpInside" id="Wom-cE-wc5"/>
                                             <action selector="openASU:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y6X-jh-nxB"/>
                                             <action selector="openASU:" destination="SEu-zG-VQ9" eventType="touchUpInside" id="axP-gZ-BqP"/>
+                                            <action selector="openASU:" destination="Mkb-HV-u9b" eventType="touchUpInside" id="fII-Jc-Gqw"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home icon" translatesAutoresizingMaskIntoConstraints="NO" id="a2U-Hi-Bn6">
-                                        <rect key="frame" x="49" y="145" width="45" height="44"/>
+                                        <rect key="frame" x="53" y="157" width="45" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phV-xn-3Hv">
-                                        <rect key="frame" x="49" y="213" width="204" height="44"/>
+                                        <rect key="frame" x="53" y="225" width="204" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                         <state key="normal" title="TIMELINE">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="goToTimeline:" destination="Mkb-HV-u9b" eventType="touchUpInside" id="CaR-bb-4dk"/>
                                             <action selector="goToTimeline:" destination="1UJ-Mk-SKe" eventType="touchUpInside" id="JMG-kC-T7j"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timeline icon" translatesAutoresizingMaskIntoConstraints="NO" id="wRW-7N-yik">
-                                        <rect key="frame" x="49" y="213" width="50" height="44"/>
+                                        <rect key="frame" x="53" y="225" width="50" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNe-H8-Da2">
-                                        <rect key="frame" x="54" y="145" width="199" height="44"/>
+                                        <rect key="frame" x="58" y="157" width="199" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                         <state key="normal" title="HOME">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="goHome:" destination="Mkb-HV-u9b" eventType="touchUpInside" id="uOI-4T-HLp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTn-qN-d7U">
-                                        <rect key="frame" x="51" y="276" width="199" height="44"/>
+                                        <rect key="frame" x="55" y="288" width="199" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                         <state key="normal" title="EXPLORE">
@@ -797,18 +803,19 @@
                                         </state>
                                         <connections>
                                             <action selector="goToExplore:" destination="eUc-cD-MwX" eventType="touchUpInside" id="Cch-uz-1hp"/>
+                                            <action selector="goToExplore:" destination="Mkb-HV-u9b" eventType="touchUpInside" id="mTw-SQ-8KX"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exploreIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fRh-Ro-4P7">
-                                        <rect key="frame" x="48" y="276" width="48" height="44"/>
+                                        <rect key="frame" x="52" y="288" width="48" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AR icon" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-Fi-aDu">
-                                        <rect key="frame" x="52" y="347" width="48" height="44"/>
+                                        <rect key="frame" x="56" y="359" width="48" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee9-vz-czH">
-                                        <rect key="frame" x="51" y="347" width="200" height="44"/>
+                                        <rect key="frame" x="55" y="359" width="200" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Knockout-HTF48-Featherweight" family="Knockout" pointSize="25"/>
                                         <state key="normal" title="3D EXPERIENCE">
@@ -816,6 +823,7 @@
                                         </state>
                                         <connections>
                                             <action selector="goToAR:" destination="1UJ-Mk-SKe" eventType="touchUpInside" id="Lgd-Pi-n3g"/>
+                                            <action selector="goToAr:" destination="Mkb-HV-u9b" eventType="touchUpInside" id="5AA-kG-f7a"/>
                                         </connections>
                                     </button>
                                 </subviews>
