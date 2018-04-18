@@ -1552,7 +1552,7 @@
                                         <rect key="frame" x="0.0" y="28" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pHK-Ds-ob7" id="eYl-8Q-ntR">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="100"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A72-EY-QZj">
@@ -1849,7 +1849,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hs-sM-NIc">
-                                            <rect key="frame" x="305" y="258" width="22" height="22"/>
+                                            <rect key="frame" x="333" y="342.5" width="22" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="22" id="UuY-i0-org"/>
                                                 <constraint firstAttribute="height" constant="22" id="eeT-AR-8Rb"/>
@@ -1864,16 +1864,16 @@
                                         <constraint firstItem="TMU-ZW-Qnb" firstAttribute="top" secondItem="BGI-Dg-ySF" secondAttribute="bottom" constant="30" id="0Ps-0e-rn6"/>
                                         <constraint firstItem="3hs-uf-eNH" firstAttribute="leading" secondItem="TMU-ZW-Qnb" secondAttribute="leading" id="3LC-Ld-ldr"/>
                                         <constraint firstItem="VDU-D1-6HR" firstAttribute="centerY" secondItem="3hs-uf-eNH" secondAttribute="centerY" id="6pM-Ft-k1h"/>
-                                        <constraint firstItem="1hs-sM-NIc" firstAttribute="leading" secondItem="BGI-Dg-ySF" secondAttribute="trailing" constant="-40" id="9bC-Ad-KKj"/>
                                         <constraint firstItem="BGI-Dg-ySF" firstAttribute="top" secondItem="3hs-uf-eNH" secondAttribute="bottom" constant="30" id="E3V-5G-0NT"/>
+                                        <constraint firstAttribute="bottom" secondItem="1hs-sM-NIc" secondAttribute="bottom" constant="35" id="Ej6-ld-puN"/>
                                         <constraint firstItem="VDU-D1-6HR" firstAttribute="centerX" secondItem="n62-Fg-IjI" secondAttribute="centerX" multiplier="0.405" id="HJP-Vw-gOF"/>
-                                        <constraint firstItem="1hs-sM-NIc" firstAttribute="top" secondItem="BGI-Dg-ySF" secondAttribute="bottom" constant="-40" id="R5Y-WY-xHU"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BGI-Dg-ySF" secondAttribute="trailing" constant="30" id="YGY-hn-Vcd"/>
                                         <constraint firstAttribute="bottom" secondItem="TMU-ZW-Qnb" secondAttribute="bottom" constant="50" id="cvh-Z6-ycO"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TMU-ZW-Qnb" secondAttribute="trailing" constant="30" id="gyN-Y2-pDE"/>
                                         <constraint firstItem="3hs-uf-eNH" firstAttribute="top" secondItem="n62-Fg-IjI" secondAttribute="top" constant="50" id="hEj-Wi-WUo"/>
                                         <constraint firstItem="3hs-uf-eNH" firstAttribute="leading" secondItem="VDU-D1-6HR" secondAttribute="trailing" constant="18.5" id="id6-iH-3H1"/>
                                         <constraint firstItem="3hs-uf-eNH" firstAttribute="leading" secondItem="BGI-Dg-ySF" secondAttribute="leading" id="lhx-wk-wfm"/>
+                                        <constraint firstAttribute="trailing" secondItem="1hs-sM-NIc" secondAttribute="trailing" constant="20" id="ogV-ky-9xV"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
