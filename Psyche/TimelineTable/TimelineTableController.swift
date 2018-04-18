@@ -124,6 +124,8 @@ class TimelineTableController: UITableViewController {
         cell.labelTitle.font = UIFont(name: "Helvetica", size: cell.labelTitle.font.pointSize)
         cell.labelTitle.sizeToFit()
         
+        cell.buttonToFact.tag = indexMission
+        
         return cell
     }
     
@@ -150,8 +152,19 @@ class TimelineTableController: UITableViewController {
         
     }
     
-    func position(for bar: UIBarPositioning) -> UIBarPosition {
-        return UIBarPosition.topAttached
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? DetailViewController {
+            
+            dest.originalView = "Timeline"
+            let button = sender as? UIButton
+            let index = button!.tag
+            
+            dest.selectedFact = eventsList[index]
+        }
+    }
+    
+    @IBAction func unwindToTimeline(segue: UIStoryboardSegue) {
+        
     }
     
     

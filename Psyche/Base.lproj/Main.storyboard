@@ -1746,7 +1746,7 @@
                                 <items>
                                     <barButtonItem title="TO FACT CATEGORY" id="rQu-WA-wUg">
                                         <connections>
-                                            <segue destination="52V-sQ-019" kind="unwind" unwindAction="unwindFromDetailWithSegue:" id="46D-DH-FvH"/>
+                                            <action selector="goBack:" destination="dkM-Zt-Pgf" id="bnO-bZ-Uia"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -1761,6 +1761,8 @@
                         <outlet property="descLabel" destination="iqA-cd-Rvy" id="MTd-OD-iA1"/>
                         <outlet property="factImage" destination="0xj-ar-7wS" id="iVa-P6-6YJ"/>
                         <outlet property="titleLabel" destination="QQj-pB-3oz" id="1nA-tK-Txw"/>
+                        <segue destination="52V-sQ-019" kind="unwind" identifier="backToTimeline" unwindAction="unwindToTimelineWithSegue:" id="dQX-vg-A5N"/>
+                        <segue destination="52V-sQ-019" kind="unwind" identifier="backToFactTable" unwindAction="unwindFromDetailWithSegue:" id="VA6-Z7-l3B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4eJ-ae-dbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1845,13 +1847,26 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hs-sM-NIc">
+                                            <rect key="frame" x="305" y="258" width="22" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="22" id="UuY-i0-org"/>
+                                                <constraint firstAttribute="height" constant="22" id="eeT-AR-8Rb"/>
+                                            </constraints>
+                                            <state key="normal" image="OrangePlus"/>
+                                            <connections>
+                                                <segue destination="dkM-Zt-Pgf" kind="show" id="ZGd-td-sjf"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="TMU-ZW-Qnb" firstAttribute="top" secondItem="BGI-Dg-ySF" secondAttribute="bottom" constant="30" id="0Ps-0e-rn6"/>
                                         <constraint firstItem="3hs-uf-eNH" firstAttribute="leading" secondItem="TMU-ZW-Qnb" secondAttribute="leading" id="3LC-Ld-ldr"/>
                                         <constraint firstItem="VDU-D1-6HR" firstAttribute="centerY" secondItem="3hs-uf-eNH" secondAttribute="centerY" id="6pM-Ft-k1h"/>
+                                        <constraint firstItem="1hs-sM-NIc" firstAttribute="leading" secondItem="BGI-Dg-ySF" secondAttribute="trailing" constant="-40" id="9bC-Ad-KKj"/>
                                         <constraint firstItem="BGI-Dg-ySF" firstAttribute="top" secondItem="3hs-uf-eNH" secondAttribute="bottom" constant="30" id="E3V-5G-0NT"/>
                                         <constraint firstItem="VDU-D1-6HR" firstAttribute="centerX" secondItem="n62-Fg-IjI" secondAttribute="centerX" multiplier="0.405" id="HJP-Vw-gOF"/>
+                                        <constraint firstItem="1hs-sM-NIc" firstAttribute="top" secondItem="BGI-Dg-ySF" secondAttribute="bottom" constant="-40" id="R5Y-WY-xHU"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BGI-Dg-ySF" secondAttribute="trailing" constant="30" id="YGY-hn-Vcd"/>
                                         <constraint firstAttribute="bottom" secondItem="TMU-ZW-Qnb" secondAttribute="bottom" constant="50" id="cvh-Z6-ycO"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TMU-ZW-Qnb" secondAttribute="trailing" constant="30" id="gyN-Y2-pDE"/>
@@ -1861,6 +1876,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="buttonToFact" destination="1hs-sM-NIc" id="Njs-Tt-Vjl"/>
                                     <outlet property="diamond" destination="VDU-D1-6HR" id="yO1-Vn-Rct"/>
                                     <outlet property="labelDescription" destination="TMU-ZW-Qnb" id="ez2-bo-Kcn"/>
                                     <outlet property="labelTitle" destination="3hs-uf-eNH" id="vRd-H9-Sbh"/>
@@ -1909,6 +1925,7 @@
         <image name="EngineeringButton" width="7339" height="3836"/>
         <image name="Journey" width="2918" height="2167"/>
         <image name="JourneyButton" width="1203" height="658"/>
+        <image name="OrangePlus" width="14" height="12"/>
         <image name="closeMenuButton" width="128" height="128"/>
         <image name="darkPurpleDot" width="229" height="228"/>
         <image name="darkerOrgangeDot" width="229" height="229"/>
@@ -1932,6 +1949,7 @@
         <image name="timeline icon" width="72" height="73"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ZGd-td-sjf"/>
         <segue reference="eO6-Lv-N2y"/>
         <segue reference="L0A-mA-YJ2"/>
         <segue reference="lTh-R6-caJ"/>

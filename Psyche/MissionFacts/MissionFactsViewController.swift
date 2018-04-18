@@ -113,7 +113,7 @@ class MissionFactsViewController: UIViewController {
         
         self.view.addGestureRecognizer(gesture)
         
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    self.navigationController?.setNavigationBarHidden(true, animated: true)
     
    
  

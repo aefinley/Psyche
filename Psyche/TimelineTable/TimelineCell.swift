@@ -15,6 +15,7 @@ class TimelineCell: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var pictureForEvent: UIImageView!
     @IBOutlet weak var labelDescription: UILabel!
+    @IBOutlet weak var buttonToFact: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
