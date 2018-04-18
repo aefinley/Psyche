@@ -183,7 +183,8 @@ class MediaGallery: UIViewController, UICollectionViewDataSource, UICollectionVi
         
         let itemSize = UIScreen.main.bounds.width/2 - 6
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsetsMake(20, 0, 60, 0)
+        layout.sectionInset = UIEdgeInsetsMake(70, 0, 60, 0)
+    
         layout.itemSize = CGSize(width: itemSize, height: itemSize)
         
         layout.minimumInteritemSpacing = 4
